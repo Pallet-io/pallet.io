@@ -117,6 +117,7 @@
 				color: rgb(102,102,102);
 			}
 			.content-a h1 {
+				/*filter: drop-shadow(1px 1px 1px black);*/
 				width: 100%;
 				text-align: left;
 				font-size: 64pt;
@@ -479,13 +480,13 @@
 				height: 100%;
 				position: absolute;
 				/*color: rgb(102,102,102);*/
-				filter: brightness(0.25);
+				filter: brightness(1.0);
 			}
 			.content-diff img {
-				width: calc(30px + 4vw);
+				height: calc(30px + 4vw);
 			}
 			.content-diff .logo {
-				filter: brightness(0.25);
+				filter: brightness(1.0);
 				width: 100%;
 				margin-top: 10%;
 				margin-bottom: 5%;
@@ -501,7 +502,7 @@
 				width: 80%;
 				padding-left: 10%;
 				padding-right: 10%;
-				font-size: 1.4vw;
+				font-size: 1.3vw;
 				line-height: 1.2em;
 				bottom: 10%;
    				height: 35%;
@@ -515,4 +516,5 @@
 				padding-left: 10%;
 				padding-right: 10%;
 				text-decoration: underline;
+				color: rgb(102,102,102);	
 			}
