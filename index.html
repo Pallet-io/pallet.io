@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pallet</title>
+	<link href="css/structure.css" rel="stylesheet">
+	<link href="index.css" rel="stylesheet">
+	<!--link href="mobile.css" rel="stylesheet"-->
+	<!--link href="debug.css" rel="stylesheet"-->
+	<script src="js/general.js" type="text/javascript"></script>
+	<meta property="og:image" content="">
+	<meta property="og:type" content="">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="http://pallet.ai">
+	<meta property="og:site_name" content="Pallet.io">
+	<!-- Copyright (c) 2018 PALLET.io All Rights Reserved -->
+	<meta name="copyright" content="PALLET.io">
+</head>
+<body>
+
+	<div id="ie" class="fullscreen">
+		<span class="title">This webpage is most recommended<br>to view in Chrome and Firefox.</span><br><br>
+		<span>There might be unwanted behaviors in some browsers like IE or Edge.</span><br>
+		<span>Click to continue browsing.</span>
+	</div>
+
+	<div id="load" class="fullscreen flex column center">
+		<div class="wrap"><div class="ani hex"><div class="hex"></div></div></div>
+		<div class="text flex row center">
+			<span>L</span><span>O</span><span>A</span><span>D</span><span>I</span><span>N</span><span>G</span>
+		</div>
+	</div>
+	<script src="js/load.js" type="text/javascript"></script>
+
+	<div id="navbar" class="flex row">
+		<a href="#nav-title" class="flex row center button">
+			<img class="logo" src="img/logo.svg" alt="Pallet logo"><span class="title">PALLET</span>
+		</a>
+		<a href="#nav-intro" class="flex center button"><span>Vision</span></a>
+		<a href="#nav-how" class="flex center button"><span>Usage</span></a>
+		<a href="#nav-feature" class="flex center button"><span>Features</span></a>
+		<a href="#nav-roadmap" class="flex center button"><span>Roadmap</span></a>
+		<a href="#nav-faq" class="flex center button"><span>Q&amp;A</span></a>
+	</div>
+
+	<div id="title" class="page">
+		<div id="nav-title" class="nav"></div>
+		<div id="lang">
+			<select name="lang">
+				<option id="en" value="en" class="selected" selected>English</option>
+				<!--option id="zh-tw" value="zh-tw">繁體中文</option-->
+				<option id="zh-cn" value="zh-cn">简体中文</option>
+			</select>
+		</div>
+		<div class="area">
+			<div id="white"></div>
+			<div class="content">
+				<div id="pallet" class="flex row">
+					<img id="logo" src="img/logo.svg" alt="Pallet logo">
+					<span>PALLET</span>
+				</div>
+				<div class="text-a">
+					<span>Protocol for<br>Abstract-Level Ledger Ecosystem</span>
+				</div>
+				<div class="text-b">
+					<span>Beyond Yet Another Chain:<br>IP Protocol for Future Internet of Values</span>
+				</div>
+				<div class="buttons">
+					<a id="whitepaper" class="button" href="doc/whitepaper.pdf" target="blank">White Paper</a>
+					<a id="onepager" class="button" href="doc/onepager.pdf" target="blank">One-Pager</a>
+					<a id="yellowpaper" class="button" href="#" onclick="return toBeAnnounced('en')">Yellow Paper</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="intro" class="page">
+		<div id="nav-intro" class="nav"></div>
+		<div id="trans1-block" class="trans hex"></div>
+		<div id="trans2-block" class="trans hex"></div>
+		<div id="trans3-block" class="trans hex"></div>
+		<div id="trans4-block" class="trans hex"></div>
+		<div id="blank1-block" class="hex"></div>
+		<div id="blank2-block" class="hex"></div>
+		<div id="blank3-block" class="hex"></div>
+
+		<div id="pallet-block" class="big hex withtext">
+			<div class="text">
+				<span class="title">PALLET</span>
+				<p>Pallet allows inter-chain transactions by decoupling contracts from blockchains. Instead of forcing all contracts onto one chain, Pallet offers a <em>Jury</em> per contract, and hence the scalability.</p>
+				<p>Security: Pallet stake mechanism minimizes rogueness through proper rewards and penalties in the ecosystem.</p>
+			</div>
+		</div>
+		<div id="zcash-block" class="hex withtext">
+			<div class="text">
+				<span class="title">Zcash</span>
+				<p>Using zero knowledge proof to provide enhanced privacy</p>
+			</div>
+		</div>
+		<div id="litecoin-block" class="hex withtext">
+			<div class="text">
+				<span class="title">Litecoin</span>
+				<p>Coin refined from Bitcoin</p>
+			</div>
+		</div>
+		<div id="ethereum-block" class="hex withtext">
+			<div class="text">
+				<span class="title">Ethereum</span>
+				<p>A cryptocurrency featuring smart contract</p>
+			</div>
+		</div>
+		<div id="bitcoin-block" class="hex withtext">
+			<div class="text">
+				<span class="title">Bitcoin</span>
+				<p>Most widely used cryptocurrency</p>
+			</div>
+		</div>
+		<div id="iota-block" class="hex withtext">
+			<div class="text">
+				<span class="title">IOTA</span>
+				<p>A cryptocurrency featuring zero transaction fee</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="how" class="page">
+		<div id="nav-how" class="nav"></div>
+		<div id="trans5-block" class="trans hex"></div>
+		<div id="trans6-block" class="trans hex"></div>
+		<div id="trans7-block" class="trans hex"></div>
+		<div id="trans8-block" class="trans hex"></div>
+		<div id="trans9-block" class="trans hex"></div>
+		<div id="trans10-block" class="trans hex"></div>
+		<div class="title"><span>How to use PALLET?</span></div>
+
+		<div id="contract-block" class="medium hex withtext">
+			<div class="text">
+				<span class="title">Contracts<br>for ICO</span>
+				<p>Pallet is versatile in deploying a contract for your Initial Coin Offering. Pallet smart contract can receive tokens from BTC, ETH, and tokens from any supported chain.</p>
+			</div>
+		</div>
+		<div id="exchange-block" class="medium hex withtext">
+			<div class="text">
+				<span class="title">Exchange</span>
+				<p>Traditionally, we need to rely on centralized exchanges to ensure we can exchange safely.</p>
+				<p>Using Pallet contract, you can build your own exchange. Exchange your bitcoin, ethereum, etc with others safely.</p>
+			</div>
+		</div>
+		<div id="decentralize-block" class="medium hex withtext">
+			<div class="text">
+				<span class="title">Decentralized Asset Management</span>
+				<p>Pallet has a scalable and decoupled smart contract. Different DApps will not interfere with each other. People don't need to worry about high transaction fees or low TPS (transaction/s).</p>
+			</div>
+		</div>
+		<div id="howzcash-block" class="small hex withtext">
+			<div class="text">
+				<span class="title">Zcash</span>
+				<p>With enhanced privacy</p>
+			</div>
+		</div>
+		<div id="howlitecoin-block" class="small hex withtext">
+			<div class="text">
+				<span class="title">Litecoin</span>
+				<p>Refined from Bitcoin</p>
+			</div>
+		</div>
+		<div id="howethereum-block" class="small hex withtext">
+			<div class="text">
+				<span class="title">Ethereum</span>
+				<p>Smart contract</p>
+			</div>
+		</div>
+		<div id="howbitcoin-block" class="small hex withtext">
+			<div class="text">
+				<span class="title">Bitcoin</span>
+				<p>Most widely used coin</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="feature" class="page">
+		<div id="nav-feature" class="nav"></div>
+		<div class="title"><span>PALLET features</span></div>
+		<div class="content flex row">
+			<div class="item">
+				<img src="img/network.svg" alt="Blockchains" class="icon">
+				<div class="title"><span>ABOVE &amp; BEYOND BLOCKCHAINS</span></div>
+				<p>Pallet decouples contract execution from underlying blockchains. Contracts are executed on the decoupled contract verifiers, called <em>Jury</em>, which keeps the contract states.</p>
+			</div>
+			<div class="item">
+				<img src="img/parallel.svg" alt="Parallel" class="icon">
+				<div class="title"><span>HIGHLY PARALLEL</span></div>
+				<p>One <em>Jury</em> per contract, instead of one blockchain for all contracts. Different Pallet contracts run independently.</p>
+			</div>
+			<div class="item">
+				<img src="img/shield.svg" alt="Security" class="icon">
+				<div class="title"><span>SECURITY</span></div>
+				<p>Pallet consensus protocol uses stake mechanism to incentivize good behaviors and punish scams. Also, Pallet utilizes LLVM-family tools such as compile-time analyses and runtime sanitizers to catch errors and threats in contract execution.</p>
+			</div>
+			<div class="item">
+				<img src="img/pencil.svg" alt="Productivity" class="icon">
+				<div class="title"><span>PRODUCTIVITY FOR CONTRACT DEVELOPERS</span></div>
+				<p>Pallet supports simplified popular languages and outputs LLVM bitcodes. Writing a contract is less error-prone, thanking to restricted yet familiar language frontends.</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="roadmap" class="page">
+		<div id="nav-roadmap" class="nav"></div>
+		<div class="title"><span>Roadmap</span></div>
+		<div id="timeline"></div>
+	</div>
+
+	<div id="faq">
+		<div id="nav-faq" class="nav" style="position: relative; top: -5vw;"></div>
+		<div class="title"><span>Q&amp;A</span></div>
+		<p class="question">Differences with other cross-chain solution?</p>
+		<p class="answer">Most recent solutions deal with blockchain interoperability by building one trustable adapter for each pair of chains. One popular adapter can be the inter-chain that consists of fully replicated nodes running the same consensus protocol. In comparison, Pallet bridges one chain with others through a decoupled, lightweight, and meta-level smart contract layer. The consensus is reached among the Jurors selected before the contract execution. Jurors responsible for execution have the contract states.</p>
+		<p class="question">Which blockchain does pallet support?</p>
+		<p class="answer">Many new blockchains are forked from Bitcoin and Ethereum. We are starting with Bitcoin and Ethereum, and then move to other popular blockchains as soon as possible. We encourage community developers to contribute to the bridge with other chains.</p>
+		<p class="question">How do you prevent collusion in Pallet?</p>
+		<p class="answer">We focus on protecting each participant from being harmed by malicious Jurors. In the beginning, each Juror deposits a stake into the arbiter contract. If participants doubt the result from contract execution, participants can invoke an arbiter contract to verify the result. The arbiter contract can request Jury 0 to verify the contract. If the result is invalid, the stake of the Juror will be confiscated and given to the contract participants as compensation.</p>
+		<p class="question">What do you mean by decoupling contract?</p>
+		<p class="answer">Decoupling Contract means that the contract execution is decoupled from the blockchain beneath and is done at Pallet level. After execution, contract states are stored in the Jury and/or the blockchain beneath.</p>
+		<p class="question">Is there any video to show how Pallet protocol works?</p>
+		<p class="answer">
+			A preliminary video is here.<br> <br>
+			<video style="width: 80%; margin-left: 10%; margin-right: 10%;" controls>
+				<source src="doc/pallet_demonstration_eng.mp4" type="video/mp4">
+				Your browser does not support the video tag. Please refer <a href="doc/pallet_demonstration_eng.mp4">here</a>.
+			</video>
+		</p>
+
+	</div>
+
+	<script src="js/hexagon.js" type="text/javascript"></script>
+	<script src="js/roadmap.js" type="text/javascript"></script>
+	<script src="index.js" type="text/javascript"></script>
+</body>
+</html>
