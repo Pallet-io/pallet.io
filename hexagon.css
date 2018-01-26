@@ -1,0 +1,65 @@
+/*@-webkit-keyframes pulse {
+  0% { box-shadow:0 0 8px #ea4c89, inset 0 0 8px #ea4c89; }
+  50% { box-shadow:0 0 16px #ea4c89, inset 0 0 14px #ea4c89; }
+  100% { box-shadow:0 0 8px #ea4c89, inset 0 0 8px #ea4c89; }
+}*/
+div.hexs {
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 0px;
+  /*padding-top:100px;*/
+  /* transform:scale(0.8); */
+}
+div.hex-type-a {
+  filter: drop-shadow(0px 0.6vw 0.3vw rgba(0,0,0,0.1));
+}
+div.hex-type-a:hover, div.hex-type-a div.hexs-clipbox:hover {
+  filter: drop-shadow(0px 1vw 0.5vw rgba(0,0,0,0.15));
+}
+
+div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*float: top;*/
+  -webkit-clip-path: url(#hexs-clip);
+  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0 50%);
+  
+  /* can't use % */
+  -webkit-box-shadow: 30px 30px 300px -50px rgba(0,0,0,0.48);
+  -moz-box-shadow: 30px 30px 300px -50px rgba(0,0,0,0.48);
+  box-shadow: 30px 30px 300px -50px rgba(0,0,0,0.48);
+  /* box-shadow: 30px 30px 300px -50px rgba(0,0,0,0.48); */
+  /* background: radial-gradient(ellipse at bottom, rgba(255,255,255,0.8) 40%,rgba(255,255,255,0) 150%); */
+  height: 100%;
+  width: 100%;
+  /*background-color: #000;  IE 8 fallback */
+  /*background-color: rgba(0,0,0,0.15);*/
+  /*-webkit-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+  -moz-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+  -ms-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+  -o-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));*/
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+      ::i-block-chrome, div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
+            clip-path: url(#hexs-clip);
+      }
+}
+div.hexs > div.hexs-clipboxouter {
+  position: absolute;
+  transform:scale(1);
+  /*z-index: 80;*/
+}
+/*!div.hexs > div.hexs-content {
+  position: absolute;
+  text-align: center;
+  font-family: "NewGothic-Extra";
+  color: rgb(209, 211, 211);
+  top: 0;
+  left: 0;
+  height: 90%;
+  width: 100%;
+  background: rgba(0,255,0,0);
+  z-index: 500;
+}*/
