@@ -110,7 +110,6 @@
 				text-align: center;
 				font-size: 48pt;
 				font-size: 4vw;
-				font-size: calc(16px + 3vw);
 				display: block;
 				line-height: 56pt;
 				line-height: 6.5vw;
@@ -122,7 +121,6 @@
 				text-align: left;
 				font-size: 64pt;
 				font-size: 6vw;
-				font-size: calc(32px + 3.5vw);
 				display: block;
 				line-height: 56pt;
 				line-height: 1.2em;
@@ -133,7 +131,6 @@
 				text-align: center;
 				font-size: 48pt;
 				font-size: 4vw;
-				font-size: calc(16px + 3vw);
 				display: block;
 				line-height: 56pt;
 				line-height: 6.5vw;
@@ -144,7 +141,6 @@
 				text-align: left;
 				font-size:24pt;
 				font-size:3vw;
-				font-size: calc(12px + 2vw);
 				display: block;
 				line-height: 32pt;
 				line-height: 3.5vw;
@@ -153,7 +149,6 @@
 			.content-a {
 				font-size:12pt;
 				font-size:1.5vw;
-				font-size: calc(10px + 0.75vw);
 				color: rgb(102,102,102);
 			}
 
@@ -231,7 +226,7 @@
 			}
 			.info-main .title {
 				font-size: 16pt;
-				font-size: calc(4px + 3vw);
+				font-size: 3.3vw;
 				font-weight: bold;
 				text-decoration: underline;
 				text-align: center;
@@ -261,7 +256,6 @@
 			.info-coinitem .title {
 				font-size: 22pt;
 				font-size: 2.0vw;
-				font-size: calc(12px + 1.0vw);
 				font-weight: bold;
 				text-decoration: underline;
 				text-align: center;
@@ -271,8 +265,7 @@
 				/* position: relative;*/
 				margin-top: 6%;
 				font-size: 12pt;
-				font-size: 1.4vw;
-				font-size: calc(2px + 1vw);
+				font-size: 1.2vw;
 				width: 100%;
 				/*height: 100%;*/
 				text-align: center;
@@ -288,7 +281,6 @@
 			.info-coinitem-tiny .title {
 				font-size: 18pt;
 				font-size: 1.6vw;
-				font-size: calc(8px + 0.9vw);
 				font-weight: bold;
 				text-decoration: underline;
 				text-align: center;
@@ -298,8 +290,7 @@
 				/* position: relative;*/
 				margin-top: 6%;
 				font-size: 10pt;
-				font-size: 1.2vw;
-				font-size: calc(3px + 1.1vw);
+				font-size: 1.4vw;
 				width: 100%;
 				/*height: 100%;*/
 				text-align: center;
@@ -314,8 +305,7 @@
 			}
 			.info-intro .title {
 				font-size: 14pt;
-				font-size: 3.0vw;
-				font-size: calc(18px + 0.8vw);
+				font-size: 2.6vw;
 				font-weight: bold;
 				text-decoration: underline;
 				text-align: center;
@@ -325,8 +315,7 @@
 			.info-intro .content {
 				margin-top: 6%;
 				font-size: 12pt;
-				font-size: 1.4vw;
-				font-size: calc(2px + 1.2vw);
+				font-size: 1.25vw;
 				width: 100%;
 				/*height: 70%;*/
 				
@@ -443,7 +432,7 @@
 			.menu_item {
 				display: inline-block;
 				width: 19%;
-				font-size: calc(14px + 1.0vw);
+				font-size: 2.0vw;
 
 				/*text-decoration: underline;*/
 				padding-top: 6%;
@@ -512,14 +501,14 @@
 				width: 80%;
 				padding-left: 10%;
 				padding-right: 10%;
-				font-size: calc(8px + 0.8vw);
+				font-size: 1.4vw;
 				line-height: 1.2em;
 				bottom: 10%;
    				height: 35%;
    				position: absolute;
 			}
 			.content-diff h2 {
-				font-size: calc(12px + 1.4vw);
+				font-size: 2vw;
 				font-weight: bold;
 				line-height: 1.3em;
 				text-align: left;
