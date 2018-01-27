@@ -21,10 +21,46 @@ $(window).on('scroll', function () {
     setItemClass($('.menubar'), 'menubar-fixed', show);
     setItemClass($('.menu_mark'), 'menu_mark-fixed', show);
 });
-$(window).bind('hashchange', function() {
+/*$(window).bind('hashchange', function() {
     //console.log($(this).scrollTop());
     $('html, body').css('scroll-top',$(this).scrollTop() - $('.navbar-fixed').height());
-    /*$('html, body').animate({
+    / *$('html, body').animate({
         scrollTop: $(this).scrollTop() - $('.navbar-fixed').height()
-    }, 1000);*/
+    }, 1000);* /
+});*/
+var toAnchor = function (n){
+    var headerHeight = ($(".navbar").height() + $(".navbar").outerHeight());
+    console.log($("a[name='" + n + "']").offset().top);
+    $('html,body').animate({
+        scrollTop: $("a[name='" + n + "']").offset().top - headerHeight
+    }, 500);
+};
+var switchAnchor = function(h){
+    var target = $(h), headerHeight = ($(".navbar").height() + $(".navbar").outerHeight()); // Get fixed header height
+    target = target.length ? target : $('[name=' + h.slice(1) +']');
+
+    if (target.length){
+        $('html,body').animate({
+            scrollTop: $(target).offset().top - headerHeight
+        }, 500);
+        return false;
+    }
+};
+$(document).ready(function() {
+    if(window.location.hash && window.location.hash != '#'){
+        toAnchor(window.location.hash.slice(1));
+    }
 });
+(function($) {
+    $( document ).ready(function() {
+       // console.log($(".navbar-fixed").height());
+       // console.log($("a[href*='#']:not([href='#'])"));
+      $("a[href*='#']:not([href='#'])").click(function(){
+          //console.log('XD');
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+            || location.hostname == this.hostname){
+            switchAnchor(this.hash);
+        }
+      });
+  });
+})(jQuery);
