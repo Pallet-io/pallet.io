@@ -22,7 +22,7 @@ div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
   top: 0;
   left: 0;
   /*float: top;*/
-  -webkit-clip-path: url(#hexs-clip);
+  /*-webkit-clip-path: url(#hexs-clip);*/
   -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0 50%);
   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0 50%);
   
@@ -43,7 +43,7 @@ div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
       ::i-block-chrome, div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
-            clip-path: url(#hexs-clip);
+            /*clip-path: url(#hexs-clip);*/
       }
 }
 div.hexs > div.hexs-clipboxouter {
