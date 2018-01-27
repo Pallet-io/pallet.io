@@ -238,7 +238,29 @@
 			.hex-type-a:hover .hexs-outer > svg {
  				filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0px 10px); 
 			}
-			
+			/*.hexs-content {
+				border-radius:100%;
+				box-shadow: outset 0 0 0px #ffffff, outset 0 0 60px #ffffff, outset 0 0 60px #ea4c89;
+			}*/
+			/*.hex-type-a:before, .hex-type-a:after {
+			  z-index: -1;
+			  position: absolute;
+			  content: "";
+			  bottom: 15px;
+			  left: 10px;
+			  width: 50%;
+			  top: 80%;
+			  max-width:300px;
+			  background: #777;
+			  -webkit-box-shadow: 0 15px 10px #777;
+			  -moz-box-shadow: 0 15px 10px #777;
+			  box-shadow: 0 15px 10px #777;
+			  -webkit-transform: rotate(-3deg);
+			  -moz-transform: rotate(-3deg);
+			  -o-transform: rotate(-3deg);
+			  -ms-transform: rotate(-3deg);
+			  transform: rotate(-3deg);
+			}*/
 			.hexs-content .hexs-inner {
 				position: absolute; 
 				width: 100%; 
