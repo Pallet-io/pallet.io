@@ -9,17 +9,56 @@
 		<title>Pallet - Protocol for Abstruct-Level Ledger Ecosystem</title>
 		<script type="text/javascript" src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 		<link rel="stylesheet" type="text/css" media="screen" href="reset.css">
-		<link rel="stylesheet" type="text/css" media="screen" href="hexagon.css">
+
 		<link rel="stylesheet" type="text/css" media="screen" href="timeline.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="hex-positions.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="page.css?98">
 
 		<style type="text/css">
+		div.hexs {
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 0px;
+}
+div.hex-type-a {
+  filter: drop-shadow(0px 0.6vw 0.3vw rgba(0,0,0,0.1));
+}
+div.hex-type-a:hover, div.hex-type-a div.hexs-clipbox:hover {
+  filter: drop-shadow(0px 1vw 0.5vw rgba(0,0,0,0.15));
+}
+div.hex-type-b2 {
+  filter: drop-shadow(0px 0.6vw 0.3vw rgba(0,0,0,0.1));
+}
+div.hex-type-b2:hover, div.hex-type-a div.hexs-clipbox:hover {
+  filter: drop-shadow(0px 1vw 0.5vw rgba(0,0,0,0.15));
+}
+
+
+div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*-webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0 50%);*/
+/*   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0 50%); */
+  /*-webkit-box-shadow: 30px 30px 300px -50px rgba(0,0,0,0.48);
+  -moz-box-shadow: 30px 30px 300px -50px rgba(0,0,0,0.48);
+  box-shadow: 30px 30px 300px -50px rgba(0,0,0,0.48);*/
+  height: 100%;
+  width: 100%;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+      ::i-block-chrome, div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
+      }
+}
+/*div.hexs > div.hexs-clipboxouter {
+  position: absolute;
+  transform:scale(1);
+}*/
 			em {
 				font-style: italic;
 
 			}
-			@media only screen and (max-device-width: 10px) {
+			/*@media only screen and (max-device-width: 10px) {
 				.main-background {
 					display: none;
 				}
@@ -30,12 +69,12 @@
 					display: block !important;
 					width: 100% !important;
 					height: 100% !important;
-					/*background-size: cover 100%;
+					/ *background-size: cover 100%;
 					background-repeat: no-repeat;
 					background-position: left top;
-					background-image: url(screencapture-pallet-ai-1516974618673.png);*/
+					background-image: url(screencapture-pallet-ai-1516974618673.png);* /
 				}	
-			}
+			}*/
 		</style>
 		<svg width="0" height="0" style="padding: 0; margin: 0; position: absolute;">
             <defs>
@@ -46,7 +85,7 @@
         </svg>
 	</head>
 	<body>
-<div class="main-img" style="display: none;"><img src="screencapture-pallet-ai-1516974618673.png" /></div>
+<!--div class="main-img" style="display: none;"><img src="screencapture-pallet-ai-1516974618673.png" /></div-->
 
 <div class="main-background">
 			<div class="hex-tile"></div>
@@ -221,375 +260,625 @@
 					</div>
 				</div>
 			</div>
-			
+						
 			<div class="hexs hex-type-a hex-pos-1 hex-for-main">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
+				
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
 		        <div class="hexs-content">
-		        	<div class="hexs-shape-left"></div>
-					<div class="hexs-shape-right"></div>
-		        	<div class="info-main">
-		        		<a name="vision"></a>
-		        		<div class="title">
-							PALLET
-						</div>
-						<div class="content">
-
-							<div>
-								<p>
-									Pallet allows inter-chain transactions by decoupling contracts from blockchains. Instead of forcing all contracts onto one chain, Pallet offers a <em>jury</em> per contract, and hence the scalability. 
-								</p>
-								<p>
-									Security: Pallet stake mechanism minimizes rogueness through proper rewards and penalties in the ecosystem.
-																	</p>
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+						<div class="hexs-shape-left"></div>
+						<div class="hexs-shape-right"></div>
+						<div class="info-main">
+							<a name="vision"></a>
+							<div class="title">
+								PALLET
 							</div>
+							<div class="content">
+
+								<div>
+									<p>
+										Pallet allows inter-chain transactions by decoupling contracts from blockchains. Instead of forcing all contracts onto one chain, Pallet offers a <em>jury</em> per contract, and hence the scalability. 
+									</p>
+									<p>
+										Security: Pallet stake mechanism minimizes rogueness through proper rewards and penalties in the ecosystem.
+																		</p>
+								</div>
+							</div>
+							<br />
 						</div>
-						<br />
                     </div>
+
 		        </div>
+		        
+
 			</div>
 
 
 			<div class="hexs hex-type-a hex-pos-2 hex-for-coinitem">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
 		        <div class="hexs-content">
-		        	<div class="hexs-shape-left"></div>
-					<div class="hexs-shape-right"></div>
-		        	<div class="info-coinitem">
-		        		<div class="title">
-							Zcash
-						</div>
-						<div class="content">
-							<div>
-								Using zero knowledge proof to provide enhanced privacy
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+						<div class="hexs-shape-left"></div>
+						<div class="hexs-shape-right"></div>
+						<div class="info-coinitem">
+							<div class="title">
+								Zcash
+							</div>
+							<div class="content">
+								<div>
+									Using zero knowledge proof to provide enhanced privacy
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 		        </div>
 			</div>
 
 
 			<div class="hexs hex-type-a hex-pos-3 hex-for-coinitem">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
 		        <div class="hexs-content">
-		        	<div class="hexs-shape-left"></div>
-					<div class="hexs-shape-right"></div>
-		        	<div class="info-coinitem">
-		        		<div class="title">
-							Litecoin
-						</div>
-						<div class="content">
-							<div>
-								Coin refined from Bitcoin
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+						<div class="hexs-shape-left"></div>
+						<div class="hexs-shape-right"></div>
+						<div class="info-coinitem">
+							<div class="title">
+								Litecoin
+							</div>
+							<div class="content">
+								<div>
+									Coin refined from Bitcoin
 
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 		        </div>
 			</div>
 
 
 			<div class="hexs hex-type-a hex-pos-4 hex-for-coinitem">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
 		        <div class="hexs-content">
-		        	<div class="hexs-shape-left"></div>
-					<div class="hexs-shape-right"></div>
-		        	<div class="info-coinitem">
-		        		<div class="title">
-							Ethereum
-						</div>
-						<div class="content">
-							<div>
-								A cryptocurrency featuring smart contract
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+						<div class="hexs-shape-left"></div>
+						<div class="hexs-shape-right"></div>
+						<div class="info-coinitem">
+							<div class="title">
+								Ethereum
+							</div>
+							<div class="content">
+								<div>
+									A cryptocurrency featuring smart contract
 
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 		        </div>
 			</div>
 
 
 			<div class="hexs hex-type-a hex-pos-5 hex-for-coinitem">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
 		        <div class="hexs-content">
-		        	<div class="hexs-shape-left"></div>
-					<div class="hexs-shape-right"></div>
-		        	<div class="info-coinitem">
-		        		<div class="title">
-							Bitcoin
-						</div>
-						<div class="content">
-							<div>
-								Most widely used cryptocurrency
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+						<div class="hexs-shape-left"></div>
+						<div class="hexs-shape-right"></div>
+						<div class="info-coinitem">
+							<div class="title">
+								Bitcoin
+							</div>
+							<div class="content">
+								<div>
+									Most widely used cryptocurrency
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 		        </div>
 			</div>
 
 
 			<div class="hexs hex-type-a hex-pos-6 hex-for-coinitem">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
 		        <div class="hexs-content">
-		        	<div class="hexs-shape-left"></div>
-					<div class="hexs-shape-right"></div>
-		        	<div class="info-coinitem">
-		        		<div class="title">
-							IOTA
-						</div>
-						<div class="content">
-							<div>
-								A cryptocurrency featuring zero transaction fee
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+						<div class="hexs-shape-left"></div>
+						<div class="hexs-shape-right"></div>
+						<div class="info-coinitem">
+							<div class="title">
+								IOTA
+							</div>
+							<div class="content">
+								<div>
+									A cryptocurrency featuring zero transaction fee
 
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 		        </div>
 			</div>
 
 
 			<div class="hexs hex-type-b2 hex-pos-7">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
-		        <div class="hexs-content"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
+		        <div class="hexs-content">
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+					</div>
+				</div>
 			</div>
 
 
 			<div class="hexs hex-type-b2 hex-pos-8">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
-		        <div class="hexs-content"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
+		        <div class="hexs-content">
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+					</div>
+				</div>
 			</div>
 
 
 			<div class="hexs hex-type-b2 hex-pos-9">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
-		        <div class="hexs-content"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
+		        <div class="hexs-content">
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+					</div>
+				</div>
 			</div>
 
 
 			<div class="hexs hex-type-b hex-pos-10">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
-		        <div class="hexs-content"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
+		        <div class="hexs-content">
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+					</div>
+				</div>
 			</div>
 
 
 			<div class="hexs hex-type-b hex-pos-11">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
-		        <div class="hexs-content"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
+		        <div class="hexs-content">
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+					</div>
+				</div>
 			</div>
 
 
 			<div class="hexs hex-type-b hex-pos-12">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
-		        <div class="hexs-content"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
+		        <div class="hexs-content">
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+					</div>
+				</div>
 			</div>
 
 
 			<div class="hexs hex-type-b hex-pos-13">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
-		        <div class="hexs-content"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
+		        <div class="hexs-content">
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+					</div>
+				</div>
 			</div>
 
 
 			<div class="hexs hex-type-a hex-pos-14 hex-for-intro">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
 		        <div class="hexs-content">
-		        	<div class="hexs-shape-left"></div>
-					<div class="hexs-shape-right"></div>
-		        	<div class="info-intro">
-		        		<div class="title">
-							Exchange
-						</div>
-						<div class="content">
-							<div>
-								<p>
-									Traditionally, we need to rely on centralized exchanges to ensure we can exchange safely.
-								</p>
-								<p>
-									Using Pallet contract, you can build your own exchange. Exchange your bitcoin, ethereum, etc with others safely.								   </p>
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+						<div class="hexs-shape-left"></div>
+						<div class="hexs-shape-right"></div>
+						<div class="info-intro">
+							<div class="title">
+								Exchange
+							</div>
+							<div class="content">
+								<div>
+									<p>
+										Traditionally, we need to rely on centralized exchanges to ensure we can exchange safely.
+									</p>
+									<p>
+										Using Pallet contract, you can build your own exchange. Exchange your bitcoin, ethereum, etc with others safely.								   </p>
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 		        </div>
 			</div>
 
 
 			<div class="hexs hex-type-a hex-pos-15 hex-for-intro">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
 		        <div class="hexs-content">
-		        	<div class="hexs-shape-left"></div>
-					<div class="hexs-shape-right"></div>
-		        	<div class="info-intro">
-		        		<div class="title">
-							Decentralized Asset Management
-
-						</div>
-						<div class="content">
-							<div>
-								Pallet has a great scalability and decoupled smart contract. Different Dapps will not interfere with each other. People don't need to worry about high transaction fees or low TPS (transaction per second).
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+						<div class="hexs-shape-left"></div>
+						<div class="hexs-shape-right"></div>
+						<div class="info-intro">
+							<div class="title">
+								Decentralized Asset Management
 
 							</div>
+							<div class="content">
+								<div>
+									Pallet has a great scalability and decoupled smart contract. Different Dapps will not interfere with each other. People don't need to worry about high transaction fees or low TPS (transaction per second).
+
+								</div>
+							</div>
 						</div>
-                    </div>
+					</div>
 		        </div>
 			</div>
 
 
 			<div class="hexs hex-type-a hex-pos-16 hex-for-intro">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
 		        <div class="hexs-content">
-		        	<div class="hexs-shape-left"></div>
-					<div class="hexs-shape-right"></div>
-		        	<div class="info-intro">
-		        		<div class="title">
-							People's Initial Token Offerings
-						</div>
-						<div class="content">
-							<div>
-								<p>
-									People can use Pallet protocol to interact with not only Ethers but `Bitcoins, Litecoins, etc.
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+						<div class="hexs-shape-left"></div>
+						<div class="hexs-shape-right"></div>
+						<div class="info-intro">
+							<div class="title">
+								People's Initial Token Offerings
+							</div>
+							<div class="content">
+								<div>
+									<p>
+										People can use Pallet protocol to interact with not only Ethers but `Bitcoins, Litecoins, etc.
 
-								</p>
+									</p>
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 		        </div>
 			</div>
 
 
 			<div class="hexs hex-type-a hex-pos-17 hex-for-coinitem-tiny">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
 		        <div class="hexs-content">
-		        	<div class="hexs-shape-left"></div>
-					<div class="hexs-shape-right"></div>
-		        	<div class="info-coinitem-tiny">
-		        		<div class="title">
-							Zcash
-						</div>
-						<div class="content">
-							<div>
-								With enhanced privacy
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+						<div class="hexs-shape-left"></div>
+						<div class="hexs-shape-right"></div>
+						<div class="info-coinitem-tiny">
+							<div class="title">
+								Zcash
+							</div>
+							<div class="content">
+								<div>
+									With enhanced privacy
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 		        </div>
 			</div>
 
-
 			<div class="hexs hex-type-a hex-pos-18 hex-for-coinitem-tiny">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
 		        <div class="hexs-content">
-		        	<div class="hexs-shape-left"></div>
-					<div class="hexs-shape-right"></div>
-		        	<div class="info-coinitem-tiny">
-		        		<div class="title">
-							Bitcoin
-						</div>
-						<div class="content">
-							<div>
-								Most widely used coin
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+						<div class="hexs-shape-left"></div>
+						<div class="hexs-shape-right"></div>
+						<div class="info-coinitem-tiny">
+							<div class="title">
+								Bitcoin
+							</div>
+							<div class="content">
+								<div>
+									Most widely used coin
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 		        </div>
 			</div>
 
 
 			<div class="hexs hex-type-a hex-pos-19 hex-for-coinitem-tiny">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
 		        <div class="hexs-content">
-		        	<div class="hexs-shape-left"></div>
-					<div class="hexs-shape-right"></div>
-		        	<div class="info-coinitem-tiny">
-		        		<div class="title">
-							Ethereum
-						</div>
-						<div class="content">
-							<div>
-								Improved contract
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+						<div class="hexs-shape-left"></div>
+						<div class="hexs-shape-right"></div>
+						<div class="info-coinitem-tiny">
+							<div class="title">
+								Ethereum
+							</div>
+							<div class="content">
+								<div>
+									Improved contract
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 		        </div>
 			</div>
 
 
 			<div class="hexs hex-type-a hex-pos-20 hex-for-coinitem-tiny">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
 		        <div class="hexs-content">
-		        	<div class="hexs-shape-left"></div>
-					<div class="hexs-shape-right"></div>
-		       		<div class="info-coinitem-tiny">
-		        		<div class="title">
-							Litecoin
-						</div>
-						<div class="content">
-							<div>
-								Refined from Bitcoin
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+						<div class="hexs-shape-left"></div>
+						<div class="hexs-shape-right"></div>
+						<div class="info-coinitem-tiny">
+							<div class="title">
+								Litecoin
+							</div>
+							<div class="content">
+								<div>
+									Refined from Bitcoin
+								</div>
 							</div>
 						</div>
-                    </div>
+					</div>
 		        </div>
 			</div>
 
 
 			<div class="hexs hex-type-b hex-pos-21">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
-		        <div class="hexs-content"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
+		        <div class="hexs-content">
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+					</div>
+				</div>
 			</div>
 
 
 			<div class="hexs hex-type-b hex-pos-22">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
-		        <div class="hexs-content"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
+		        <div class="hexs-content">
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+					</div>
+				</div>
 			</div>
 
 
 			<div class="hexs hex-type-b hex-pos-23">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
-		        <div class="hexs-content"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
+		        <div class="hexs-content">
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+					</div>
+				</div>
 			</div>
 
 
 			<div class="hexs hex-type-b hex-pos-24">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
-		        <div class="hexs-content"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
+		        <div class="hexs-content">
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+					</div>
+				</div>
 			</div>
 
 
 			<div class="hexs hex-type-b hex-pos-25">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
-		        <div class="hexs-content"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
+		        <div class="hexs-content">
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+					</div>
+				</div>
 			</div>
 
 
 			<div class="hexs hex-type-b hex-pos-26">
-		        <div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div>
-		        <div class="hexs-content"></div>
+		        <!--div class="hexs-clipbox"></div>
+		        <div class="hexs-clipboxouter"></div-->
+		        <div class="hexs-content">
+		        	<div class="hexs-outer">
+						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
+							viewbox="0 0 200 173.20508075688772">
+							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
+							</path>
+						</svg>
+					</div>
+					<div class="hexs-inner">
+					</div>
+				</div>
 			</div>
 
             <!--div class="hexs hex-type-a hex-pos-2">
