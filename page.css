@@ -55,6 +55,15 @@
 				z-index: 1507;
 				filter: drop-shadow(0px 1vw 0.5vw rgba(0,0,0,0.15));
 			}
+			.block-a2 {
+				/* 70.454, 55.4523, -23.2476, -3.99857, -11.2921 */
+				background-color: rgba(255,255,255,1);
+				width: 70.454%;
+				padding-bottom: 55.4523%;
+				transform: translate(-32.6476%, -73.99857%) rotate(-5.2921deg);
+				z-index: 1507;
+				filter: drop-shadow(0px 1vw 0.5vw rgba(0,0,0,0.15));
+			}
 			.block-b {
 				/* 128.662, 43.3752, -10.8707, 106.066, 11.579 */
 				background-color: rgba(163,228,215,1);
@@ -194,9 +203,9 @@
 			div.hexs > div.hexs-content {
 				position: absolute;
 				z-index: 1700;
-				padding-top: 5.2%;
-				padding-bottom: 5.2%;
-				height: 90%;
+				/* padding-top: 5.2%; */
+				/* padding-bottom: 5.2%; */
+				height: 86.7%;
 				width: 100%;
 				z-index: 1700;
 			}
@@ -219,15 +228,16 @@
 				background-size: 100%;
 				background-image: url(web_bg.png);
 				z-index: 1300;
+				/* top:; */
 			}
 			.hexs-content .hexs-outer {
 				position: absolute; 
 				width: 100%; 
-				height: 100%; 
+				height: 100%;
 				 
 				z-index: -1;
 			}
-			.hex-for-main .hexs-content .hexs-outer {
+			.hex-for-main .hexs-content .hexs-outer svg {
 				margin-left: -50%;
 			}
 			.hexs-content .hexs-outer > svg {
@@ -264,7 +274,7 @@
 			.hexs-content .hexs-inner {
 				position: absolute; 
 				width: 100%; 
-				height: 86.5%
+				height: 100%;
 			}
 			.info-main {
 				position: relative;
@@ -472,20 +482,24 @@
 				position: absolute;
 				width: 40%;
 				min-width: 400px;
-				padding-bottom: 10%;
+				/* padding-bottom: 10%; */
 				/* background-color: rgba(0,255,255,0.2); */
 				transform: translate(25%, 15%) rotate(0deg);
 				z-index: 1800;
+				display: table;
+				height: 3vw;
+				top: 2vw;
 			}
 			.menu_item {
 				display: inline-block;
 				width: 19%;
 				font-size: 2.0vw;
-
 				/*text-decoration: underline;*/
-				padding-top: 6%;
+				/* padding-top: 6%; */
 				font-weight: normal;
 				color: rgb(108,108,108);
+				display: table-cell;
+				vertical-align: middle;
 			}
 			.menu_item a:link, .menu_item a:visited {
 				color: rgb(108,108,108);
@@ -564,4 +578,20 @@
 				padding-right: 10%;
 				text-decoration: underline;
 				color: rgb(102,102,102);	
+			}
+			.menubar-nav {
+				/* width: 100vw; */
+				transform: translate(25%, 0%);
+				padding-bottom:  0;
+				position: fixed;
+				background-color: white;
+				border-bottom-style: dotted;
+				border-bottom-width: 2px;
+				box-shadow: 0 4px 2px -2px gray;
+				z-index: 10000;
+				/* padding-left: 20vw; */
+				/* padding-right: 20vw; */
+				top: 0;
+				/* border-bottom-style: dotted; */
+				/* border-bottom-width: 2px; */
 			}
