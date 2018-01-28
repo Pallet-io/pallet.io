@@ -34,15 +34,19 @@ var toAnchor = function (n){
     $('html,body').animate({
         scrollTop: $("a[name='" + n + "']").offset().top - headerHeight
     }, 500);
+    $('.main-background').scrollTop(0);
 };
 var switchAnchor = function(h){
     var target = $(h), headerHeight = ($(".navbar").height() + $(".navbar").outerHeight()); // Get fixed header height
     target = target.length ? target : $('[name=' + h.slice(1) +']');
 
     if (target.length){
+        console.log($('html,body'));
         $('html,body').animate({
             scrollTop: $(target).offset().top - headerHeight
         }, 500);
+        console.log($('.main-background').scrollTop());
+        $('.main-background').scrollTop(0);
         return false;
     }
 };
@@ -50,7 +54,15 @@ $(document).ready(function() {
     if(window.location.hash && window.location.hash != '#'){
         toAnchor(window.location.hash.slice(1));
     }
+    $('.main-background').scrollTop(0);
+    // FIXME
+    var fixBackgroundScroll = function(){
+        $('.main-background').scrollTop(0);
+    };
+    var t = setInterval(fixBackgroundScroll, 1000);
 });
+
+
 (function($) {
     $( document ).ready(function() {
        // console.log($(".navbar-fixed").height());
@@ -61,6 +73,7 @@ $(document).ready(function() {
             || location.hostname == this.hostname){
             switchAnchor(this.hash);
         }
+        $('.main-background').scrollTop(0);
       });
   });
 })(jQuery);

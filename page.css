@@ -6,17 +6,19 @@
 			}
 			@font-face {
 			  font-family: "Myriad Pro"; 
-			  src: local("Myriad Pro Regular"), local("Myriad Pro"), url(myriad.ttf);
+			  src: local("Myriad Pro Regular"),
+			  local("Myriad Pro"),
+			  url(myriad.ttf),url(myriad.eot);
 			}
 			@font-face {
 			  font-family: "Myriad Pro"; 
 			  font-weight: bold;
-			  src: local("Myriad Pro Bold"), url(myriad_bold.ttf);
+			  src: local("Myriad Pro Bold"), url(myriad_bold.ttf)),url('myriad_bold.eot');
 			}
 			@font-face {
 			  font-family: "Myriad Pro"; 
 			  font-weight: 900;
-			  src: local("Myriad Pro SemiExt"), url(myriad_bold900.ttf);
+			  src: local("Myriad Pro SemiExt"), url(myriad_bold900.ttf)),url('myriad_bold900.eot');
 			}
 			.main-background {
 				font-family: "Myriad Pro",arial,helvetica,sans-serif;
@@ -38,6 +40,7 @@
 				margin-right: 0;
 				/*margin-top: 25%;
 				margin-bottom: 25%;*/
+				/* overscroll-behavior-y:  none; */
 			}
 			.blocks {
 				position: absolute;
@@ -237,12 +240,12 @@
 				 
 				z-index: -1;
 			}
-			.hex-for-main .hexs-content .hexs-outer svg {
+			/*.hex-for-main .hexs-content .hexs-outer svg {
 				margin-left: -50%;
-			}
+			}*/
 			.hexs-content .hexs-outer > svg {
-				position: absolute; 
-				z-index: 10000; 
+				/* position: absolute; */
+				z-index: 10000;
 				transform-origin: 50% 50% 0px;
 			}
 			.hex-type-a:hover .hexs-outer > svg {
@@ -418,6 +421,10 @@
 					/*position: absolute;*/
 				}
 			}
+			_:-ms-lang(x), .hexs-shape-left, .hexs-shape-right {
+					width: 10%;
+					/*position: absolute;*/
+				}
 			@media screen and (-webkit-min-device-pixel-ratio:0) { 
 				::i-block-chrome,.hexs-shape-left, ::i-block-chrome,.hexs-shape-right {
 					width: 15%;
@@ -490,7 +497,7 @@
 				min-width: 400px;
 				/* padding-bottom: 10%; */
 				/* background-color: rgba(0,255,255,0.2); */
-				transform: translate(23%, 15%) rotate(0deg);
+				transform: translate(20%, 15%) rotate(0deg);
 				z-index: 1800;
 				height: 3vw;
 				top: 2vw;
@@ -526,6 +533,9 @@
 				display: table-cell;
 				
 			}
+			_:-ms-lang(x), .menu_item {
+				font-size: unset;
+			}
 			.menu_item {
 				display: inline-block;
 				width: 16%;
@@ -536,6 +546,7 @@
 				color: rgb(108,108,108);
 				display: table-cell;
 				vertical-align: middle;
+				text-align: center;
 			}
 			.menu_item a:link, .menu_item a:visited {
 				color: rgb(108,108,108);
@@ -606,7 +617,7 @@
    				position: absolute;
 			}
 			.content-diff h2 {
-				font-size: 2vw;
+				font-size: 1.8vw;
 				font-weight: bold;
 				line-height: 1.3em;
 				text-align: left;
