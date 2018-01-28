@@ -517,6 +517,9 @@
 			}
 			.menubar-fixed  .menu_item {
 				font-size: 1.6vw;
+				/* width: 15%; */
+			}
+			_:-ms-lang(x), .menubar-fixed  .menu_item {
 				width: 15%;
 			}
 			.menu_mark {
@@ -538,7 +541,7 @@
 			}
 			.menu_item {
 				display: inline-block;
-				width: 16%;
+				/* width: 16%; */
 				font-size: 1.8vw;
 				/*text-decoration: underline;*/
 				/* padding-top: 6%; */
