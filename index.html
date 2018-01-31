@@ -7,58 +7,26 @@
 		<meta http-equiv='Cache-Control' content='no-cache'>
 		<meta name='copyright' content='Pallet'>
 		<title>Pallet - Protocol for Abstruct-Level Ledger Ecosystem</title>
-		<script type="text/javascript" src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="nav.js"></script>
 		<link rel="stylesheet" type="text/css" media="screen" href="reset.css">
 
 		<link rel="stylesheet" type="text/css" media="screen" href="timeline.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="hex-positions.css">
-		<link rel="stylesheet" type="text/css" media="screen" href="page.css?98">
+		<link rel="stylesheet" type="text/css" media="screen" href="page.css?_=374374676">
+		<link rel="stylesheet" type="text/css" media="screen" href="mobile.css">
 
 		<style type="text/css">
-		div.hexs {
-  position: absolute;
-  margin: 0 auto;
-  margin-top: 0px;
-}
-div.hex-type-a {
-  filter: drop-shadow(0px 0.6vw 0.3vw rgba(0,0,0,0.1));
-}
-div.hex-type-a:hover, div.hex-type-a div.hexs-clipbox:hover {
-  filter: drop-shadow(0px 1vw 0.5vw rgba(0,0,0,0.15));
-}
-div.hex-type-b2 {
-  filter: drop-shadow(0px 0.6vw 0.3vw rgba(0,0,0,0.1));
-}
-div.hex-type-b2:hover, div.hex-type-a div.hexs-clipbox:hover {
-  filter: drop-shadow(0px 1vw 0.5vw rgba(0,0,0,0.15));
-}
 
-
-div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
-  position: absolute;
-  top: 0;
-  left: 0;
-  /*-webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0 50%);*/
-/*   clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0 50%); */
-  /*-webkit-box-shadow: 30px 30px 300px -50px rgba(0,0,0,0.48);
-  -moz-box-shadow: 30px 30px 300px -50px rgba(0,0,0,0.48);
-  box-shadow: 30px 30px 300px -50px rgba(0,0,0,0.48);*/
-  height: 100%;
-  width: 100%;
-}
-@media screen and (-webkit-min-device-pixel-ratio:0) { 
-      ::i-block-chrome, div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
-      }
-}
+		@media screen and (-webkit-min-device-pixel-ratio:0) { 
+			  ::i-block-chrome, div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
+			  }
+		}
 /*div.hexs > div.hexs-clipboxouter {
   position: absolute;
   transform:scale(1);
 }*/
-			em {
-				font-style: italic;
 
-			}
 			/*@media only screen and (max-device-width: 10px) {
 				.main-background {
 					display: none;
@@ -76,6 +44,7 @@ div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
 					background-image: url(screencapture-pallet-ai-1516974618673.png);* /
 				}	
 			}*/
+
 		</style>
 
 	</head>
@@ -92,12 +61,12 @@ div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
 <div class="main-background">
 			<div class="hex-tile"></div>
 			<div class="navbar">
-				<div class="menu_mark">PALLET</div>
+				<input type="button" class="menu_mark" value="PALLET"></input>
 				<div class="menubar">
 					
 					<div class="menu_item"><a href="#vision">Vision</a></div>
 					<div class="menu_item"><a href="#about">About</a></div>
-					<div class="menu_item"><a href="#features">Features</a></div>
+					<div class="menu_item menu_item_br"><a href="#features">Features</a></div>
 					<div class="menu_item"><a>Team</a></div>
 					<div class="menu_item"><a>FAQs</a></div>
 					<div class="menu_item"><a>News</a></div>
@@ -110,6 +79,7 @@ div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
 						Abstract-Level Ledger Ecosystem
 					</h2>
 					<span class="bold">Protocol to build trust between decentralized ledgers</span>
+					<input type="button" class="DownWhitePaperButton" value="White Paper" onclick="javascript: alert('To be announced');"></input>
 				</div>
 			</div>
 

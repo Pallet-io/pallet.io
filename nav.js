@@ -28,9 +28,9 @@ $(window).on('scroll', function () {
         scrollTop: $(this).scrollTop() - $('.navbar-fixed').height()
     }, 1000);* /
 });*/
-var toAnchor = function (n){
+/*var toAnchor = function (n){
     var headerHeight = ($(".navbar").height() + $(".navbar").outerHeight());
-    console.log($("a[name='" + n + "']").offset().top);
+    //console.log($("a[name='" + n + "']").offset().top);
     $('html,body').animate({
         scrollTop: $("a[name='" + n + "']").offset().top - headerHeight
     }, 500);
@@ -49,21 +49,30 @@ var switchAnchor = function(h){
         $('.main-background').scrollTop(0);
         return false;
     }
+};*/
+var fixBackgroundScroll = function(){
+    if($('.main-background').scrollTop() > 0){
+        console.log($('.main-background').scrollTop());
+        console.log((new Date()).getTime()/1000.0);
+        $('.main-background').scrollTop(0);
+    }
 };
 $(document).ready(function() {
-    if(window.location.hash && window.location.hash != '#'){
+    /*if(window.location.hash && window.location.hash != '#'){
         toAnchor(window.location.hash.slice(1));
     }
-    $('.main-background').scrollTop(0);
+    $('.main-background').scrollTop(0);*/
     // FIXME
-    var fixBackgroundScroll = function(){
-        $('.main-background').scrollTop(0);
-    };
-    var t = setInterval(fixBackgroundScroll, 1000);
+    $('.menu_mark').on('click',function(){
+        //console.log('click');
+        $('html,body').animate({
+            scrollTop: 0
+        }, 300);
+    });
+    var t = setInterval(fixBackgroundScroll, 50);
 });
-
-
-(function($) {
+$('.main-background').scroll(fixBackgroundScroll);
+/*(function($) {
     $( document ).ready(function() {
        // console.log($(".navbar-fixed").height());
        // console.log($("a[href*='#']:not([href='#'])"));
@@ -71,9 +80,9 @@ $(document).ready(function() {
           //console.log('XD');
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
             || location.hostname == this.hostname){
-            switchAnchor(this.hash);
+            ///switchAnchor(this.hash);
         }
         $('.main-background').scrollTop(0);
       });
   });
-})(jQuery);
+})(jQuery);*/
