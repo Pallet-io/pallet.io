@@ -14,7 +14,7 @@
     .menubar-fixed {
         /* width: 56%; */
     }
-    .menubar-fixed  .menu_item {
+    .navbar-fixed .menubar  .menu_item {
         font-size: 3vw;
         padding-left: 2vw;
         padding-right: 2vw;
@@ -24,15 +24,15 @@
         padding-left: 1vw;
         padding-right: 1vw;
     }
-    .menubar:not(.menubar-fixed)  .menu_item {
+    .navbar:not(.navbar-fixed) .menubar  .menu_item {
         display: inline-block;
         
         margin-top: 1.5vw;
     }
-    .menubar:not(.menubar-fixed)  .menu_item_2 {
+    .navbar:not(.navbar-fixed) .menubar  .menu_item_2 {
         width: 16%;
     }
-    .menubar:not(.menubar-fixed)  .menu_item_1 {
+    .navbar:not(.navbar-fixed) .menubar  .menu_item_1 {
         width: 24%;
     }
     width: 17%;
