@@ -24,9 +24,16 @@
     }
     .menubar:not(.menubar-fixed)  .menu_item {
         display: inline-block;
-        width: 20%;
+        
         margin-top: 1.5vw;
     }
+    .menubar:not(.menubar-fixed)  .menu_item_2 {
+        width: 16%;
+    }
+    .menubar:not(.menubar-fixed)  .menu_item_1 {
+        width: 24%;
+    }
+    width: 17%;
     .menubar {
         /* width: 50%; */
         /* display: block; */

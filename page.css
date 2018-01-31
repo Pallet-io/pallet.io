@@ -509,7 +509,7 @@
 			}
 			.menubar {
 				display: table;
-				width: 93%;
+				width: 100%;
 				height: 100%;
 				/* margin-right: 5%; */
 				/* padding-right: 10%; */
@@ -517,13 +517,15 @@
 
 			.menubar-fixed {
 				width: 45%;
-				right: 0;
+				right: 5%;
 				position:  absolute;
 				margin-top: 0.5vw;
+				/* text-decoration: blink; */
 			}
 			.menubar-fixed  .menu_item {
 				font-size: 1.6vw;
 				/* width: 15%; */
+				/* text-decoration: none !important; */
 			}
 			_:-ms-lang(x), .menubar-fixed  .menu_item {
 				width: 15%;
@@ -664,7 +666,7 @@
 				/* border-bottom-width: 2px; */
 				right: 0;
 				width: 100%;
-				padding-bottom: 1.5vw;
+				padding-bottom: 1.3vw;
 			}
 
 			div.hexs {
@@ -774,4 +776,11 @@ div.hexs > div.hexs-clipboxouter {
 }
 .DownWhitePaperButton:hover {
 	background-color: rgb(240,240,240);
+}
+a, a:link, a:visited, a:focus, a:hover, a:active{
+  /* color:olive; */
+  text-decoration:none;
+}
+a[href]:hover {
+	cursor: pointer;
 }
