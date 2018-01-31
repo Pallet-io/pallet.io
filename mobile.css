@@ -6,6 +6,7 @@
     .navbar-fixed {
         height: 6vh;
         /* padding-top: 2vw; */
+        /* width: 100%; */
     }
     .menu_mark-fixed {
         font-size: 5vw;
@@ -128,16 +129,17 @@
     }
     .logo-toolbar-img {
         /* padding: 0.8vw; */
-        display: inline-block;
-        position: absolute;
-        width: 6vw;
-        padding-left: 1.2vw;
+        /* display: inline-block; */
+        /* position: absolute; */
+        /* width: 6vw; */
+        /* padding-left: 1.2vw; */
     }
     .menu_mark-fixed {
-        padding-left: 7vw;
+        /* padding-left: 7vw; */
         /* padding-bottom: 0.5vw; */
         height: 100%;
         /* vertical-align: middle; */
+        /* padding-left: 2.5vw; */
     }
     .navbar-fixed .logo-toolbar-img {
         /* padding: 0.5vw; */
@@ -153,5 +155,33 @@
         /* right: 0; */
         margin: auto;
         margin-left: 1vw;
+    }
+    .menu_logo-toolbar-img {
+        display: table-cell;
+        /* position: absolute; */
+        width: 10vw;
+        width: 5vh;
+        /* padding-left: 1.2vw; */
+        /* display: none; */
+        /* padding-top: 0.2vh; */
+        vertical-align: middle;
+        /* position: absolute; */
+        /* margin: 0 auto; */
+        margin: 0.5vh;
+        /* margin-bottom: 0.5vh; */
+        margin-right: 0;
+    }
+    .menu_logo_title h1 {
+        /* width: 60%; */
+        text-align: left;
+        font-size: 64pt;
+        font-size: 6vw;
+        display: block;
+        font-weight: 900;
+        display: inline-block;
+        line-height: 1em;
+        height: 100%;
+        /* padding-left: 4vw; */
+        display: table-cell;
     }
 }

@@ -465,7 +465,7 @@
 				width: 50%;
 				min-width: 500px;
 				/* padding-bottom: 50%; */
-				transform: translate(20%, 14%) rotate(0deg);
+				transform: translate(20%, 0%) rotate(0deg);
 				z-index: 1800;
 				margin-top: 10%;
 			}
@@ -511,8 +511,10 @@
 				/* background-color: rgba(0,255,255,0.2); */
 				/* transform: translate(20%, 15%) rotate(0deg); */
 				z-index: 1800;
-				height: 3vw;
+				height: 3.5vw;
 				top: 2vw;
+				/* display: none; */
+				visibility: hidden;
 			}
 			.menubar {
 				display: table;
@@ -542,7 +544,7 @@
 				position:  absolute;
 				font-size: 3.3vw;
 				font-weight: bold;
-				margin-left: 2vw;
+				margin-left: 1vw;
 				color: rgb(102,102,102);
 				/* padding: 0.6vw; */
 				bottom: 0;
@@ -552,9 +554,9 @@
 			}
 			.menu_mark-fixed {
 				display: table-cell;
-				padding-left: 2.5vw;
+				/* padding-left: 2.5vw; */
 				/* padding-right: 4vw; */
-				padding-left: 3.5vw;
+				/* padding-left: 3.5vw; */
 				vertical-align: text-bottom;
 				line-height: 1em;
 				border: 0;
@@ -663,7 +665,21 @@
 				padding-left: 10%;
 				padding-right: 10%;
 				text-decoration: underline;
-				color: rgb(102,102,102);	
+				color: rgb(102,102,102);
+				p.upcase{      text-transform: capitalize;
+				font-variant:small-caps;
+				font-weight:bold;   }
+				p.upcase{      text-transform: capitalize;
+				font-variant:small-caps;
+				font-weight:bold;   }
+				p.upcase {      text-transform: capitalize;
+				font-variant:small-caps;
+				font-weight:bold;   }
+				text-transform: capitalize;
+				/* font-variant:small-caps; */
+				font-weight:bold;
+				text-transform: capitalize;
+				font-variant-caps: all-petite-caps;
 			}
 			.navbar-fixed {
 				/* width: 100vw; */
@@ -684,6 +700,7 @@
 				width: 100%;
 				/* padding-bottom: 1.3vw; */
 				padding-left: 0;
+				visibility: visible;
 			}
 
 			div.hexs {
@@ -819,6 +836,28 @@ a[href]:hover {
 .navbar:not(.navbar-fixed) .logo-toolbar-fixed-img {
 	display:none;
 }
+.menu_logo-toolbar-img {
+	display:inline-block;
+	/* position: absolute; */
+	/* height: 10vw; */
+	width: 3.5vw;
+	padding-left: 1.2vw;
+	/* display:none; */
+	/* padding-top: 0.2vh; */
+	filter: grayscale(0%);
+}
+.menu_logo_title h1 {
+    /* width: 60%; */
+    text-align: left;
+    font-size: 64pt;
+    font-size: 6vw;
+    display: block;
+    font-weight: 900;
+    display: inline-block;
+    line-height: 1em;
+    height: 100%;
+    /* padding-left: 4vw; */
+}
 .navbar-fixed + .content-a .logo-toolbar-img {
 	/* display:none; */
 	/* display: table-cell; */
@@ -865,4 +904,10 @@ a[href]:hover {
 	/* text-align: center; */
 	/* padding-left: 0; */
 	/* margin-right: 10vw; */
+}
+.menu_logo_title{
+	position:absolute;
+	height: 100%;
+	/* width: 40%; */
+	display: table;
 }

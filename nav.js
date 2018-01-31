@@ -11,7 +11,7 @@ $(window).on('scroll', function () {
             }
         }
     };
-    var tx = $('.navbar').position().top; // + el.outerHeight(true);
+    var tx = 0; //$('.navbar').position().top; // + el.outerHeight(true);
     var show = ($(this).scrollTop() > tx) ? 1 : 0;
     
     var el2 = $('.content-a-inner > .logo_title > h1');
@@ -82,8 +82,11 @@ $('.main-background').scroll(fixBackgroundScroll);
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
             || location.hostname == this.hostname){
             switchAnchor(this.hash);
+
         }
         $('.main-background').scrollTop(0);
+        return false;
+        
       });
   });
 })(jQuery);
