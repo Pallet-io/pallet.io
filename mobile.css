@@ -125,4 +125,15 @@
         border-right: 2px solid rgb(102,102,102) !important;
         border-bottom: 2px solid rgb(102,102,102) !important;
     }
+    .logo-toolbar-img {
+        padding: 0.8vw;
+        display: inline-block;
+        position: absolute;
+        width: 6vw;
+        padding-left: 1.2vw;
+    }
+    .menu_mark-fixed {
+        padding-left: 6vw;
+        padding-bottom: 0.5vw;
+    }
 }

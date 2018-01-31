@@ -500,12 +500,13 @@
 				color: rgb(102,102,102);
 			}
 			.navbar {
+				padding-left: 10vw;
 				position: absolute;
-				width: 46%;
+				width: 100%;
 				min-width: 400px;
 				/* padding-bottom: 10%; */
 				/* background-color: rgba(0,255,255,0.2); */
-				transform: translate(20%, 15%) rotate(0deg);
+				/* transform: translate(20%, 15%) rotate(0deg); */
 				z-index: 1800;
 				height: 3vw;
 				top: 2vw;
@@ -519,8 +520,8 @@
 			}
 
 			.menubar-fixed {
-				width: 45%;
-				right: 5%;
+				width: 60%;
+				right: 10%;
 				position:  absolute;
 				margin-top: 0.5vw;
 				/* text-decoration: blink; */
@@ -548,7 +549,9 @@
 			}
 			.menu_mark-fixed {
 				display: table-cell;
-				
+				padding-left: 2.5vw;
+				/* padding-right: 4vw; */
+				padding-left: 3.5vw;
 			}
 			input[type=button]:focus {
 				outline: 0;
@@ -785,4 +788,34 @@ a, a:link, a:visited, a:focus, a:hover, a:active{
 }
 a[href]:hover {
 	cursor: pointer;
+}
+.logo-toolbar-img {
+	display:inline-block;
+	position: absolute;
+	width: 10vw;
+
+}
+.navbar-fixed .logo-toolbar-img {
+	padding:0.5vw;
+	width: 3.5vw;
+	padding-left: 1.2vw;
+}
+
+.menubar:not(.menubar-fixed) {
+    display: table;
+    width: 60%;
+    right: 10%;
+    position:absolute;
+    left: 22vw;
+    /* right: 0vw; */
+}
+.menubar:not(:hover) .menu_item_2 {
+	visibility: hidden;
+}
+.menubar:hover .menu_item_2 {
+	visibility: visible;
+}
+.menubar:hover{
+	background-color:white;
+	
 }
