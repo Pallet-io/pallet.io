@@ -119,4 +119,10 @@
         font-size: 60pt;
         font-size: 5.2vw;
     }
+    .DownWhitePaperButton {
+        border-top: 2px solid rgb(102,102,102) !important;
+        border-left: 2px solid rgb(102,102,102) !important;
+        border-right: 2px solid rgb(102,102,102) !important;
+        border-bottom: 2px solid rgb(102,102,102) !important;
+    }
 }

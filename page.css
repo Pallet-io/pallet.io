@@ -6,7 +6,10 @@
 			}
 			em {
 				font-style: italic;
-
+				
+			}
+			em:first-letter {
+				text-transform: uppercase;
 			}
 			@font-face {
 			  font-family: "Myriad Pro"; 
@@ -761,11 +764,10 @@ div.hexs > div.hexs-clipboxouter {
   z-index: 500;
 }*/
 .DownWhitePaperButton {
-	border-top:		3px solid rgb(102,102,102);
+	border-top: 3px solid rgb(102,102,102);
 	border-left:		3px solid rgb(102,102,102);
 	border-right:		3px solid rgb(102,102,102);
 	border-bottom:		3px solid rgb(102,102,102);
-
 	padding:		1vw 2vw !important;
 	font-size:		1.8vw !important;
 	background-color:	#ffffff;
