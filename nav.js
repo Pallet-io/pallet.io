@@ -15,7 +15,7 @@ $(window).on('scroll', function () {
     var show = ($(this).scrollTop() > tx) ? 1 : 0;
     
     var el2 = $('.content-a-inner > .logo_title > h1');
-    var tx2 = el2.position().top + el2.offset().top + el2.outerHeight(true);
+	var tx2 = el2.position().top + el2.offset().top + el2.outerHeight(true);
     var show2 = ($(this).scrollTop() + $('.menubar').height() > tx2) ? 1 : 0;
     setItemClass($('.navbar'), 'navbar-fixed', show);
     setItemClass($('.menubar'), 'menubar-fixed', show);
