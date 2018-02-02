@@ -511,7 +511,7 @@
 				/* background-color: rgba(0,255,255,0.2); */
 				/* transform: translate(20%, 15%) rotate(0deg); */
 				z-index: 1800;
-				height: 3.5vw;
+				height: 4vw;
 				top: 2vw;
 				/* display: none; */
 				visibility: hidden;
@@ -562,6 +562,7 @@
 				border: 0;
 				padding: 0;
 				/* width: 100%; */
+				margin-bottom: 0.5vw;
 			}
 			input[type=button]:focus {
 				outline: 0;
@@ -605,7 +606,7 @@
 
 				background-color: white;
 				width: calc(230px + 11vw);
-				height: calc(200px + 20vw);
+				height: calc(40vw);
 				margin: 20px;
 				position: relative;
 				float: center;
@@ -651,10 +652,10 @@
 				width: 80%;
 				padding-left: 10%;
 				padding-right: 10%;
-				font-size: 1.3vw;
+				font-size: calc(6px + 1.2vw);
 				line-height: 1.2em;
 				bottom: 10%;
-   				height: 35%;
+   				height: 38%;
    				position: absolute;
 			}
 			.content-diff h2 {
@@ -850,6 +851,7 @@ a[href]:hover {
 	/* display:none; */
 	/* padding-top: 0.2vh; */
 	filter: grayscale(0%);
+	margin-bottom: 0.2vw;
 }
 .menu_logo_title h1 {
     /* width: 60%; */

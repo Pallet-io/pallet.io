@@ -140,6 +140,7 @@
         height: 100%;
         /* vertical-align: middle; */
         /* padding-left: 2.5vw; */
+		margin-bottom: 0;
     }
     .navbar-fixed .logo-toolbar-img {
         /* padding: 0.5vw; */
