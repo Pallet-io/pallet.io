@@ -2,33 +2,71 @@ var hexBlocks = [
 	{
 		"id":"pallet",
 		"left":50,
-		"top":30,
+		"top":0,
 		"width":40
 	},{
 		"id":"zcash",
 		"left":18,
-		"top":68,
+		"top":115,
 		"width":14
 	},{
 		"id":"litecoin",
 		"left":33,
-		"top":63,
+		"top":104,
 		"width":14
 	},{
 		"id":"ethereum",
 		"left":47,
-		"top":72,
+		"top":130,
 		"width":14
 	},{
 		"id":"bitcoin",
 		"left":64,
-		"top":68,
+		"top":120,
 		"width":14
 	},{
 		"id":"iota",
 		"left":82,
-		"top":62,
+		"top":104,
 		"width":14
+	},{
+		"id":"blank1",
+		"left":22,
+		"top":-50,
+		"width":14
+	},{
+		"id":"blank2",
+		"left":82,
+		"top":3,
+		"width":14
+	},{
+		"id":"blank3",
+		"left":16,
+		"top":40,
+		"width":9
+	},{
+		"id":"trans1",
+		"left":33,
+		"top":32,
+		"width":11
+	}
+	,{
+		"id":"trans2",
+		"left":80,
+		"top":45,
+		"width":4
+	}
+	,{
+		"id":"trans3",
+		"left":64,
+		"top":93,
+		"width":11
+	}
+	,{
+		"id":"trans4",
+		"left":24.5,
+		"top":97,
+		"width":4
 	}
 ]
 
