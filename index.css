@@ -21,6 +21,7 @@ body{
 .page{
 	width:100%;
 	min-height:100vh;
+	position: relative;
 }
 
 #title{
@@ -45,13 +46,17 @@ body{
 	background-color: #D6CBF7;
 }
 
+.hex{
+	position: absolute;
+}
+
 /* TITLE */
 #title .area{
 	width: 80%;
 	position: relative;
 }
 
-#whitepaper{
+#white{
 	width: 100%;
 	height: 117%;
 	position: absolute;
@@ -97,9 +102,49 @@ body{
 	margin-bottom: 2em;
 }
 
-#title button{
+#title a{
 	font-size: 2em;
 	font-weight: bold;
 	padding: .4em .8em;
 	margin-right: 5%;
+	background-color: rgba(0,0,0,0);
+	border:solid #000000 3px;
+}
+
+#title a:hover{
+	background-color: rgba(0,0,0,0.1);
+	border:solid #000000 3px;
+}
+
+/* INTRO */
+.hex>.text{
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 15% 15%;
+}
+
+.hex>.text>.title{
+	font-size: 2vw;
+    font-weight: bold;
+    text-decoration: underline
+}
+
+.hex>.text>p{
+	font-size: 1.2em;
+	line-height: 1em;
+}
+
+#pallet-block>.text{
+	padding: 12% 20%;
+}
+
+#pallet-block>.text>.title{
+	font-size: 3.5vw;
+}
+
+#pallet-block>.text>p{
+	font-size: 1.5em;
+	line-height: 1.2em;
 }
