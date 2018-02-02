@@ -11,17 +11,13 @@
 		<script type="text/javascript" src="nav.js"></script>
 		<link rel="stylesheet" type="text/css" media="screen" href="reset.css">
 
-		<link rel="stylesheet" type="text/css" media="screen" href="timeline.css">
+		<!--link rel="stylesheet" type="text/css" media="screen" href="timeline.css"-->
 		<link rel="stylesheet" type="text/css" media="screen" href="hex-positions.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="page.css">
 		<link rel="stylesheet" type="text/css" media="screen" href="mobile.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="test.css">
 
 		<style type="text/css">
-
-		@media screen and (-webkit-min-device-pixel-ratio:0) { 
-			  ::i-block-chrome, div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
-			  }
-		}
 /*div.hexs > div.hexs-clipboxouter {
   position: absolute;
   transform:scale(1);
@@ -62,10 +58,20 @@
 			<div class="hex-tile"></div>
 			<div class="navbar">
 				<div class="menu_logo_title">
-					<img src="logo.svg" class="menu_logo-toolbar-img"></img>
-					<h1>
-						<input type="button" class="menu_mark" value="PALLET"></input>
-					</h1>
+					<div class="logo_title">
+						<table><tr>
+							<td><img src="logo.svg" class="logo-toolbar-img"></td>
+							<td><div>PALLET</div></td>
+						</tr></table>
+					</div>
+					<div style="display: none; /*inline-block*/">
+						
+						<h1>
+							<img src="logo.svg" class="menu_logo-toolbar-img"></img>
+							<!--input type="button" class="menu_mark" value="PALLET"></input-->
+							<div>PALLET</div>
+						</h1>
+					</div>
 				</div>
 				<div class="menubar">
 					
@@ -171,79 +177,6 @@
 				<div class="blocks-content">
 					<h1>Roadmap</h1>
 					<div class="Timeline">
-
-						<svg height="5" width="200">
-							<line x1="0" y1="0" x2="200" y2="0" style="stroke:#004165;stroke-width:5"></line>
-						</svg>
-						<div class="event1">
-							
-							<div class="event1Bubble">
-								<div class="eventTime">
-									<div class="DayDigit">May</div>
-									<div class="MonthYear">2014</div>
-								</div>
-								<div class="eventTitle">GCoin project founding</div>
-							</div>
-							<div class="eventAuthor">by S.-W. Liao</div>
-							<svg height="20" width="20">
-								<circle cx="10" cy="11" r="5" fill="#004165"></circle>
-							</svg>
-							<div class="time"></div>
-							
-						</div>
-						
-						<svg height="5" width="300">
-							<line x1="0" y1="0" x2="300" y2="0" style="stroke:#004165;stroke-width:5"></line>
-						</svg>
-						<div class="event2">
-							
-							<div class="event2Bubble">
-								<div class="eventTime">
-									<div class="DayDigit">Sep</div>
-									<div class="MonthYear">2017</div>
-								</div>
-								<div class="eventTitle">Pallet project launched</div>
-							</div>
-							<div class="event2Author">by S.-W. Liao</div>
-							<svg height="20" width="20">
-								<circle cx="10" cy="11" r="5" fill="#004165"></circle>
-							</svg>
-							<div class="time2"></div>
-						</div>
-						
-						<svg height="5" width="50">
-							<line x1="0" y1="0" x2="50" y2="0" style="stroke:#004165;stroke-width:5"></line>
-						</svg>
-						<div class="now">
-							NOW
-						</div>
-						
-						
-						<svg height="5" width="150">
-							<line x1="0" y1="0" x2="150" y2="0" style="stroke:rgba(162, 164, 163, 0.37);stroke-width:5"></line>
-						</svg>
-						<div class="event3 futureGray ">
-							<div class="event1Bubble futureOpacity">
-								<div class="eventTime">
-									<div class="DayDigit">Aug</div>
-									<div class="MonthYear">2018</div>
-								</div>
-								<div class="eventTitle">Pallet officially runs</div>
-							</div>
-							<svg height="20" width="20">
-								<circle cx="10" cy="11" r="5" fill="rgba(162, 164, 163, 0.37)"></circle>
-							</svg>
-						</div>
-						<svg height="5" width="50">
-							<line x1="0" y1="0" x2="50" y2="0" style="stroke:#004165;stroke-width:5"></line>
-						</svg>
-						<svg height="20" width="42">
-							<line x1="1" y1="0" x2="1" y2="20" style="stroke:#004165;stroke-width:2"></line>
-							<circle cx="11" cy="10" r="3" fill="#004165"></circle>
-							<circle cx="21" cy="10" r="3" fill="#004165"></circle>
-							<circle cx="31" cy="10" r="3" fill="#004165"></circle>
-							<line x1="41" y1="0" x2="41" y2="20" style="stroke:#004165;stroke-width:2"></line>
-						</svg>
 									
 					</div>
 				</div>
