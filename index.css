@@ -1,0 +1,105 @@
+/* FONT */
+@font-face {
+	font-family: "Myriad Pro"; 
+	src: url(myriad.ttf);
+}
+@font-face {
+	font-family: "Myriad Pro"; 
+	font-weight: bold;
+	src: url(myriad_bold.ttf);
+}
+@font-face {
+	font-family: "Myriad Pro"; 
+	font-weight: 900;
+	src: url(myriad_900.ttf);
+}
+body{
+	font-family: "Myriad Pro";
+}
+
+/* PAGES */
+.page{
+	width:100%;
+	min-height:100vh;
+}
+
+#title{
+	background-image: url('titlebg.png');
+	background-size: cover;
+	background-position: top;
+}
+
+#intro{
+	background-color: #A3E4D7;
+}
+
+#how{
+	background-color: #BBF3FC;
+}
+
+#feature{
+	background-color: #F9EDBB;
+}
+
+#roadmap{
+	background-color: #D6CBF7;
+}
+
+/* TITLE */
+#title .area{
+	width: 80%;
+	position: relative;
+}
+
+#whitepaper{
+	width: 100%;
+	height: 117%;
+	position: absolute;
+	background-color: #FFFFFF;
+	transform:
+		translate(-26%, -9%)
+		rotate(-11deg);
+}
+
+#title .content{
+	width: 80%;
+	padding: 8% 12%;
+	position: relative;
+}
+
+#pallet{
+	align-items: center;
+	padding-bottom: 1em;
+}
+
+#logo{
+	height: 30%;
+	margin-right: 5%;
+}
+
+#pallet>span{
+	font-size: 6em;
+	font-weight: 900;
+	color: #666666;
+	vertical-align: middle;
+	padding-top: .1em;
+}
+
+#title .text-a{
+	font-size: 3em;
+	font-weight:400;
+	margin-bottom: 0.5em;
+}
+
+#title .text-b{
+	font-size: 1.5em;
+	font-weight: 200;
+	margin-bottom: 2em;
+}
+
+#title button{
+	font-size: 2em;
+	font-weight: bold;
+	padding: .4em .8em;
+	margin-right: 5%;
+}
