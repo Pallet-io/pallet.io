@@ -1,912 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<meta http-equiv='Expires' content='0'>
-		<meta http-equiv='Pragma' content='no-cache'>
-		<meta http-equiv='Cache-Control' content='no-cache'>
-		<meta name='copyright' content='Pallet'>
-		<title>Pallet - Protocol for Abstruct-Level Ledger Ecosystem</title>
-		<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
-		<script type="text/javascript" src="nav.js?4"></script>
-		<link rel="stylesheet" type="text/css" media="screen" href="reset.css">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Pallet</title>
+	<link href="structure.css" rel="stylesheet">
+	<link href="index.css" rel="stylesheet">
+	<!--link href="debug.css" rel="stylesheet"-->
+	<meta property="og:image" content="">
+	<meta property="og:type" content="">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="http://pallet.ai">
+	<meta property="og:site_name" content="Pallet.io">
+</head>
+<body>
 
-		<link rel="stylesheet" type="text/css" media="screen" href="timeline.css">
-		<link rel="stylesheet" type="text/css" media="screen" href="hex-positions.css">
-		<link rel="stylesheet" type="text/css" media="screen" href="page.css?66">
-		<link rel="stylesheet" type="text/css" media="screen" href="mobile.css?6686">
+	<div id="navbar" class="flex row">
+		<img class="logo" src="logo.svg" alt="Pallet logo"><span class="title">PALLET</span>
+		<a href="#nav-title" class="button">Home</a>
+		<a href="#nav-intro" class="button">Vision</a>
+		<a href="#nav-how" class="button">Usage</a>
+		<a href="#nav-feature" class="button">Features</a>
+		<a href="#nav-roadmap" class="button">Roadmap</a>
+	</div>
 
-		<style type="text/css">
-
-		@media screen and (-webkit-min-device-pixel-ratio:0) { 
-			  ::i-block-chrome, div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
-			  }
-		}
-/*div.hexs > div.hexs-clipboxouter {
-  position: absolute;
-  transform:scale(1);
-}*/
-
-			/*@media only screen and (max-device-width: 10px) {
-				.main-background {
-					display: none;
-				}
-				html, body {
-					height: auto;
-				}
-				.main-img {
-					display: block !important;
-					width: 100% !important;
-					height: 100% !important;
-					/ *background-size: cover 100%;
-					background-repeat: no-repeat;
-					background-position: left top;
-					background-image: url(screencapture-pallet-ai-1516974618673.png);* /
-				}	
-			}*/
-
-		</style>
-
-	</head>
-	<body>
-		<svg width="0" height="0" style="padding: 0; margin: 0; position: absolute;">
-            <defs>
-                <clipPath id="hexs-clip" clipPathUnits="objectBoundingBox">
-                    <polygon points="0.25 0.05, 0.75 0.05, 1 0.5, 0.75 0.95, 0.25 0.95, 0 0.5"></polygon>
-                </clipPath>
-            </defs>
-        </svg>
-<!--div class="main-img" style="display: none;"><img src="screencapture-pallet-ai-1516974618673.png" /></div-->
-<!--div style="position: absolute; top:10px; left:10px; width: 40px; z-index: 100000;"><a style="font-size:12px; color: #666666; font-weight: bold;" href="index_ch.html">中文版</a></div-->
-<div class="main-background">
-			<div class="hex-tile"></div>
-			<div class="navbar">
-				<div class="menu_logo_title">
-					<img src="logo.svg" class="menu_logo-toolbar-img"></img>
-					<h1>
-						<input type="button" class="menu_mark" value="PALLET"></input>
-					</h1>
+	<div id="title" class="page">
+		<div id="nav-title" class="nav"></div>
+		<div class="area">
+			<div id="white"></div>
+			<div class="content">
+				<div id="pallet" class="flex row">
+					<img id="logo" src="logo.svg" alt="Pallet logo">
+					<span>PALLET</span>
 				</div>
-				<div class="menubar">
-					
-					<div class="menu_item menu_item_1"><a href="#vision">Vision</a></div>
-					<div class="menu_item menu_item_1"><a href="#usage">Usage</a></div>
-					<div class="menu_item menu_item_1 menu_item_br"><a href="#features">Features</a></div>
-					<div class="menu_item menu_item_2"><a>Roadmap</a></div>
-					<div class="menu_item menu_item_2"><a>Team</a></div>
-					<div class="menu_item menu_item_2"><a>FAQs</a></div>
-					<div class="menu_item menu_item_2"><a>News</a></div>
+				<div class="text-a">
+					<span>Protocol for<br>Abstract-Level Ledger Ecosystem</span>
+				</div>
+				<div class="text-b">
+					<span>Beyond Yet Another Chain:<br>IP Protocol for Future Internet of Values</span>
+				</div>
+				<div class="buttons">
+					<a id="whitepaper">White Paper</a>
+					<a id="onepager" href="http://pallet.ai/onepager.pdf" target="blank">One-Pager</a>
 				</div>
 			</div>
-			<div class="content-a">
-				<div class="content-a-inner">
-					<div class="logo_title">
-						<img src="logo.svg" class="logo-toolbar-img"></img>
-					
-						<h1>
-						
-												<div>PALLET</div>
-						</h1>
-					</div>
-					<h2>Protocol for <br>
-						Abstract-Level Ledger Ecosystem
-					</h2>
-					<span class="bold" style="line-height: 1.2em">Beyond Yet Another Chain:<br />
-					IP Protocol for Future Internet of Values</span>
-					<p>
-					<input type="button" class="DownWhitePaperButton" value="White Paper" onclick="javascript: alert('To be announced');"></input>
-					<input type="button" class="DownWhitePaperButton" value="One-Pager" onclick="javascript: location.href='onepager.pdf';"></input>
-					</p>
-				</div>
-			</div>
-
-			<div class="content-c">
-				<div class="content-c-inner">
-					<a name="usage"></a>
-					<h1>How to Use PALLET?</h1>
-				</div>
-			</div>
-			<div class="content-d">
-				<div class="content-d-inner">
-					<a name="features"></a>
-					<h1>PALLET Features</h1>
-					<div class="content-diff">
-						<div class="content-diff-inner">
-							<div class="logo">
-								<img src="network.svg?1" />
-							</div>
-							<div class="title">
-								<h2>Above & Beyond Blockchains</h2>
-							</div>
-							<div class="content">
-								Pallet decouples contract execution from underlying blockchains. Contracts are executed on the decoupled contract verifiers, called <em>Jury</em>, which keeps the contract states.
-
-							</div>
-						</div>
-					</div>
-					<div class="content-diff">
-						<div class="content-diff-inner">
-							<div class="logo">
-								<img src="small-rocket-ship-silhouette.svg?1" />
-							</div>
-							<div class="title">
-								<h2>Highly Parallel
-</h2>
-							</div>
-							<div class="content">
-								One <em>Jury</em> per contract, instead of one blockchain for all contracts. Different Pallet contracts run independently.
-							</div>
-						</div>
-					</div>
-					<div class="content-diff">
-						<div class="content-diff-inner">
-							<div class="logo">
-								<img src="shield.svg" />
-							</div>
-							<div class="title">
-								<h2>Security</h2>
-							</div>
-							<div class="content">
-								Pallet consensus protocol uses stake mechanism to incentivize good behaviors and punish scams. Also, Pallet utilizes LLVM-family tools such as compile-time analyses and runtime sanitizers to catch errors and threats in contract execution. 							</div>
-						</div>
-					</div>
-					<div class="content-diff">
-						<div class="content-diff-inner">
-							<div class="logo">
-								<img src="pencil-striped-symbol-for-interface-edit-buttons.svg" />
-							</div>
-							<div class="title">
-								<h2>Productivity for Contract Developers</h2>
-
-							</div>
-							<div class="content">
-								Pallet supports simplified popular languages and outputs LLVM bitcodes. Writing a contract is less error-prone, thanking to restricted yet familiar language frontends.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="blocks block-a"></div>
-			<!--div class="blocks block-a2" style="position: fixed"></div-->
-			<div class="blocks block-b"></div>
-			<div class="blocks block-c"></div>
-			<div class="blocks block-d"></div>
-			<div class="blocks block-e">
-				<div class="blocks-content">
-					<h1>Roadmap</h1>
-					<div class="Timeline">
-
-						<svg height="5" width="200">
-							<line x1="0" y1="0" x2="200" y2="0" style="stroke:#004165;stroke-width:5"></line>
-						</svg>
-						<div class="event1">
-							
-							<div class="event1Bubble">
-								<div class="eventTime">
-									<div class="DayDigit">May</div>
-									<div class="MonthYear">2014</div>
-								</div>
-								<div class="eventTitle">GCoin project founding</div>
-							</div>
-							<div class="eventAuthor">by S.-W. Liao</div>
-							<svg height="20" width="20">
-								<circle cx="10" cy="11" r="5" fill="#004165"></circle>
-							</svg>
-							<div class="time"></div>
-							
-						</div>
-						
-						<svg height="5" width="300">
-							<line x1="0" y1="0" x2="300" y2="0" style="stroke:#004165;stroke-width:5"></line>
-						</svg>
-						<div class="event2">
-							
-							<div class="event2Bubble">
-								<div class="eventTime">
-									<div class="DayDigit">Sep</div>
-									<div class="MonthYear">2017</div>
-								</div>
-								<div class="eventTitle">Pallet project launched</div>
-							</div>
-							<div class="event2Author">by S.-W. Liao</div>
-							<svg height="20" width="20">
-								<circle cx="10" cy="11" r="5" fill="#004165"></circle>
-							</svg>
-							<div class="time2"></div>
-						</div>
-						
-						<svg height="5" width="50">
-							<line x1="0" y1="0" x2="50" y2="0" style="stroke:#004165;stroke-width:5"></line>
-						</svg>
-						<div class="now">
-							NOW
-						</div>
-						
-						
-						<svg height="5" width="150">
-							<line x1="0" y1="0" x2="150" y2="0" style="stroke:rgba(162, 164, 163, 0.37);stroke-width:5"></line>
-						</svg>
-						<div class="event3 futureGray ">
-							<div class="event1Bubble futureOpacity">
-								<div class="eventTime">
-									<div class="DayDigit">Aug</div>
-									<div class="MonthYear">2018</div>
-								</div>
-								<div class="eventTitle">Pallet officially runs</div>
-							</div>
-							<svg height="20" width="20">
-								<circle cx="10" cy="11" r="5" fill="rgba(162, 164, 163, 0.37)"></circle>
-							</svg>
-						</div>
-						<svg height="5" width="50">
-							<line x1="0" y1="0" x2="50" y2="0" style="stroke:#004165;stroke-width:5"></line>
-						</svg>
-						<svg height="20" width="42">
-							<line x1="1" y1="0" x2="1" y2="20" style="stroke:#004165;stroke-width:2"></line>
-							<circle cx="11" cy="10" r="3" fill="#004165"></circle>
-							<circle cx="21" cy="10" r="3" fill="#004165"></circle>
-							<circle cx="31" cy="10" r="3" fill="#004165"></circle>
-							<line x1="41" y1="0" x2="41" y2="20" style="stroke:#004165;stroke-width:2"></line>
-						</svg>
-									
-					</div>
-				</div>
-			</div>
-						
-			<div class="hexs hex-type-a hex-pos-1 hex-for-main">
-				
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-						<div class="hexs-shape-left"></div>
-						<div class="hexs-shape-right"></div>
-						<div class="info-main">
-							<a name="vision"></a>
-							<div class="title">
-								PALLET
-							</div>
-							<div class="content">
-
-								<div>
-									<p>
-										Pallet allows inter-chain
-										 transactions by decoupling contracts
-										 from blockchains. Instead of forcing all
-										 contracts onto one chain, Pallet offers a <em>Jury</em>
-										 per contract, and hence the scalability.
-									 </p>
-
-									<p>
-										Security: Pallet stake mechanism minimizes
-										  rogueness through proper rewards
-										   and penalties in the ecosystem.
-										   
-									</p>
-								</div>
-							</div>
-							<br />
-						</div>
-                    </div>
-
-		        </div>
-		        
-
-			</div>
-
-
-			<div class="hexs hex-type-a hex-pos-2 hex-for-coinitem">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-						<div class="hexs-shape-left"></div>
-						<div class="hexs-shape-right"></div>
-						<div class="info-coinitem">
-							<div class="title">
-								Zcash
-							</div>
-							<div class="content">
-								<div>
-									Provides enhanced
-									privacy by using
-									zero knowledge
-									 proof
-								</div>
-							</div>
-						</div>
-					</div>
-		        </div>
-			</div>
-
-
-			<div class="hexs hex-type-a hex-pos-3 hex-for-coinitem">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-						<div class="hexs-shape-left"></div>
-						<div class="hexs-shape-right"></div>
-						<div class="info-coinitem">
-							<div class="title">
-								Litecoin
-							</div>
-							<div class="content">
-								<div>
-									Cryptocurrency refined from Bitcoin
-
-								</div>
-							</div>
-						</div>
-					</div>
-		        </div>
-			</div>
-
-
-			<div class="hexs hex-type-a hex-pos-4 hex-for-coinitem">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-						<div class="hexs-shape-left"></div>
-						<div class="hexs-shape-right"></div>
-						<div class="info-coinitem">
-							<div class="title">
-								Ethereum
-							</div>
-							<div class="content">
-								<div>
-									A cryptocurrency featuring smart contract
-
-								</div>
-							</div>
-						</div>
-					</div>
-		        </div>
-			</div>
-
-
-			<div class="hexs hex-type-a hex-pos-5 hex-for-coinitem">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-						<div class="hexs-shape-left"></div>
-						<div class="hexs-shape-right"></div>
-						<div class="info-coinitem">
-							<div class="title">
-								Bitcoin
-							</div>
-							<div class="content">
-								<div>
-									Most widely used cryptocurrency
-								</div>
-							</div>
-						</div>
-					</div>
-		        </div>
-			</div>
-
-
-			<div class="hexs hex-type-a hex-pos-6 hex-for-coinitem">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-						<div class="hexs-shape-left"></div>
-						<div class="hexs-shape-right"></div>
-						<div class="info-coinitem">
-							<div class="title">
-								IOTA
-							</div>
-							<div class="content">
-								<div>
-									A cryptocurrency featuring zero transaction fee
-
-								</div>
-							</div>
-						</div>
-					</div>
-		        </div>
-			</div>
-
-
-			<div class="hexs hex-type-b2 hex-pos-7">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-					</div>
-				</div>
-			</div>
-
-
-			<div class="hexs hex-type-b2 hex-pos-8">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-					</div>
-				</div>
-			</div>
-
-
-			<div class="hexs hex-type-b2 hex-pos-9">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-					</div>
-				</div>
-			</div>
-
-
-			<div class="hexs hex-type-b hex-pos-10">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-					</div>
-				</div>
-			</div>
-
-
-			<div class="hexs hex-type-b hex-pos-11">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-					</div>
-				</div>
-			</div>
-
-
-			<div class="hexs hex-type-b hex-pos-12">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-					</div>
-				</div>
-			</div>
-
-
-			<div class="hexs hex-type-b hex-pos-13">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-					</div>
-				</div>
-			</div>
-
-
-			<div class="hexs hex-type-a hex-pos-14 hex-for-intro">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-						<div class="hexs-shape-left"></div>
-						<div class="hexs-shape-right"></div>
-						<div class="info-intro">
-							<div class="title">
-								Exchange
-							</div>
-							<div class="content">
-								<div>
-									<p>
-										Traditionally, we need to
-										rely on centralized exchanges
-										to ensure we can exchange safely.
-									</p>
-									<p>
-										Using Pallet contract, you can
-										 build your own exchange.
-										 Exchange your bitcoin,
-										 ethereum, etc with
-										 others safely.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-		        </div>
-			</div>
-
-
-			<div class="hexs hex-type-a hex-pos-15 hex-for-intro">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-						<div class="hexs-shape-left"></div>
-						<div class="hexs-shape-right"></div>
-						<div class="info-intro">
-							<div class="title">
-								Decentralized Asset Management
-
-							</div>
-							<div class="content">
-								<div>
-									Pallet has a scalable
-									and decoupled smart contract.
-									Different DApps will not interfere
-									with each other. People don't
-									need to worry about high
-									 transaction fees or low
-									 TPS (transaction/s).
-								</div>
-							</div>
-						</div>
-					</div>
-		        </div>
-			</div>
-
-
-			<div class="hexs hex-type-a hex-pos-16 hex-for-intro">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-						<div class="hexs-shape-left"></div>
-						<div class="hexs-shape-right"></div>
-						<div class="info-intro">
-							<div class="title">
-								Contracts for ICO
-							</div>
-							<div class="content">
-								<div>
-									<p>
-										Pallet is versatile in deploying
-										 a contract for your Initial Coin
-										 Offering. Pallet smart contract
-										  can receive tokens from
-										  BTC, ETH, and tokens
-										  from any supported
-										  chain.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-		        </div>
-			</div>
-
-
-			<div class="hexs hex-type-a hex-pos-17 hex-for-coinitem-tiny">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-						<div class="hexs-shape-left"></div>
-						<div class="hexs-shape-right"></div>
-						<div class="info-coinitem-tiny">
-							<div class="title">
-								Zcash
-							</div>
-							<div class="content">
-								<div>
-									With enhanced privacy
-								</div>
-							</div>
-						</div>
-					</div>
-		        </div>
-			</div>
-
-			<div class="hexs hex-type-a hex-pos-18 hex-for-coinitem-tiny">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-						<div class="hexs-shape-left"></div>
-						<div class="hexs-shape-right"></div>
-						<div class="info-coinitem-tiny">
-							<div class="title">
-								Bitcoin
-							</div>
-							<div class="content">
-								<div>
-									Most widely used coin
-								</div>
-							</div>
-						</div>
-					</div>
-		        </div>
-			</div>
-
-
-			<div class="hexs hex-type-a hex-pos-19 hex-for-coinitem-tiny">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-						<div class="hexs-shape-left"></div>
-						<div class="hexs-shape-right"></div>
-						<div class="info-coinitem-tiny">
-							<div class="title">
-								Ethereum
-							</div>
-							<div class="content">
-								<div>
-									Smart contract
-								</div>
-							</div>
-						</div>
-					</div>
-		        </div>
-			</div>
-
-
-			<div class="hexs hex-type-a hex-pos-20 hex-for-coinitem-tiny">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-						<div class="hexs-shape-left"></div>
-						<div class="hexs-shape-right"></div>
-						<div class="info-coinitem-tiny">
-							<div class="title">
-								Litecoin
-							</div>
-							<div class="content">
-								<div>
-									Refined from Bitcoin
-								</div>
-							</div>
-						</div>
-					</div>
-		        </div>
-			</div>
-
-
-			<div class="hexs hex-type-b hex-pos-21">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-					</div>
-				</div>
-			</div>
-
-
-			<div class="hexs hex-type-b hex-pos-22">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-					</div>
-				</div>
-			</div>
-
-
-			<div class="hexs hex-type-b hex-pos-23">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-					</div>
-				</div>
-			</div>
-
-
-			<div class="hexs hex-type-b hex-pos-24">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-					</div>
-				</div>
-			</div>
-
-
-			<div class="hexs hex-type-b hex-pos-25">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-					</div>
-				</div>
-			</div>
-
-
-			<div class="hexs hex-type-b hex-pos-26">
-		        <!--div class="hexs-clipbox"></div>
-		        <div class="hexs-clipboxouter"></div-->
-		        <div class="hexs-content">
-		        	<div class="hexs-outer">
-						<svg width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" 
-							viewbox="0 0 200 173.20508075688772">
-							<path fill="#fff" d="M0 86.60254037844386L50 0L150 0L200 86.60254037844386L150 173.20508075688772L50 173.20508075688772Z">
-							</path>
-						</svg>
-					</div>
-					<div class="hexs-inner">
-					</div>
-				</div>
-			</div>
-
-            <!--div class="hexs hex-type-a hex-pos-2">
-                <div class="hexs-clipbox"></div>
-                <div class="hexs-clipboxouter"></div>
-                <div class="hexs-content">
-                </div>
-            </div-->
 		</div>
-	</body>
+	</div>
+
+	<div id="intro" class="page">
+		<div id="nav-intro" class="nav"></div>
+		<div id="trans1-block" class="trans hex"></div>
+		<div id="trans2-block" class="trans hex"></div>
+		<div id="trans3-block" class="trans hex"></div>
+		<div id="trans4-block" class="trans hex"></div>
+		<div id="blank1-block" class="hex"></div>
+		<div id="blank2-block" class="hex"></div>
+		<div id="blank3-block" class="hex"></div>
+
+		<div id="pallet-block" class="big hex">
+			<div class="text">
+				<span class="title">PALLET</span>
+				<p>Pallet allows inter-chain transactions by decoupling contracts from blockchains. Instead of forcing all contracts onto one chain, Pallet offers a Jury per contract, and hence the scalability.</p>
+				<p>Security: Pallet stake mechanism minimizes rogueness through proper rewards and penalties in the ecosystem.</p>
+			</div>
+		</div>
+		<div id="zcash-block" class="hex">
+			<div class="text">
+				<span class="title">Zcash</span>
+				<p>Using zero knowledge proof to provide enhanced privacy</p>
+			</div>
+		</div>
+		<div id="litecoin-block" class="hex">
+			<div class="text">
+				<span class="title">Litecoin</span>
+				<p>Coin refined from Bitcoin</p>
+			</div>
+		</div>
+		<div id="ethereum-block" class="hex">
+			<div class="text">
+				<span class="title">Ethereum</span>
+				<p>A cryptocurrency featuring smart contract</p>
+			</div>
+		</div>
+		<div id="bitcoin-block" class="hex">
+			<div class="text">
+				<span class="title">Bitcoin</span>
+				<p>PMost widely used cryptocurrency</p>
+			</div>
+		</div>
+		<div id="iota-block" class="hex">
+			<div class="text">
+				<span class="title">IOTA</span>
+				<p>A cryptocurrency featuring zero transaction fee</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="how" class="page">
+		<div id="nav-how" class="nav"></div>
+		<div id="trans5-block" class="trans hex"></div>
+		<div id="trans6-block" class="trans hex"></div>
+		<div id="trans7-block" class="trans hex"></div>
+		<div id="trans8-block" class="trans hex"></div>
+		<div id="trans9-block" class="trans hex"></div>
+		<div id="trans10-block" class="trans hex"></div>
+		<div class="title"><span>How to use PALLET?</span></div>
+
+		<div id="contract-block" class="medium hex">
+			<div class="text">
+				<span class="title">Contracts<br>for ICO</span>
+				<p>Pallet is versatile in deploying a contract for your Initial Coin Oering. Pallet smart contract can receive tokens from BTC, ETH, and tokens from any supported chain.</p>
+			</div>
+		</div>
+		<div id="exchange-block" class="medium hex">
+			<div class="text">
+				<span class="title">Exchange</span>
+				<p>Traditionally, we need to rely on centralized exchanges to ensure we can exchange safely.</p>
+				<p>Using Pallet contract, you can build your own exchange. Exchange your bitcoin, ethereum, etc with others safely.</p>
+			</div>
+		</div>
+		<div id="decentralize-block" class="medium hex">
+			<div class="text">
+				<span class="title">Decentralized Asset Management</span>
+				<p>Pallet has a scalable and decoupled smart contract. Different DApps will not interfere with each other. People don't need to worry about high transaction fees or low TPS (transaction/s).</p>
+			</div>
+		</div>
+		<div id="howzcash-block" class="small hex">
+			<div class="text">
+				<span class="title">Zcash</span>
+				<p>With enhanced privacy</p>
+			</div>
+		</div>
+		<div id="howlitecoin-block" class="small hex">
+			<div class="text">
+				<span class="title">Litecoin</span>
+				<p>Refined from Bitcoin</p>
+			</div>
+		</div>
+		<div id="howethereum-block" class="small hex">
+			<div class="text">
+				<span class="title">Ethereum</span>
+				<p>Smart contract</p>
+			</div>
+		</div>
+		<div id="howbitcoin-block" class="small hex">
+			<div class="text">
+				<span class="title">Bitcoin</span>
+				<p>Most widely used coin</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="feature" class="page">
+		<div id="nav-feature" class="nav"></div>
+		<div class="title"><span>PALLET features</span></div>
+		<div class="content flex row">
+			<div class="item">
+				<img src="network.svg" alt="Blockchains" class="icon">
+				<div class="title"><span>ABOVE &amp; BEYOND BLOCKCHAINS</span></div>
+				<p>Pallet decouples contract execution from underlying blockchains. Contracts are executed on the decoupled contract verifiers, called Jury, which keeps the contract states.</p>
+			</div>
+			<div class="item">
+				<img src="parallel.svg" alt="Parallel" class="icon">
+				<div class="title"><span>HIGHLY PARALLEL</span></div>
+				<p>One Jury per contract, instead of one blockchain for all contracts. Different Pallet contracts run independently.</p>
+			</div>
+			<div class="item">
+				<img src="shield.svg" alt="Security" class="icon">
+				<div class="title"><span>SECURITY</span></div>
+				<p>Pallet consensus protocol uses stake mechanism to incentivize good behaviors and punish scams. Also, Pallet utilizes LLVM-family tools such as compile-time analyses and runtime sanitizers to catch errors and threats in contract execution.</p>
+			</div>
+			<div class="item">
+				<img src="pencil.svg" alt="Productivity" class="icon">
+				<div class="title"><span>PRODUCTIVITY FOR CONTRACT DEVELOPERS</span></div>
+				<p>Pallet supports simplified popular languages and outputs LLVM bitcodes. Writing a contract is less error-prone, thanking to restricted yet familiar language frontends.</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="roadmap" class="page">
+		<div id="nav-roadmap" class="nav"></div>
+		<div class="title"><span>Roadmap</span></div>
+		<div id="timeline"></div>
+	</div>
+
+
+</body>
+<script src="general.js" type="text/javascript"></script>
+<script src="hexagon.js" type="text/javascript"></script>
+<script src="roadmap.js" type="text/javascript"></script>
+<script src="index.js" type="text/javascript"></script>
 </html>
