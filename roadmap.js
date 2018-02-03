@@ -87,22 +87,21 @@ var events = [
 ]
 
 var eventNum = events.length
-var lineWidth = 4 // sync with index.css!!
-var eventSize = 16 // sync with index.css!!
-var eventMargin = 4 // sync with index.css!!
+var lineWidth = 0.3 // sync with index.css!!
+var eventSize = 1.4 // sync with index.css!!
+var eventMargin = 0.3 // sync with index.css!!
 
 function generateRoadmap(){
 	var timeline = $("#timeline")
 	let newElement
-	let yCursorVw = 0
-	let yCursorPx = 0
+	let yCursor = 0
 
 	newElement = $n("div",null,"vline")
 	newElement.style.height = "7vw"
-	newElement.style.left = "calc(50% - " + (lineWidth/2) + "px)"
+	newElement.style.left = "calc(50% - " + (lineWidth/2) + "vw)"
 	newElement.style.top = "0"
 	timeline.apnd(newElement)
-	yCursorVw += 7
+	yCursor += 7
 
 	events.forEach((e,i,a)=>{
 		newElement = $n("div",null,"event","hex")
@@ -118,47 +117,47 @@ function generateRoadmap(){
 					.apnd($n("span").apnd(e.content))
 				)
 			)
-		newElement.style.top = "calc(" + yCursorVw + "vw + " + yCursorPx + "px)"
-		newElement.style.left = "calc(50% - " + (eventSize*0.57735 + eventMargin) + "px)"
+		newElement.style.top = yCursor + "vw"
+		newElement.style.left = "calc(50% - " + (eventSize*0.57735 + eventMargin) + "vw)"
 
 		let innerElement
 		innerElement = $n("div","","left")
-		innerElement.style.borderTopWidth = eventSize*0.5 + "px"
-		innerElement.style.borderBottomWidth = eventSize*0.5 + "px"
-		innerElement.style.borderRightWidth = eventSize*0.288675 + "px"
+		innerElement.style.borderTopWidth = eventSize*0.5 + "vw"
+		innerElement.style.borderBottomWidth = eventSize*0.5 + "vw"
+		innerElement.style.borderRightWidth = eventSize*0.288675 + "vw"
 		newElement.apnd(innerElement)
 
 		innerElement = $n("div","","mid")
 		newElement.apnd(innerElement)
 
 		innerElement = $n("div","","right")
-		innerElement.style.borderTopWidth = eventSize*0.5 + "px"
-		innerElement.style.borderBottomWidth = eventSize*0.5 + "px"
-		innerElement.style.borderLeftWidth = eventSize*0.288675 + "px"
+		innerElement.style.borderTopWidth = eventSize*0.5 + "vw"
+		innerElement.style.borderBottomWidth = eventSize*0.5 + "vw"
+		innerElement.style.borderLeftWidth = eventSize*0.288675 + "vw"
 		newElement.apnd(innerElement)
 
 		timeline.apnd(newElement)
-		yCursorPx += eventSize + 2*eventMargin
+		yCursor += eventSize + 2*eventMargin
 
 		newElement = $n("div",null,"vline")
-		newElement.style.width = lineWidth+"px"
+		newElement.style.width = lineWidth+"vw"
 		newElement.style.height = "2.5vw"
-		newElement.style.left = "calc(50% - " + (lineWidth/2) + "px)"
-		newElement.style.top = "calc(" + yCursorVw + "vw + " + yCursorPx + "px)"
+		newElement.style.left = "calc(50% - " + (lineWidth/2) + "vw)"
+		newElement.style.top = yCursor + "vw"
 		timeline.apnd(newElement)
-		yCursorVw += 2.5
+		yCursor += 2.5
 	})
 
 	for(let i=0;i<3;i++){
-		yCursorVw += .5
+		yCursor += .5
 		newElement = $n("div",null,"vline")
-		newElement.style.width = lineWidth+"px"
+		newElement.style.width = lineWidth+"vw"
 		newElement.style.height = ".5vw"
-		newElement.style.left = "calc(50% - " + (lineWidth/2) + "px)"
-		newElement.style.top = "calc(" + yCursorVw + "vw + " + yCursorPx + "px)"
+		newElement.style.left = "calc(50% - " + (lineWidth/2) + "vw)"
+		newElement.style.top = yCursor + "vw"
 		timeline.apnd(newElement)
-		yCursorVw += .5
+		yCursor += .5
 	}
 
-	$("#roadmap").style.height = "calc(" + (yCursorVw+20) + "vw + " + yCursorPx + "px)"
+	$("#roadmap").style.height = (yCursor+20) + "vw"
 }

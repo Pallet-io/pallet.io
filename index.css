@@ -336,13 +336,13 @@ body{
 
 #timeline>.vline{
 	background-color: #000000;
-	width: 4px; /* Sync with roadmap.js!! */
+	width: .3vw; /* Sync with roadmap.js!! */
 }
 
 #timeline>.event{
-	width: 18.4753px; /* Sync with roadmap.js!! */
-	height: 16px; /* Sync with roadmap.js!! */
-	margin: 4px; /* Sync with roadmap.js!! */
+	width: 1.61658vw; /* Sync with roadmap.js!! */
+	height: 1.4vw; /* Sync with roadmap.js!! */
+	margin: .3vw; /* Sync with roadmap.js!! */
 }
 
 #timeline .eventBox{
