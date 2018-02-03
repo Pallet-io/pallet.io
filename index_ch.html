@@ -6,7 +6,7 @@
 		<meta http-equiv='Pragma' content='no-cache'>
 		<meta http-equiv='Cache-Control' content='no-cache'>
 		<meta name='copyright' content='Pallet'>
-		<title>Pallet - Protocol for Abstruct-Level Ledger Ecosystem</title>
+		<title>PALLET - 分布式共享帳本共治協定</title>
 		<script type="text/javascript" src="jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="nav.js?4"></script>
 		<link rel="stylesheet" type="text/css" media="screen" href="reset.css">
@@ -17,7 +17,50 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="mobile.css?6686">
 
 		<style type="text/css">
+@font-face {
+  font-family: 'Rhythm Heiti';
+  src:
+    local('PingFang SC Light'),
+    local('PingFang TC Light'),
+    local('PingFang-SC-Light'),
+    local('PingFang-TC-Light'),
+    local('PingFang SC'),
+    local('PingFang TC'),
 
+    local('Hiragino Sans GB'),
+
+    local('Lantinghei TC Extralight'),
+    local('Lantinghei SC Extralight'),
+    local(FZLTXHB--B51-0),
+    local(FZLTZHK--GBK1-0),
+
+    local('Heiti SC Light'),
+    local(STHeitiSC-Light),
+    local('Heiti SC'),
+    local('Heiti TC Light'),
+    local(STHeitiTC-Light),
+    local('Heiti TC'),
+
+    local('Microsoft Yahei'),
+    local('Microsoft Jhenghei'),
+
+    local('Noto Sans CJK KR'),
+    local('Noto Sans CJK JP'),
+    local('Noto Sans CJK SC'),
+    local('Noto Sans CJK TC'),
+    local('Source Han Sans K'),
+    local('Source Han Sans KR'),
+    local('Source Han Sans JP'),
+    local('Source Han Sans CN'),
+    local('Source Han Sans HK'),
+    local('Source Han Sans TW'),
+    local('Source Han Sans TWHK'),
+    local('Droid Sans Fallback')
+  ;
+}
+* {
+	font-family: 'Rhythm Heiti' !important;
+}
 		@media screen and (-webkit-min-device-pixel-ratio:0) { 
 			  ::i-block-chrome, div.hexs > div.hexs-clipbox, div.hexs > div.hexs-clipboxouter {
 			  }
@@ -57,7 +100,8 @@
             </defs>
         </svg>
 <!--div class="main-img" style="display: none;"><img src="screencapture-pallet-ai-1516974618673.png" /></div-->
-<!--div style="position: absolute; top:10px; left:10px; width: 40px; z-index: 100000;"><a style="font-size:12px; color: #666666; font-weight: bold;" href="index_ch.html">中文版</a></div-->
+
+<div style="position: absolute; top:10px; left:10px; width: 45px; z-index: 100000;"><a style="white-space: nowrap; font-size:12px; color: #666666; font-weight: bold;" href="/">English Version</a></div>
 <div class="main-background">
 			<div class="hex-tile"></div>
 			<div class="navbar">
@@ -69,13 +113,13 @@
 				</div>
 				<div class="menubar">
 					
-					<div class="menu_item menu_item_1"><a href="#vision">Vision</a></div>
-					<div class="menu_item menu_item_1"><a href="#usage">Usage</a></div>
-					<div class="menu_item menu_item_1 menu_item_br"><a href="#features">Features</a></div>
-					<div class="menu_item menu_item_2"><a>Roadmap</a></div>
-					<div class="menu_item menu_item_2"><a>Team</a></div>
-					<div class="menu_item menu_item_2"><a>FAQs</a></div>
-					<div class="menu_item menu_item_2"><a>News</a></div>
+					<div class="menu_item menu_item_1"><a href="#vision">願景</a></div>
+					<div class="menu_item menu_item_1"><a href="#usage">情境</a></div>
+					<div class="menu_item menu_item_1 menu_item_br"><a href="#features">特點</a></div>
+					<div class="menu_item menu_item_2"><a>展望</a></div>
+					<div class="menu_item menu_item_2"><a>團隊</a></div>
+					<div class="menu_item menu_item_2"><a>問答</a></div>
+					<div class="menu_item menu_item_2"><a>快訊</a></div>
 				</div>
 			</div>
 			<div class="content-a">
@@ -88,14 +132,13 @@
 												<div>PALLET</div>
 						</h1>
 					</div>
-					<h2>Protocol for <br>
-						Abstract-Level Ledger Ecosystem
+					<h2>泛階分布式共享帐本共治协议<br>
 					</h2>
-					<span class="bold" style="line-height: 1.2em">Beyond Yet Another Chain:<br />
-					IP Protocol for Future Internet of Values</span>
+					<span class="bold" style="line-height: 1.2em"><!--超越下一條鏈－--><br />
+					來自未來的網路協議－讓價值互聯互通</span>
 					<p>
-					<input type="button" class="DownWhitePaperButton" value="White Paper" onclick="javascript: alert('To be announced');"></input>
-					<input type="button" class="DownWhitePaperButton" value="One-Pager" onclick="javascript: location.href='onepager.pdf';"></input>
+					<input type="button" class="DownWhitePaperButton" value="白皮書" onclick="javascript: alert('To be announced');"></input>
+					<input type="button" class="DownWhitePaperButton" value="摘要冊" onclick="javascript: location.href='onepager.pdf';"></input>
 					</p>
 				</div>
 			</div>
@@ -116,11 +159,10 @@
 								<img src="network.svg?1" />
 							</div>
 							<div class="title">
-								<h2>Above & Beyond Blockchains</h2>
+								<h2>區塊鏈承上啟下</h2>
 							</div>
 							<div class="content">
-								Pallet decouples contract execution from underlying blockchains. Contracts are executed on the decoupled contract verifiers, called <em>Jury</em>, which keeps the contract states.
-
+								Pallet 去除區塊鏈與智能合約的耦合。合約將由獨立的合約驗證者「陪審團」執行，陪審團將會留存合約的狀態。
 							</div>
 						</div>
 					</div>
@@ -130,11 +172,11 @@
 								<img src="small-rocket-ship-silhouette.svg?1" />
 							</div>
 							<div class="title">
-								<h2>Highly Parallel
+								<h2>高度平行化
 </h2>
 							</div>
 							<div class="content">
-								One <em>Jury</em> per contract, instead of one blockchain for all contracts. Different Pallet contracts run independently.
+								每個合約都基於各自的陪審團，而不是所有的合約跑在同一條區塊鏈上，使得不同的 Pallet 合約可獨立執行。
 							</div>
 						</div>
 					</div>
@@ -144,10 +186,10 @@
 								<img src="shield.svg" />
 							</div>
 							<div class="title">
-								<h2>Security</h2>
+								<h2>Pallet 安全性</h2>
 							</div>
 							<div class="content">
-								Pallet consensus protocol uses stake mechanism to incentivize good behaviors and punish scams. Also, Pallet utilizes LLVM-family tools such as compile-time analyses and runtime sanitizers to catch errors and threats in contract execution. 							</div>
+								Pallet 共識協定採用權益機制來激勵良好的行為並懲罰詐騙。此外，Pallet 更採用 LLVM 系列的工具，例如採用編譯時期分析和運行期時檢查器來捕捉合約中的錯誤與威脅。 							</div>
 						</div>
 					</div>
 					<div class="content-diff">
@@ -156,11 +198,11 @@
 								<img src="pencil-striped-symbol-for-interface-edit-buttons.svg" />
 							</div>
 							<div class="title">
-								<h2>Productivity for Contract Developers</h2>
+								<h2>高效率的合約撰寫</h2>
 
 							</div>
 							<div class="content">
-								Pallet supports simplified popular languages and outputs LLVM bitcodes. Writing a contract is less error-prone, thanking to restricted yet familiar language frontends.
+								Pallet 以 LLVM bitcodes 作為基礎，從而可支援各種語言的簡潔版，採用熟悉的語言前端讓撰寫合約更不易出錯。
 							</div>
 						</div>
 					</div>
@@ -277,18 +319,11 @@
 
 								<div>
 									<p>
-										Pallet allows inter-chain
-										 transactions by decoupling contracts
-										 from blockchains. Instead of forcing all
-										 contracts onto one chain, Pallet offers a <em>Jury</em>
-										 per contract, and hence the scalability.
-									 </p>
+										Pallet 的誕生將合約從區塊鏈中解構，從而使得跨鏈交換成為可能。每個合約有其各自的陪審團，無須讓所有合約擠在同條鏈中，以達成最佳的擴展性。
+									</p>
 
 									<p>
-										Security: Pallet stake mechanism minimizes
-										  rogueness through proper rewards
-										   and penalties in the ecosystem.
-										   
+										Pallet 的權益證明機制透過共治網路中適當的獎勵和懲罰，能最大限度地減少流氓行為，以確保 Pallet 的安全性。										   
 									</p>
 								</div>
 							</div>
@@ -318,14 +353,10 @@
 						<div class="hexs-shape-right"></div>
 						<div class="info-coinitem">
 							<div class="title">
-								Zcash
+								零幣
 							</div>
 							<div class="content">
-								<div>
-									Provides enhanced
-									privacy by using
-									zero knowledge
-									 proof
+								<div> 透過零知識證明達成最佳的交易隱私保護
 								</div>
 							</div>
 						</div>
@@ -350,12 +381,11 @@
 						<div class="hexs-shape-right"></div>
 						<div class="info-coinitem">
 							<div class="title">
-								Litecoin
+								萊特幣
 							</div>
 							<div class="content">
 								<div>
-									Cryptocurrency refined from Bitcoin
-
+									精巧的比特幣改良版
 								</div>
 							</div>
 						</div>
@@ -380,12 +410,11 @@
 						<div class="hexs-shape-right"></div>
 						<div class="info-coinitem">
 							<div class="title">
-								Ethereum
+								以太坊
 							</div>
 							<div class="content">
 								<div>
-									A cryptocurrency featuring smart contract
-
+									以智能合約為基礎的區塊鏈貨幣
 								</div>
 							</div>
 						</div>
@@ -410,11 +439,11 @@
 						<div class="hexs-shape-right"></div>
 						<div class="info-coinitem">
 							<div class="title">
-								Bitcoin
+								比特幣
 							</div>
 							<div class="content">
 								<div>
-									Most widely used cryptocurrency
+									最知名且使用最廣泛的加密貨幣
 								</div>
 							</div>
 						</div>
@@ -443,7 +472,7 @@
 							</div>
 							<div class="content">
 								<div>
-									A cryptocurrency featuring zero transaction fee
+									聲稱無須交易手續費之加密貨幣
 
 								</div>
 							</div>
@@ -588,22 +617,14 @@
 						<div class="hexs-shape-right"></div>
 						<div class="info-intro">
 							<div class="title">
-								Exchange
+								跨鏈交互操作
 							</div>
 							<div class="content">
 								<div>
+									<p> 
+										傳統上，我們僅能依賴可靠的中心化的交易所來達成安全的跨鏈交互操作。</p>
 									<p>
-										Traditionally, we need to
-										rely on centralized exchanges
-										to ensure we can exchange safely.
-									</p>
-									<p>
-										Using Pallet contract, you can
-										 build your own exchange.
-										 Exchange your bitcoin,
-										 ethereum, etc with
-										 others safely.
-									</p>
+										採用 Pallet 智能合約，你可以構建自己的交換，安全的將您的比特幣，以太坊等與他人交換。</p>
 								</div>
 							</div>
 						</div>
@@ -628,18 +649,11 @@
 						<div class="hexs-shape-right"></div>
 						<div class="info-intro">
 							<div class="title">
-								Decentralized Asset Management
+							分散式資產管理
 
 							</div>
 							<div class="content">
-								<div>
-									Pallet has a scalable
-									and decoupled smart contract.
-									Different DApps will not interfere
-									with each other. People don't
-									need to worry about high
-									 transaction fees or low
-									 TPS (transaction/s).
+								<div> Pallet 具有可擴展和去耦合的智能合約，因此不同的 DApps 並不會互相干擾，因此並不必擔心交易手續費高昂或吞吐量不足。
 								</div>
 							</div>
 						</div>
@@ -664,18 +678,11 @@
 						<div class="hexs-shape-right"></div>
 						<div class="info-intro">
 							<div class="title">
-								Contracts for ICO
+								構建 ICO 合約
 							</div>
 							<div class="content">
 								<div>
-									<p>
-										Pallet is versatile in deploying
-										 a contract for your Initial Coin
-										 Offering. Pallet smart contract
-										  can receive tokens from
-										  BTC, ETH, and tokens
-										  from any supported
-										  chain.
+									<p> Pallet 是部署 ICO (首次代幣發行) 合約的絕佳平台。基於 Pallet 的靈活性，您的 ICO 可以接受比特幣、以太幣或任何其他受到支援的幣。
 									</p>
 								</div>
 							</div>
@@ -705,7 +712,7 @@
 							</div>
 							<div class="content">
 								<div>
-									With enhanced privacy
+								絕佳的隱私	
 								</div>
 							</div>
 						</div>
@@ -733,7 +740,7 @@
 							</div>
 							<div class="content">
 								<div>
-									Most widely used coin
+									區塊鏈的始祖
 								</div>
 							</div>
 						</div>
@@ -762,7 +769,7 @@
 							</div>
 							<div class="content">
 								<div>
-									Smart contract
+									智能合約
 								</div>
 							</div>
 						</div>
@@ -791,7 +798,7 @@
 							</div>
 							<div class="content">
 								<div>
-									Refined from Bitcoin
+									精巧的改善
 								</div>
 							</div>
 						</div>
