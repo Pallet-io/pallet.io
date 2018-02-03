@@ -1,13 +1,13 @@
 /*General Function Declaration*/
-function $all(a){return document.querySelectorAll(a)}
+function $a(a){return document.querySelectorAll(a)}
 
 function $(a){return document.querySelector(a)}
 
-function $load(e,f){e.addEventListener('load',f)}
+Element.prototype.load = function(f){this.addEventListener('load',f)}
 
-function $click(e,f){e.addEventListener('click',f)}
+Element.prototype.click = function(f){this.addEventListener('click',f)}
 
-function $new(a,id,cls){
+function $n(a,id,cls){
 	var e = document.createElement(a)
 	if(id) e.id = id
 	for(cl of Array.prototype.slice.call(arguments,2))
@@ -15,12 +15,12 @@ function $new(a,id,cls){
 	return e
 }
 
-function $append(e,a){
-	e.append(a)
-	return e
+Element.prototype.attr = function(n,v){
+	if(v) this.setAttribute(n,v)
+	else return this.getAttribute(n)
 }
 
-function $attr(e,n,v){
-	if(v) e.setAttribute(n,v)
-	else return e.getAttribute(n)
+Element.prototype.apnd = function(e){
+	this.append(e)
+	return this
 }

@@ -52,7 +52,6 @@ button:hover{
 
 .hex>.left{
     float:left;
-    border-right: solid #FFF;
     border-top: solid transparent;
     border-bottom: solid transparent;
 }
@@ -61,12 +60,10 @@ button:hover{
     float:left;
     height: 100%;
     width: 50%;
-    background-color: #FFF;
 }
 
 .hex>.right{
     float:left;
-    border-left: solid #FFF;
     border-top: solid transparent;
     border-bottom: solid transparent;
 }

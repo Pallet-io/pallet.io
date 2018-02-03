@@ -139,25 +139,25 @@ var howBlocks = [
 	}
 ]
 
-function generateHexBlcoks(src){
+function generateHexBlocks(src){
 	src.forEach((e,i,a)=>{
 		let hexElement = $("#" + e.id + "-block")
 		let innerElement
 
-		innerElement = $new("div","","left")
+		innerElement = $n("div","","left")
 		innerElement.style.borderTopWidth = e.width*0.433 + "vw"
 		innerElement.style.borderBottomWidth = e.width*0.433 + "vw"
 		innerElement.style.borderRightWidth = e.width*0.25 + "vw"
-		$append(hexElement,innerElement)
+		hexElement.apnd(innerElement)
 
-		innerElement = $new("div","","mid")
-		$append(hexElement,innerElement)
+		innerElement = $n("div","","mid")
+		hexElement.apnd(innerElement)
 
-		innerElement = $new("div","","right")
+		innerElement = $n("div","","right")
 		innerElement.style.borderTopWidth = e.width*0.433 + "vw"
 		innerElement.style.borderBottomWidth = e.width*0.433 + "vw"
 		innerElement.style.borderLeftWidth = e.width*0.25 + "vw"
-		$append(hexElement,innerElement)
+		hexElement.apnd(innerElement)
 
 		hexElement.style.width = e.width + "vw";
 		hexElement.style.height = e.width*0.866 + "vw";

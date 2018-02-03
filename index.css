@@ -25,7 +25,6 @@ body{
 .page{
 	width:100%;
 	position: relative;
-	height:100vh;
 }
 
 #title{
@@ -62,7 +61,7 @@ body{
 
 #how{
 	background-color: #BBF3FC;
-	height: 90vh;
+	height: 65vw;
 }
 
 #how:after{
@@ -76,7 +75,6 @@ body{
 
 #feature{
 	background-color: #F9EDBB;
-	height: auto;
 	margin-bottom: -5vw;
 }
 
@@ -91,15 +89,6 @@ body{
 
 #roadmap{
 	background-color: #D6CBF7;
-}
-
-.hex{
-	position: absolute;
-	z-index: 90;
-}
-
-.hex:not(.trans){
-	filter: drop-shadow(0 .4vw .2vw rgba(0,0,0,.2));
 }
 
 .trans.hex{
@@ -175,7 +164,34 @@ body{
 }
 
 /* INTRO & HOW */
-.hex>.text{
+#intro .hex>.left,
+#how   .hex>.left{
+    border-right: solid #FFFFFF;
+}
+
+#intro .hex>.mid,
+#how   .hex>.mid{
+    background-color: #FFFFFF;
+}
+
+#intro .hex>.right,
+#how   .hex>.right{
+    border-left: solid #FFFFFF;
+}
+
+#intro .hex,
+#how   .hex{
+	position: absolute;
+	z-index: 90;
+}
+
+#intro .hex:not(.trans),
+#how   .hex:not(.trans){
+	filter: drop-shadow(0 .4vw .2vw rgba(0,0,0,.2));
+}
+
+#intro .hex>.text,
+#how   .hex>.text{
 	text-align: center;
 	position: absolute;
 	width: 100%;
@@ -183,52 +199,63 @@ body{
 	padding: 15% 12%;
 }
 
-.hex>.text>.title{
+#intro .hex>.text>.title,
+#how   .hex>.text>.title{
 	font-size: 2em;
     font-weight: bold;
     text-decoration: underline
 }
 
-.hex>.text>p{
+#intro .hex>.text>p,
+#how   .hex>.text>p{
 	font-size: 1.25em;
 	line-height: 1em;
 }
 
-.hex.big>.text{
+#intro .hex.big>.text,
+#how   .hex.big>.text{
 	padding: 12% 20%;
 }
 
-.hex.big>.text>.title{
+#intro .hex.big>.text>.title,
+#how   .hex.big>.text>.title{
 	font-size: 3.5em;
 }
 
-.hex.big>.text>p{
+#intro .hex.big>.text>p,
+#how   .hex.big>.text>p{
 	font-size: 1.5em;
 	line-height: 1.2em;
 }
 
-.hex.medium>.text{
+#intro .hex.medium>.text,
+#how   .hex.medium>.text{
 	padding: 12% 15%;
 }
 
-.hex.medium>.text>.title{
+#intro .hex.medium>.text>.title,
+#how   .hex.medium>.text>.title{
 	font-size: 2.5em;
 }
 
-.hex.medium>.text>p{
+#intro .hex.medium>.text>p,
+#how   .hex.medium>.text>p{
 	font-size: 1.25em;
 	line-height: 1.2em;
 }
 
-.hex.small>.text{
+#intro .hex.small>.text,
+#how   .hex.small>.text{
 	padding: 13% 15%;
 }
 
-.hex.small>.text>.title{
+#intro .hex.small>.text>.title,
+#how   .hex.small>.text>.title{
 	font-size: 1.5em;
 }
 
-.hex.small>.text>p{
+#intro .hex.small>.text>p,
+#how   .hex.small>.text>p{
 	font-size: 1.25em;
 	line-height: 1em;
 	margin: .5em 0;
@@ -287,4 +314,74 @@ body{
 	font-size: 1.5em;
 	line-height: 1.5em;
 	text-align: left;
+}
+
+/* ROADMAP */
+#roadmap>.title{
+	font-size: 4em;
+	width:100%;
+	padding-top: 10vw;
+	text-align: center;
+	font-weight: 900;
+}
+
+#timeline{
+	width: 100%;
+	position: relative;
+}
+
+#timeline>*{
+	position: absolute;
+}
+
+#timeline>.vline{
+	background-color: #000000;
+	width: 4px; /* Sync with roadmap.js!! */
+}
+
+#timeline>.event{
+	width: 18.4753px; /* Sync with roadmap.js!! */
+	height: 16px; /* Sync with roadmap.js!! */
+	margin: 4px; /* Sync with roadmap.js!! */
+}
+
+#timeline .eventBox{
+	position: absolute;
+	top: -.5vw;
+	width: 30vw;
+}
+
+#timeline>.event:nth-child(4n)>.eventBox{
+	left: 2.5vw;
+	text-align: left;
+}
+
+#timeline>.event:nth-child(4n+2)>.eventBox{
+	right: 2.5vw;
+	text-align: right;
+}
+
+#timeline .eventBox .year{
+	font-size: 2em;
+	padding: 0 .5em;
+}
+
+#timeline .eventBox .month{
+	font-size: 2.5em;
+}
+
+#timeline .eventBox .content{
+	font-size: 1.5em;
+}
+
+#timeline .hex>.left{
+    border-right: solid #000000;
+}
+
+#timeline .hex>.mid{
+    background-color: #000000;
+}
+
+#timeline .hex>.right{
+    border-left: solid #000000;
 }

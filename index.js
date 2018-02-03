@@ -1,4 +1,6 @@
-generateHexBlcoks(introBlocks);
-generateHexBlcoks(howBlocks);
+generateHexBlocks(introBlocks)
+generateHexBlocks(howBlocks)
 
-$click($("#title #whitepaper"),()=>{alert('To be announced')})
+generateRoadmap()
+
+$("#title #whitepaper").click(()=>{alert('To be announced')})
