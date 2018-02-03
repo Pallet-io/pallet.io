@@ -1,4 +1,4 @@
-var hexBlocks = [
+var introBlocks = [
 	{
 		"id":"pallet",
 		"left":50,
@@ -70,8 +70,77 @@ var hexBlocks = [
 	}
 ]
 
-function generateHexBlcoks(){
-	hexBlocks.forEach((e,i,a)=>{
+var howBlocks = [
+	{
+		"id":"contract",
+		"left":73,
+		"top":56,
+		"width":28
+	},{
+		"id":"exchange",
+		"left":24,
+		"top":69,
+		"width":28
+	},{
+		"id":"decentralize",
+		"left":51,
+		"top":77,
+		"width":28
+	},{
+		"id":"howzcash",
+		"left":39,
+		"top":53,
+		"width":10
+	},{
+		"id":"howlitecoin",
+		"left":80,
+		"top":85,
+		"width":10
+	},{
+		"id":"howethereum",
+		"left":68,
+		"top":95,
+		"width":10
+	},{
+		"id":"howbitcoin",
+		"left":29,
+		"top":99,
+		"width":10
+	},,{
+		"id":"trans5",
+		"left":7,
+		"top":50,
+		"width":4
+	},{
+		"id":"trans6",
+		"left":53,
+		"top":52,
+		"width":4
+	},{
+		"id":"trans7",
+		"left":61,
+		"top":60,
+		"width":13
+	},{
+		"id":"trans8",
+		"left":85,
+		"top":63,
+		"width":28
+	},{
+		"id":"trans9",
+		"left":12,
+		"top":77,
+		"width":28
+	},{
+		"id":"trans10",
+		"left":44,
+		"top":95,
+		"width":12
+	}
+]
+
+function generateHexBlcoks(src){
+	src.forEach((e,i,a)=>{
 		let hexElement = $("#" + e.id + "-block")
 		let innerElement
 
