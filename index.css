@@ -255,12 +255,12 @@ body{
 
 #intro .hex:not(.trans),
 #how   .hex:not(.trans){
-	filter: drop-shadow(0 .4vw .2vw rgba(0,0,0,.3));
+	filter: drop-shadow(0 .5vw .2vw rgba(0,0,0,.3));
 }
 
 #intro .hex.withtext:hover,
 #how   .hex.withtext:hover{
-	filter: drop-shadow(0 .4vw .4vw rgba(0,0,0,.7));
+	filter: drop-shadow(0 .7vw .3vw rgba(0,0,0,.6));
 }
 
 #intro .hex>.text,
@@ -269,20 +269,24 @@ body{
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	padding: 15% 12%;
+	padding: 12% 12%;
 }
 
 #intro .hex>.text>.title,
 #how   .hex>.text>.title{
 	font-size: 2em;
     font-weight: bold;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 #intro .hex>.text>p,
 #how   .hex>.text>p {
 	font-size: 1.25em;
-	line-height: 1.35em;
+	line-height: 1.25em;
+}
+
+#zcash-block p{ /* exception */
+	margin: .5em 0;
 }
 
 #intro .hex.big>.text,
@@ -373,7 +377,7 @@ body{
 }
 
 #feature>.content>.item:hover{
-	box-shadow: .3vw .3vw .8vw rgba(0,0,0,.5);
+	box-shadow: .3vw .3vw .4vw rgba(0,0,0,.5);
 }
 
 #feature .icon{
