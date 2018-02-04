@@ -1,150 +1,152 @@
+var lang = $("#title>#lang>select").value
+
 var events = [
 	/*{
 		"year":2014,
 		"month":"Sep",
 		"content": {
 			"en":"Gcoin start",
-			"zh_tw":""
+			"zh-tw":""
 		}
 	},{
 		"year":2014,
 		"month":"Oct",
 		"content": {
 			"en":"Gcoin API start",
-			"zh_tw":""
+			"zh-tw":""
 		}
 	},{
 		"year":2014,
 		"month":"Dec",
 		"content": {
 			"en":"Gcoin opensource",
-			"zh_tw":""
+			"zh-tw":""
 		}
 	},{
 		"year":2015,
 		"month":"Apr",
 		"content": {
 			"en":"Release Gcoin whitepaper 1.0",
-			"zh_tw":""
+			"zh-tw":""
 		}
 	},{
 		"year":2015,
 		"month":"Oct",
 		"content": {
 			"en":"Gcoin wallet apps available",
-			"zh_tw":""
+			"zh-tw":""
 		}
 	},{
 		"year":2016,
 		"month":"May",
 		"content": {
 			"en":"Gcoin API v2",
-			"zh_tw":""
+			"zh-tw":""
 		}
 	},{
 		"year":2016,
 		"month":"Aug",
 		"content": {
 			"en":"Decoupling of EVM on Gcoin",
-			"zh_tw":""
+			"zh-tw":""
 		}
 	},*/{
 		"year":2017,
 		"month":"Aug",
 		"content": {
 			"en":"Concept of Pallet born",
-			"zh_tw":"創始 Pallet 概念"
+			"zh-tw":"創始 Pallet 概念"
 		}
 	},{
 		"year":2017,
 		"month":"Oct",
 		"content": {
 			"en":"Project of Pallet start",
-			"zh_tw":"正式啟動 Pallet 專案"
+			"zh-tw":"正式啟動 Pallet 專案"
 		}
 	},{
 		"year":2018,
 		"month":"Jan",
 		"content": {
 			"en":"Pallet bitcoin API release",
-			"zh_tw":"釋出支援比特幣之 Pallet API"
+			"zh-tw":"釋出支援比特幣之 Pallet API"
 		}
 	},{
 		"year":2018,
 		"month":"Feb",
 		"content": {
 			"en":"NOW",
-			"zh_tw":"現在"
+			"zh-tw":"現在"
 		}
 	},{
 		"year":2018,
 		"month":"Feb",
 		"content": {
 			"en":"Release of Pallet white paper",
-			"zh_tw":"釋出 Pallet 白皮書"
+			"zh-tw":"釋出 Pallet 白皮書"
 		}
 	},{
 		"year":2018,
 		"month":"Feb",
 		"content": {
 			"en":"Release demo video ofan abstract-level contract",
-			"zh_tw":"釋出泛階合約之操作示範影片"
+			"zh-tw":"釋出泛階合約之操作示範影片"
 		}
 	},{
 		"year":2018,
 		"month":"Apr",
 		"content": {
 			"en":"Spec. release of Pallet.",
-			"zh_tw":"釋出 Pallet 規格書"
+			"zh-tw":"釋出 Pallet 規格書"
 		}
 	},{
 		"year":2018,
 		"month":"May",
 		"content": {
 			"en":"POC demo of inter-chain exchange",
-			"zh_tw":"跨鏈交換之可行性驗證展示"
+			"zh-tw":"跨鏈交換之可行性驗證展示"
 		}
 	},{
 		"year":2018,
 		"month":"Q3",
 		"content": {
 			"en":"Beta release of Pallet on Bitcoin.",
-			"zh_tw":"釋出支援比特幣之 Pallet 預覽版"
+			"zh-tw":"釋出支援比特幣之 Pallet 預覽版"
 		}
 	},{
 		"year":2018,
 		"month":"Q3",
 		"content": {
 			"en":"Connect Pallet and Ethereum network",
-			"zh_tw":"釋出支援以太坊網路之 Pallet 預覽版"
+			"zh-tw":"釋出支援以太坊網路之 Pallet 預覽版"
 		}
 	},{
 		"year":2018,
 		"month":"Q4",
 		"content": {
 			"en":"Pallet online",
-			"zh_tw":"上線 Pallet 系統"
+			"zh-tw":"上線 Pallet 系統"
 		}
 	},{
 		"year":2018,
 		"month":"Q4",
 		"content": {
 			"en":"Pallet distribute contract online",
-			"zh_tw":"上線 Pallet 分散式合約"
+			"zh-tw":"上線 Pallet 分散式合約"
 		}
 	},{
 		"year":2018,
 		"month":"Q4",
 		"content": {
 			"en":"Pallet arbiter contract online",
-			"zh_tw":"上線 Pallet 仲裁合約"
+			"zh-tw":"上線 Pallet 仲裁合約"
 		}
 	},{
 		"year":2019,
 		"month":"",
 		"content": {
 			"en":"Connect Pallet to other blockchain",
-			"zh_tw":"使 Pallet 支援更多區塊鏈"
+			"zh-tw":"使 Pallet 支援更多區塊鏈"
 		}
 	}
 ]
@@ -177,7 +179,7 @@ function generateRoadmap(){
 						.apnd($n("span",null,"year").apnd(e.year))
 						.apnd($n("span",null,"month").apnd(e.month))
 				).apnd($n("div",null,"content")
-					.apnd($n("span").apnd(e.content.en))
+					.apnd($n("span").apnd(e.content[lang]))
 				)
 			)
 		newElement.style.top = yCursor + "vw"
