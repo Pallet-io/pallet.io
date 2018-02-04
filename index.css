@@ -33,7 +33,7 @@ body{
 	background-color: #FFF;
 	box-shadow: 0 2px 4px rgba(0,0,0,.4);
 	align-items: stretch;
-	transition: 100ms;
+	transition: 200ms;
 }
 
 #navbar .logo{
@@ -149,6 +149,19 @@ body{
 }
 
 /* TITLE */
+#title>#lang{
+	font-size: 1.5em;
+	position: absolute;
+	top: 5vw;
+	right: 5vw;
+}
+
+#title>#lang>select{
+	background-color: rgba(255,255,255,.5);
+	padding: .8vw 1.2vw;
+	height: 2.8em;
+}
+
 #title .area{
 	width: 80%;
 	position: relative;
@@ -236,11 +249,18 @@ body{
 #how   .hex{
 	position: absolute;
 	z-index: 90;
+	transition: 250ms;
+	backface-visibility: hidden;
 }
 
 #intro .hex:not(.trans),
 #how   .hex:not(.trans){
-	filter: drop-shadow(0 .4vw .2vw rgba(0,0,0,.2));
+	filter: drop-shadow(0 .4vw .2vw rgba(0,0,0,.3));
+}
+
+#intro .hex.withtext:hover,
+#how   .hex.withtext:hover{
+	filter: drop-shadow(0 .4vw .4vw rgba(0,0,0,.7));
 }
 
 #intro .hex>.text,
@@ -347,8 +367,13 @@ body{
 	padding: 5%;
 	background-color: #FFFFFF;
 	box-shadow: .3vw .3vw .4vw rgba(0,0,0,.2);
+	transition: 250ms;
 	position: relative;
 	z-index: 90
+}
+
+#feature>.content>.item:hover{
+	box-shadow: .3vw .3vw .8vw rgba(0,0,0,.5);
 }
 
 #feature .icon{
