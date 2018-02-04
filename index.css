@@ -16,8 +16,10 @@
 	src: url(myriad_900.ttf);
 }
 
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
 body{
-	font-family: "Myriad Pro","sans-serif";
+	font-family: 'Myriad Pro','Noto Sans TC';
 	color: #555555;
 	overflow-x: hidden;
 }
