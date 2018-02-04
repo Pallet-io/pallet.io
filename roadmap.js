@@ -55,98 +55,113 @@ var events = [
 		"month":"Aug",
 		"content": {
 			"en":"Concept of Pallet born",
-			"zh-tw":"創始 Pallet 概念"
+			"zh-tw":"創始 Pallet 概念",
+			"zh-cn":"创设 Pallet 概念"
 		}
 	},{
 		"year":2017,
 		"month":"Oct",
 		"content": {
 			"en":"Project of Pallet start",
-			"zh-tw":"正式啟動 Pallet 專案"
+			"zh-tw":"正式啟動 Pallet 專案",
+			"zh-cn":"正式启动 Pallet 专案"
 		}
 	},{
 		"year":2018,
 		"month":"Jan",
 		"content": {
 			"en":"Pallet bitcoin API release",
-			"zh-tw":"釋出支援比特幣之 Pallet API"
+			"zh-tw":"釋出支援比特幣之 Pallet API",
+			"zh-cn":"释出支援比特币之 Pallet API"
+			
 		}
 	},{
 		"year":2018,
 		"month":"Feb",
 		"content": {
 			"en":"NOW",
-			"zh-tw":"現在"
+			"zh-tw":"現在",
+			"zh-cn":"现在"
 		}
 	},{
 		"year":2018,
 		"month":"Feb",
 		"content": {
 			"en":"Release of Pallet white paper",
-			"zh-tw":"釋出 Pallet 白皮書"
+			"zh-tw":"釋出 Pallet 白皮書",
+			"zh-cn":"释出 Pallet 白皮书"
 		}
 	},{
 		"year":2018,
 		"month":"Feb",
 		"content": {
-			"en":"Release demo video ofan abstract-level contract",
-			"zh-tw":"釋出泛階合約之操作示範影片"
+			"en":"Release demo video of an abstract-level contract",
+			"zh-tw":"釋出泛階合約之操作示範影片",
+			"zh-cn":"释出泛阶合约之操作示范影片"
 		}
 	},{
 		"year":2018,
 		"month":"Apr",
 		"content": {
 			"en":"Spec. release of Pallet.",
-			"zh-tw":"釋出 Pallet 規格書"
+			"zh-tw":"釋出 Pallet 規格書",
+			"zh-cn":"释出 Pallet 规格书"
 		}
 	},{
 		"year":2018,
 		"month":"May",
 		"content": {
 			"en":"POC demo of inter-chain exchange",
-			"zh-tw":"跨鏈交換之可行性驗證展示"
+			"zh-tw":"跨鏈交換之可行性驗證展示",
+			"zh-cn":"跨链交换之可行性验证展示"
 		}
 	},{
 		"year":2018,
 		"month":"Q3",
 		"content": {
 			"en":"Beta release of Pallet on Bitcoin.",
-			"zh-tw":"釋出支援比特幣之 Pallet 預覽版"
+			"zh-tw":"釋出支援比特幣之 Pallet 預覽版",
+			"zh-cn":"释出支援比特币之 Pallet 预览版"
 		}
 	},{
 		"year":2018,
 		"month":"Q3",
 		"content": {
 			"en":"Connect Pallet and Ethereum network",
-			"zh-tw":"釋出支援以太坊網路之 Pallet 預覽版"
+			"zh-tw":"釋出支援以太坊網路之 Pallet 預覽版",
+			"zh-cn":"释出支援以太坊网路之 Pallet 预览版"
 		}
 	},{
 		"year":2018,
 		"month":"Q4",
 		"content": {
 			"en":"Pallet online",
-			"zh-tw":"上線 Pallet 系統"
+			"zh-tw":"上線 Pallet 系統",
+			"zh-cn":"上线 Pallet 系统"
 		}
 	},{
 		"year":2018,
 		"month":"Q4",
 		"content": {
 			"en":"Pallet distribute contract online",
-			"zh-tw":"上線 Pallet 分散式合約"
+			"zh-tw":"上線 Pallet 分散式合約",
+			"zh-cn":"上线 Pallet 分散式合约"
 		}
 	},{
 		"year":2018,
 		"month":"Q4",
 		"content": {
 			"en":"Pallet arbiter contract online",
-			"zh-tw":"上線 Pallet 仲裁合約"
+			"zh-tw":"上線 Pallet 仲裁合約",
+			"zh-cn":"上线 Pallet 仲裁合约"
 		}
 	},{
 		"year":2019,
 		"month":"",
 		"content": {
 			"en":"Connect Pallet to other blockchain",
-			"zh-tw":"使 Pallet 支援更多區塊鏈"
+			"zh-tw":"使 Pallet 支援更多區塊鏈",
+			"zh-cn":"使 Pallet 支援更多区块链"
 		}
 	}
 ]
