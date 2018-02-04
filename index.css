@@ -155,8 +155,8 @@ body{
 }
 
 #white{
-	width: 100%;
-	height: 117%;
+	width: 90%;
+	height: 112%;
 	position: absolute;
 	background-color: #FFFFFF;
 	transform:
@@ -168,7 +168,7 @@ body{
 
 #title .content{
 	width: 80%;
-	padding: 8% 12%;
+	padding: 6% 8% 10% 8%;
 	position: relative;
 	z-index: 101;
 }
@@ -202,16 +202,16 @@ body{
 	margin-bottom: 2em;
 }
 
-#title a{
+#title .button{
 	font-size: 2em;
 	font-weight: bold;
-	padding: .4em .8em;
-	margin-right: 5%;
+	padding: .4em .6em;
+	margin-right: 3%;
 	background-color: rgba(0,0,0,0);
 	border:solid #000000 3px;
 }
 
-#title a:hover{
+#title .button:hover{
 	background-color: rgba(0,0,0,0.1);
 	border:solid #000000 3px;
 }

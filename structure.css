@@ -39,16 +39,6 @@ body{
 	justify-content: center;
 }
 
-button{
-	background-color: rgba(0,0,0,0);
-	border:solid #000000 3px;
-}
-
-button:hover{
-	background-color: rgba(0,0,0,0.1);
-	border:solid #000000 3px;
-}
-
 .hex>.left{
     float:left;
     border-top: solid transparent;
