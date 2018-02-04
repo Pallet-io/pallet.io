@@ -1,25 +1,26 @@
 /* FONT */
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(//fonts.googleapis.com/earlyaccess/notosanssc.css);
 
 @font-face {
-	font-family: "Myriad Pro"; 
-	src: url(myriad.ttf);
+	font-family: 'Myriad Pro'; 
+	src: url('myriad.ttf');
 }
 
 @font-face {
-	font-family: "Myriad Pro"; 
+	font-family: 'Myriad Pro'; 
 	font-weight: bold;
-	src: url(myriad_bold.ttf);
+	src: url('myriad_bold.ttf');
 }
 
 @font-face {
-	font-family: "Myriad Pro"; 
+	font-family: 'Myriad Pro'; 
 	font-weight: 900;
-	src: url(myriad_900.ttf);
+	src: url('myriad_900.ttf');
 }
 
 body{
-	font-family: 'Myriad Pro','Noto Sans TC';
+	font-family: 'Myriad Pro';
 	color: #555555;
 	overflow-x: hidden;
 }
@@ -163,6 +164,10 @@ body{
 	padding: .8vw 1.2vw;
 	height: 2.8em;
 }
+
+#title>#lang #en{font-family: 'Myriad Pro'}
+#title>#lang #zh-tw{font-family: 'Noto Sans TC'}
+#title>#lang #zh-cn{font-family: 'Noto Sans SC'}
 
 #title .area{
 	width: 80%;
