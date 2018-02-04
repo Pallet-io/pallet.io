@@ -1,4 +1,6 @@
 /* FONT */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
 @font-face {
 	font-family: "Myriad Pro"; 
 	src: url(myriad.ttf);
@@ -15,8 +17,6 @@
 	font-weight: 900;
 	src: url(myriad_900.ttf);
 }
-
-@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 body{
 	font-family: 'Myriad Pro','Noto Sans TC';
