@@ -3,37 +3,51 @@ var events = [
 		"year":2014,
 		"month":"Sep",
 		"content": {
-			"en":"Gcoin start"
+			"en":"Gcoin start",
+			"zh_tw":""
+		}
 	},{
 		"year":2014,
 		"month":"Oct",
 		"content": {
-			"en":"Gcoin API start"
+			"en":"Gcoin API start",
+			"zh_tw":""
+		}
 	},{
 		"year":2014,
 		"month":"Dec",
 		"content": {
-			"en":"Gcoin opensource"
+			"en":"Gcoin opensource",
+			"zh_tw":""
+		}
 	},{
 		"year":2015,
 		"month":"Apr",
 		"content": {
-			"en":"Release Gcoin whitepaper 1.0"
+			"en":"Release Gcoin whitepaper 1.0",
+			"zh_tw":""
+		}
 	},{
 		"year":2015,
 		"month":"Oct",
 		"content": {
-			"en":"Gcoin wallet apps available"
+			"en":"Gcoin wallet apps available",
+			"zh_tw":""
+		}
 	},{
 		"year":2016,
 		"month":"May",
 		"content": {
-			"en":"Gcoin API v2"
+			"en":"Gcoin API v2",
+			"zh_tw":""
+		}
 	},{
 		"year":2016,
 		"month":"Aug",
 		"content": {
-			"en":"Decoupling of EVM on Gcoin"
+			"en":"Decoupling of EVM on Gcoin",
+			"zh_tw":""
+		}
 	},*/{
 		"year":2017,
 		"month":"Aug",
@@ -163,7 +177,7 @@ function generateRoadmap(){
 						.apnd($n("span",null,"year").apnd(e.year))
 						.apnd($n("span",null,"month").apnd(e.month))
 				).apnd($n("div",null,"content")
-					.apnd($n("span").apnd(e.content))
+					.apnd($n("span").apnd(e.content.en))
 				)
 			)
 		newElement.style.top = yCursor + "vw"
