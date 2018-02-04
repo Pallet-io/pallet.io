@@ -159,12 +159,12 @@ var eventMargin = 0.3 // sync with index.css!!
 function generateRoadmap(){
 	var timeline = $("#timeline")
 	let newElement
-	let yCursor = 0
+	let yCursor = 1
 
 	newElement = $n("div",null,"vline")
 	newElement.style.height = "7vw"
 	newElement.style.left = "calc(50% - " + (lineWidth/2) + "vw)"
-	newElement.style.top = "0"
+	newElement.style.top = yCursor + "vw"
 	timeline.apnd(newElement)
 	yCursor += 7
 
