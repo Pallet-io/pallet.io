@@ -32,28 +32,28 @@ body{
 	z-index: 110;
 	background-color: #FFF;
 	box-shadow: 0 2px 4px rgba(0,0,0,.4);
-	align-items: center;
+	align-items: stretch;
 	transition: 100ms;
 }
 
-#navbar>.logo{
+#navbar .logo{
 	height: 4vw;
-	margin: 0 1vw 0 2vw ;
+	margin: 0 1vw 0 3vw ;
 }
 
-#navbar>.title{
-	font-size: 3em;
+#navbar .title{
+	font-size: 1.5em;
 	font-weight: 900;
 	vertical-align: middle;
 	padding-top: .1em;
-	margin-right: 5vw;
+	margin-right: 3vw;
 }
 
 #navbar>.button{
 	flex:1 0 0;
 	font-size: 2em;
 	text-align: center;
-	padding: calc(2.5vw - .5em) 0;
+/*	padding: calc(2.5vw - .5em) 0;*/
 	transition: 200ms;
 }
 
