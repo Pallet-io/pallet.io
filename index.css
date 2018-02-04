@@ -280,9 +280,9 @@ body{
 }
 
 #intro .hex>.text>p,
-#how   .hex>.text>p{
+#how   .hex>.text>p {
 	font-size: 1.25em;
-	line-height: 1em;
+	line-height: 1.35em;
 }
 
 #intro .hex.big>.text,
