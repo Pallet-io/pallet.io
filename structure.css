@@ -17,6 +17,7 @@ input, textarea, select, button{
 	font-size: inherit;
 	line-height: inherit;
 	border: none;
+	font-family: inherit;
 }
 
 .flex{
