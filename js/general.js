@@ -20,7 +20,7 @@ Element.prototype.attr = function(n,v){
 	else return this.getAttribute(n)
 }
 
-Element.prototype.apd = function(e){
+Element.prototype.apnd = function(e){
 	if(!Element.prototype.append)
 		if(typeof(e) === "object") this.insertAdjacentElement("beforeend", e)
 		else this.insertAdjacentHTML("beforeend", e);
