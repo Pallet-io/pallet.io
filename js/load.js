@@ -12,7 +12,7 @@ if(!String.prototype.includes) {
 	};
 }
 console.log(navigator.userAgent);
-var isIE = (navigator.userAgent.includes("Chrome")||
+var isIE = !(navigator.userAgent.includes("Chrome")||
 			navigator.userAgent.includes("Opera")||
 			navigator.userAgent.includes("Safari")||
 //			navigator.userAgent.includes("Edge")||
