@@ -4,19 +4,19 @@
 
 @font-face {
 	font-family: "Myriad Pro";
-	src: url("myriad.ttf");
+	src: url("font/myriad.ttf");
 }
 
 @font-face {
 	font-family: "Myriad Pro";
 	font-weight: bold;
-	src: url("myriad_bold.ttf");
+	src: url("font/myriad_bold.ttf");
 }
 
 @font-face {
 	font-family: "Myriad Pro";
 	font-weight: 900;
-	src: url("myriad_900.ttf");
+	src: url("font/myriad_900.ttf");
 }
 
 html{
@@ -99,7 +99,7 @@ body{
 }
 
 #title{
-	background-image: url("titlebg.png");
+	background-image: url("img/titlebg.png");
 	background-size: cover;
 	background-position: top right;
 	height:68vw;
