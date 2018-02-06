@@ -20,8 +20,8 @@
 }
 
 html{
-	overflow-x: hidden;
-	-webkit-overflow-scrolling: touch; /* Safari scroll bug */
+/*	overflow-x: hidden;*/
+/*	-webkit-overflow-scrolling: touch; /* Safari scroll bug */
 }
 
 body{
