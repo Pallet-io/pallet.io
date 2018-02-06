@@ -30,6 +30,22 @@ body{
 	overflow-x: hidden;
 }
 
+/* IE */
+#ie{
+	background-color: #FFFFFF;
+	text-align: center;
+	display: none;
+	z-index: 200;
+	padding: 30% 20%;
+	font-size: 2em;
+	display: none;
+}
+
+#ie>.title{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
 /* NAVBAR */
 #navbar.navbar_hidden{
 	opacity: 0;

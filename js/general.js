@@ -3,9 +3,9 @@ function $a(a){return document.querySelectorAll(a)}
 
 function $(a){return document.querySelector(a)}
 
-Element.prototype.load = function(f){this.addEventListener('load',f)}
+Element.prototype.load = function(f){this.addEventListener("load",f)}
 
-Element.prototype.click = function(f){this.addEventListener('click',f)}
+Element.prototype.click = function(f){this.addEventListener("click",f)}
 
 function $n(a,id,cls){
 	var e = document.createElement(a)
