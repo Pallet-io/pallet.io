@@ -3,24 +3,24 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanssc.css);
 
 @font-face {
-	font-family: 'Myriad Pro'; 
-	src: url('myriad.ttf');
+	font-family: "Myriad Pro";
+	src: url("myriad.ttf");
 }
 
 @font-face {
-	font-family: 'Myriad Pro'; 
+	font-family: "Myriad Pro";
 	font-weight: bold;
-	src: url('myriad_bold.ttf');
+	src: url("myriad_bold.ttf");
 }
 
 @font-face {
-	font-family: 'Myriad Pro'; 
+	font-family: "Myriad Pro";
 	font-weight: 900;
-	src: url('myriad_900.ttf');
+	src: url("myriad_900.ttf");
 }
 
 body{
-	font-family: 'Myriad Pro';
+	font-family: "Myriad Pro", sans-serif;
 	color: #555555;
 	overflow-x: hidden;
 }
@@ -94,7 +94,7 @@ body{
 }
 
 #title{
-	background-image: url('titlebg.png');
+	background-image: url("titlebg.png");
 	background-size: cover;
 	background-position: top right;
 	height:68vw;
@@ -175,9 +175,9 @@ body{
 	height: 2.8em;
 }
 
-#title>#lang #en{font-family: 'Myriad Pro'}
-#title>#lang #zh-tw{font-family: 'Noto Sans TC'}
-#title>#lang #zh-cn{font-family: 'Noto Sans SC'}
+#title>#lang #en{font-family: "Myriad Pro", sans-serif}
+#title>#lang #zh-tw{font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif}
+#title>#lang #zh-cn{font-family: "Noto Sans SC", "Microsoft JhengHei", sans-serif}
 
 #title .area{
 	width: 80%;
