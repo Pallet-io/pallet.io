@@ -56,7 +56,7 @@ var events = [
 		"content": {
 			"en":"Concept of Pallet born",
 			"zh-tw":"創始 Pallet 概念",
-			"zh-cn":"创设 Pallet 概念"
+			"zh-cn":"设计 Pallet 概念"
 		}
 	},{
 		"year":2017,
@@ -64,7 +64,7 @@ var events = [
 		"content": {
 			"en":"Project of Pallet start",
 			"zh-tw":"正式啟動 Pallet 專案",
-			"zh-cn":"正式启动 Pallet 专案"
+			"zh-cn":"Pallet 项目正式启动"
 		}
 	},{
 		"year":2018,
@@ -72,7 +72,7 @@ var events = [
 		"content": {
 			"en":"Pallet bitcoin API release",
 			"zh-tw":"釋出支援比特幣之 Pallet API",
-			"zh-cn":"释出支援比特币之 Pallet API"
+			"zh-cn":"发布支援比特币的 Pallet API"
 			
 		}
 	},{
@@ -89,7 +89,7 @@ var events = [
 		"content": {
 			"en":"Release of Pallet white paper",
 			"zh-tw":"釋出 Pallet 白皮書",
-			"zh-cn":"释出 Pallet 白皮书"
+			"zh-cn":"发布 Pallet 白皮书"
 		}
 	},{
 		"year":2018,
@@ -97,7 +97,7 @@ var events = [
 		"content": {
 			"en":"Release demo video of an abstract-level contract",
 			"zh-tw":"釋出泛階合約之操作示範影片",
-			"zh-cn":"释出泛阶合约之操作示范影片"
+			"zh-cn":"发布高阶合约操作的示范影片"
 		}
 	},{
 		"year":2018,
@@ -105,7 +105,7 @@ var events = [
 		"content": {
 			"en":"Spec. release of Pallet.",
 			"zh-tw":"釋出 Pallet 規格書",
-			"zh-cn":"释出 Pallet 规格书"
+			"zh-cn":"发布 Pallet 说明书"
 		}
 	},{
 		"year":2018,
@@ -113,7 +113,7 @@ var events = [
 		"content": {
 			"en":"POC demo of inter-chain exchange",
 			"zh-tw":"跨鏈交換之可行性驗證展示",
-			"zh-cn":"跨链交换之可行性验证展示"
+			"zh-cn":"跨链交换可行性的验证展示"
 		}
 	},{
 		"year":2018,
@@ -121,7 +121,7 @@ var events = [
 		"content": {
 			"en":"Beta release of Pallet on Bitcoin.",
 			"zh-tw":"釋出支援比特幣之 Pallet 預覽版",
-			"zh-cn":"释出支援比特币之 Pallet 预览版"
+			"zh-cn":"发布支援比特币的 Pallet 协议"
 		}
 	},{
 		"year":2018,
@@ -129,7 +129,7 @@ var events = [
 		"content": {
 			"en":"Connect Pallet and Ethereum network",
 			"zh-tw":"釋出支援以太坊網路之 Pallet 預覽版",
-			"zh-cn":"释出支援以太坊网路之 Pallet 预览版"
+			"zh-cn":"发布支援以太坊网路的 Pallet 协议"
 		}
 	},{
 		"year":2018,
@@ -137,7 +137,7 @@ var events = [
 		"content": {
 			"en":"Pallet online",
 			"zh-tw":"上線 Pallet 系統",
-			"zh-cn":"上线 Pallet 系统"
+			"zh-cn":"Pallet 系统正式上线"
 		}
 	},{
 		"year":2018,
@@ -145,7 +145,7 @@ var events = [
 		"content": {
 			"en":"Pallet distribute contract online",
 			"zh-tw":"上線 Pallet 分散式合約",
-			"zh-cn":"上线 Pallet 分散式合约"
+			"zh-cn":"Pallet 分散式合约上线"
 		}
 	},{
 		"year":2018,
@@ -153,7 +153,7 @@ var events = [
 		"content": {
 			"en":"Pallet arbiter contract online",
 			"zh-tw":"上線 Pallet 仲裁合約",
-			"zh-cn":"上线 Pallet 仲裁合约"
+			"zh-cn":"Pallet 仲裁合约上线"
 		}
 	},{
 		"year":2019,
@@ -161,7 +161,7 @@ var events = [
 		"content": {
 			"en":"Connect Pallet to other blockchain",
 			"zh-tw":"使 Pallet 支援更多區塊鏈",
-			"zh-cn":"使 Pallet 支援更多区块链"
+			"zh-cn":"将 Pallet 支援更多区块链"
 		}
 	}
 ]
