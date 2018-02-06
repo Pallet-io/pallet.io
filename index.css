@@ -162,6 +162,12 @@ body{
 	background-color: #D6CBF7;
 }
 
+#faq{
+	background-color: #FFCC99;
+	font-size: 1.5em;
+	padding: 5vw 20vw;
+}
+
 .trans.hex{
 	opacity: .5;
 }
@@ -487,4 +493,23 @@ body{
 
 #timeline .hex>.right{
     border-left: solid #000000;
+}
+
+/* FAQ */
+#faq>.title{
+	font-size: 4em;
+	width:100%;
+	text-align: center;
+	font-weight: 900;
+}
+
+#faq>.question{
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+#faq>.answer{
+	margin-top: .5em;
+	line-height: 1.5em;
 }
