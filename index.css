@@ -237,13 +237,12 @@ body{
 	font-weight: bold;
 	padding: .4em .6em;
 	margin-right: 3%;
-	background-color: rgba(0,0,0,0);
-	border:solid #000000 3px;
+	border:solid #555555 3px;
 }
 
 #title .button:hover{
 	background-color: rgba(0,0,0,0.1);
-	border:solid #000000 3px;
+	border:solid #555555 3px;
 }
 
 /* INTRO & HOW */
