@@ -216,7 +216,7 @@
 		<p class="answer">Most recent solutions deal with cross-chain by building one trustable adapter for each pair of chains. One popular adapter can be the inter-chain that consists of fully replicated nodes running the same consensus protocol. In comparison, Pallet bridges one chain with others through a decoupled, lightweight, meta-level smart contract layer. The consensus is reached among the Jurors selected before the contract execution. Having one Jury for one contract boosts the scalability. We do not want to use one (inter-)chain for all contracts. Our shared contract states among Jurors address all chains.</p>
 		<p class="question">Which blockchain does pallet support?</p>
 		<p class="answer">Many new blockchains are forked from Bitcoin and Ethereum. We are starting with Bitcoin and Ethereum, and then move to other popular blockchains as soon as possible.</p>
-		<p class="question">How do you prevent collision in Pallet?</p>
+		<p class="question">How do you prevent collusion in Pallet?</p>
 		<p class="answer">We focus on protecting each participant from being harmed by malicious Jurors. In the beginning each Juror deposits a stake into the arbiter contract. If participants doubt the result from contract execution, participants can invoke an arbiter contract to verify the result. The arbiter contract can request the genesis Jury to verify the contract. If the result is invalid, the stake of the Juror will be confiscated and given to the contract participants.</p>
 	</div>
 
