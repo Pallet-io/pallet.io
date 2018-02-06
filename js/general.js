@@ -21,6 +21,7 @@ Element.prototype.attr = function(n,v){
 }
 
 Element.prototype.apnd = function(e){
-	this.append(e)
+	if(!Element.prototype.append) this.insertAdjacentElement("beforeend", e);
+	else this.append(e)
 	return this
 }
