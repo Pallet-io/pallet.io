@@ -159,9 +159,9 @@ function generateHexBlocks(src){
 		innerElement.style.borderLeftWidth = e.width*0.25 + "vw"
 		hexElement.apnd(innerElement)
 
-		hexElement.style.width = e.width + "vw";
-		hexElement.style.height = e.width*0.866 + "vw";
-		hexElement.style.left = "calc(" + e.left + "% - " + e.width*0.5 + "vw)";
-		hexElement.style.top = "calc(" + e.top + "% - " + e.width*0.433 + "vw)";
+		hexElement.style.width = e.width + "vw"
+		hexElement.style.height = e.width*0.866 + "vw"
+		hexElement.style.left = "calc(" + e.left + "% - " + e.width*0.5 + "vw)"
+		hexElement.style.top = "calc(" + e.top + "% - " + e.width*0.433 + "vw)"
 	})
 }

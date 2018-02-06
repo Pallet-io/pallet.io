@@ -15,7 +15,8 @@ function toBeAnnounced(a){
 	if(a == "zh-cn") alert("即将发布！")
 }
 
-window.addEventListener("scroll", function(){
-	if ($("html").scrollTop < 400) $("#navbar").style.opacity = "";
-	else $("#navbar").style.opacity = 1;
+document.addEventListener("scroll", function(){
+	if (($("body").scrollTop || $("html").scrollTop) < 400)
+		$("#navbar").style.opacity = ""
+	else $("#navbar").style.opacity = 1
 })
