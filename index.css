@@ -19,6 +19,10 @@
 	src: url("myriad_900.ttf");
 }
 
+html{
+	overflow-x: hidden;
+}
+
 body{
 	font-family: "Myriad Pro", sans-serif;
 	color: #555555;
