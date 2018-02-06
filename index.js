@@ -16,6 +16,6 @@ function toBeAnnounced(a){
 }
 
 document.addEventListener("scroll", function(){
-	if ($("html").scrollTop < 400) $("#navbar").style.opacity = 0;
+	if ($("html").scrollTop < 400) $("#navbar").style.opacity = "";
 	else $("#navbar").style.opacity = 1;
-});
+})

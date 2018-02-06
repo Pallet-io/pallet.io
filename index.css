@@ -1,5 +1,5 @@
 /* FONT */
-@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+/*@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);*/
 @import url(//fonts.googleapis.com/earlyaccess/notosanssc.css);
 
 @font-face {
@@ -37,6 +37,10 @@ body{
 	box-shadow: 0 2px 4px rgba(0,0,0,.4);
 	align-items: stretch;
 	transition: 200ms;
+}
+
+#navbar:hover{
+	opacity: 1;
 }
 
 #navbar .logo{
