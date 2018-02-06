@@ -15,9 +15,9 @@ console.log(navigator.userAgent);
 var isIE = !(navigator.userAgent.includes("Chrome")||
 			navigator.userAgent.includes("Opera")||
 			navigator.userAgent.includes("Safari")||
-//			navigator.userAgent.includes("Edge")||
 			navigator.userAgent.includes("Firefox")||
-			navigator.userAgent.includes("AppleWebKit"))
+			navigator.userAgent.includes("AppleWebKit"))||
+			navigator.userAgent.includes("Edge")
 if(isIE) {
 	$("#ie").style.display = "block"
 	$("#ie").style.opacity = "1"
