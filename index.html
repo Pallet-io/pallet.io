@@ -215,18 +215,16 @@
 		<div id="nav-faq" class="nav" style="position: relative; top: -5vw;"></div>
 		<div class="title"><span>Q&amp;A</span></div>
 		<p class="question">Differences with other cross-chain solution?</p>
-		<p class="answer">Most recent solutions deal with blockchain interoperability by building one trustable adapter for each pair of chains. One popular adapter can be the inter-chain that consists of fully replicated nodes running the same consensus protocol. In comparison, Pallet bridges one chain with others through a decoupled, lightweight, and meta-level smart contract layer. The consensus is reached among the Jurors selected before the contract execution and this design does not have the limitation of different consensus. The contract states are stored among Jurors responsible for execution.</p>
+		<p class="answer">Most recent solutions deal with blockchain interoperability by building one trustable adapter for each pair of chains. One popular adapter can be the inter-chain that consists of fully replicated nodes running the same consensus protocol. In comparison, Pallet bridges one chain with others through a decoupled, lightweight, and meta-level smart contract layer. The consensus is reached among the Jurors selected before the contract execution. Jurors responsible for execution have the contract states.</p>
 		<p class="question">Which blockchain does pallet support?</p>
-		<p class="answer">Many new blockchains are forked from Bitcoin and Ethereum. We are starting with Bitcoin and Ethereum, and then move to other popular blockchains as soon as possible. Those developers who have contributed in bridging other chains will receive incentives for their work.</p>
+		<p class="answer">Many new blockchains are forked from Bitcoin and Ethereum. We are starting with Bitcoin and Ethereum, and then move to other popular blockchains as soon as possible. We encourage community developers to contribute to the bridge with other chains.</p>
 		<p class="question">How do you prevent collusion in Pallet?</p>
 		<p class="answer">We focus on protecting each participant from being harmed by malicious Jurors. In the beginning, each Juror deposits a stake into the arbiter contract. If participants doubt the result from contract execution, participants can invoke an arbiter contract to verify the result. The arbiter contract can request Jury 0 to verify the contract. If the result is invalid, the stake of the Juror will be confiscated and given to the contract participants as compensation.</p>
 		<p class="question">What do you mean by decoupling contract?</p>
-		<p class="answer">Decoupling Contract means that the contract execution is decoupled from the beneath blockchain and executed on Pallet. After execution, contract states are stored in the Jury  and if request, will be stored in the beneath blockchain.</p>
-		<p class="question">What is Internet of value?</p>
-		<p class="answer">Internet of value represents our dream to the blockchain today. On Pallet, people can create their own contract and build their reputation upon Pallet platform.</p>
-		<p class="question">Is there a video to show how Pallet protocol works?</p>
+		<p class="answer">Decoupling Contract means that the contract execution is decoupled from the blockchain beneath and is done at Pallet level. After execution, contract states are stored in the Jury and/or the blockchain beneath.</p>
+		<p class="question">Is there any video to show how Pallet protocol works?</p>
 		<p class="answer">
-			Yes, a preliminary demonstration video here! <br> <br>
+			A preliminary video is here.<br> <br>
 			<video style="width: 80%; margin-left: 10%; margin-right: 10%;" controls>
 				<source src="doc/pallet_demonstration_eng.mp4" type="video/mp4">
 				Your browser does not support the video tag. Please refer <a href="doc/pallet_demonstration_eng.mp4">here</a>.
