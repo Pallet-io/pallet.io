@@ -577,9 +577,25 @@ body{
 	font-size: 1.5em;
 	font-weight: bold;
 	margin-bottom: 0;
+	padding: 1%;
+}
+
+#faq>.question:hover{
+	background-color: rgb(255,177,96);
+	cursor: pointer;
+}
+#faq>.question.qa_show, #faq>.question:hover{
+	background-image: url(img/logo.svg);
+	background-repeat: no-repeat;
+	background-position: right 2% top 0;
 }
 
 #faq>.answer{
 	margin-top: .5em;
 	line-height: 1.5em;
+	display: none;
+}
+
+#faq>.answer.qa_show{
+	display: block;
 }
