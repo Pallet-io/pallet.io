@@ -238,6 +238,12 @@ body{
 	padding: 5vw 20vw;
 }
 
+#teams{
+	background-color: #BBFFCA;
+	font-size: 1.5em;
+	padding: 5vw 20vw;
+}
+
 .trans.hex{
 	opacity: .5;
 }
@@ -622,4 +628,15 @@ body{
 #faq>.answer.qa_show{
 	display: block;
 	border-left: darkorange solid 3px;
+}
+
+/* FAQ */
+#teams>.title{
+	font-size: 4em;
+	width:100%;
+	text-align: center;
+	font-weight: 900;
+}
+#teams img {
+	margin: 0 auto;
 }
