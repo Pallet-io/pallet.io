@@ -638,5 +638,7 @@ body{
 	font-weight: 900;
 }
 #teams img {
-	margin: 0 auto;
+	margin-left:10%;
+	margin-right:10%;
+	width: 80%;
 }
