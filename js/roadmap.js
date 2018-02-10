@@ -7,7 +7,7 @@ var events = [
 		"content": {
 			"en":"Gcoin start",
 			"zh-tw":""
-			"zh-cn":"Gcoin 项目开始"
+			"zh-cn":" Gcoin 项目开始"
 		}
 	},{
 		"year":2014,
@@ -15,7 +15,7 @@ var events = [
 		"content": {
 			"en":"Gcoin API start",
 			"zh-tw":""
-			"zh-cn":"Gcoin API 开始制作"
+			"zh-cn":" Gcoin API 开始制作"
 		}
 	},{
 		"year":2014,
@@ -23,7 +23,7 @@ var events = [
 		"content": {
 			"en":"Gcoin opensource",
 			"zh-tw":""
-			"zh-cn":"Gcoin 开源"
+			"zh-cn":" Gcoin 开源"
 		}
 	},{
 		"year":2015,
@@ -39,7 +39,7 @@ var events = [
 		"content": {
 			"en":"Gcoin wallet apps available",
 			"zh-tw":""
-			"zh-cn":"Gcoin 钱包上线"
+			"zh-cn":" Gcoin 钱包上线"
 		}
 	},{
 		"year":2016,
