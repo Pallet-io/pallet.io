@@ -183,7 +183,9 @@ function generateRoadmap(){
 	timeline.apnd(newElement)
 	yCursor += 7
 
-	events.forEach((e,i,a)=>{
+	//events.forEach((e,i,a)=>{
+	for (let t = 0, len = events.length; t < len; t++) {
+		(function(e,i,a){
 		newElement = $n("div",null,"event","hex")
 			.apnd($n("div",null,"eventBox")
 				.apnd((i%2 == 1)?
@@ -226,7 +228,9 @@ function generateRoadmap(){
 		newElement.style.top = yCursor + "vw"
 		timeline.apnd(newElement)
 		yCursor += 2.5
-	})
+		})(events[t]);
+	}
+	//})
 
 	for(let i=0;i<3;i++){
 		yCursor += .5

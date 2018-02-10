@@ -140,7 +140,10 @@ var howBlocks = [
 ]
 
 function generateHexBlocks(src){
-	src.forEach((e,i,a)=>{
+	for (let t = 0; t < src.length; t++) {
+		if(!src[t]) continue;
+		//console.log([t, src[t]]);
+	/*src.forEach((e,i,a)=>{*/ (function (e) {
 		let hexElement = $("#" + e.id + "-block")
 		let innerElement
 
@@ -163,5 +166,6 @@ function generateHexBlocks(src){
 		hexElement.style.height = e.width*0.866 + "vw"
 		hexElement.style.left = "calc(" + e.left + "% - " + e.width*0.5 + "vw)"
 		hexElement.style.top = "calc(" + e.top + "% - " + e.width*0.433 + "vw)"
-	})
+	})(src[t]);
+	}
 }
