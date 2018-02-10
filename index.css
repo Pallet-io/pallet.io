@@ -2,40 +2,22 @@
 /*@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);*/
 @import url(//fonts.googleapis.com/earlyaccess/notosanssc.css);
 
-/*
 @font-face {
-	font-family: "Myriad Pro";
-
-	src: url("font/myriad.ttf");
+	font-family: 'Myriad Pro';
+	src: local('Myriad Pro Regular'),local('Myriad Pro'),
+	     url('font/myriad.ttf'),url('font/myriad.eot');
 }
-
 @font-face {
-	font-family: "Myriad Pro";
+	font-family: 'Myriad Pro';
 	font-weight: bold;
-	src: url("font/myriad_bold.ttf");
+	src: local('Myriad Pro Bold'),
+	     url('font/myriad_bold.ttf'),url('font/myriad_bold.eot');
 }
-
 @font-face {
-	font-family: "Myriad Pro";
+	font-family: 'Myriad Pro';
 	font-weight: 900;
-	src: url("font/myriad_900.ttf");
-}*/
-
-@font-face {
-  font-family: "Myriad Pro";
-  src: local("Myriad Pro Regular"),
-  local("Myriad Pro"),
-  url('font/myriad.eot'),url('font/myriad.ttf');
-}
-@font-face {
-  font-family: "Myriad Pro";
-  font-weight: bold;
-  src: local("Myriad Pro Bold"),url('font/myriad_bold.eot'),url('font/myriad_bold.ttf');
-}
-@font-face {
-  font-family: "Myriad Pro";
-  font-weight: 900;
-  src: local("Myriad Pro SemiExt"),url('font/myriad_900.ttf'),url('font/myriad_900.eot');
+	src: local('Myriad Pro SemiExt'),
+	     url('font/myriad_900.ttf'),url('font/myriad_900.eot');
 }
 
 html{
@@ -44,7 +26,7 @@ html{
 }
 
 body{
-	font-family: "Myriad Pro", sans-serif;
+	font-family: 'Myriad Pro', sans-serif;
 	color: #555555;
 	overflow-x: hidden;
 }
@@ -145,7 +127,7 @@ body{
 
 #navbar .logo{
 	height: 4vw;
-	width: 4vw; /* for IE*/
+	width: 4vw; /* for IE */
 	margin: 0 1vw 0 3vw ;
 }
 
@@ -159,11 +141,9 @@ body{
 
 #navbar>.button{
 	flex:1 0 0;
-	padding-left: 2%;
-	padding-right: 2%;
+	padding: 0 2%;
 	font-size: 2em;
 	text-align: center;
-/*	padding: calc(2.5vw - .5em) 0;*/
 	transition: 200ms;
 }
 
@@ -184,11 +164,10 @@ body{
 }
 
 #nav-teams{
-	position: relative;
 	top: -5vw;
 }
+
 #nav-faq{
-	position: relative;
 	top: -5vw;
 }
 
@@ -199,7 +178,7 @@ body{
 }
 
 #title{
-	background-image: url("img/titlebg.png");
+	background-image: url('img/titlebg.png');
 	background-size: cover;
 	background-position: top right;
 	height:68vw;
@@ -213,7 +192,7 @@ body{
 }
 
 #intro:before{
-	content:"";
+	content:'';
 	position: absolute;
 	top: -20vw;
 	border-bottom: 20vw solid #A3E4D7;
@@ -222,7 +201,7 @@ body{
 }
 
 #intro:after{
-	content:"";
+	content:'';
 	position: absolute;
 	bottom: -20vw;
 	border-top: 20vw solid #A3E4D7;
@@ -236,7 +215,7 @@ body{
 }
 
 #how:after{
-	content:"";
+	content:'';
 	position: absolute;
 	bottom: -10vw;
 	border-top: 10vw solid #BBF3FC;
@@ -250,7 +229,7 @@ body{
 }
 
 #feature:after{
-	content:"";
+	content:'';
 	position: absolute;
 	bottom: -5vw;
 	border-top: 10vw solid #F9EDBB;
@@ -258,7 +237,7 @@ body{
 	z-index:80;
 }
 
-#roadmap{
+#timeline{
 	background-color: #D6CBF7;
 }
 
@@ -269,16 +248,10 @@ body{
 }
 
 #teams{
-	/*background-color: #BBFFCA;
+	background-color: #BBFFCA;
 	font-size: 1.5em;
-	padding: 5vw 20vw;*/
-    background-color: #BBFFCA;
-    font-size: 1.5em;
-    /* padding: 5vw 20vw; */
-    /* left: -20%; */
-    position: relative;
-    width: 100%;
-    padding: 5% 10%;
+	/* padding: 5vw 20vw; */
+	padding: 5vw 10vw;
 }
 
 .trans.hex{
@@ -299,9 +272,9 @@ body{
 	height: 2.8em;
 }
 
-#title>#lang #en{font-family: "Myriad Pro", sans-serif}
-#title>#lang #zh-tw{font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif}
-#title>#lang #zh-cn{font-family: "Noto Sans SC", "Microsoft JhengHei", sans-serif}
+#title>#lang #en{font-family: 'Myriad Pro', sans-serif}
+#title>#lang #zh-tw{font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif}
+#title>#lang #zh-cn{font-family: 'Noto Sans SC', 'Microsoft JhengHei', sans-serif}
 
 #title .area{
 	width: 80%;
@@ -508,8 +481,8 @@ body{
 #feature>.content>.item{
 	flex: 44% 0 0;
 	height: 40vw;
-	margin: 3%;
-	padding: 5%;
+	margin: 2vw;
+	padding: 3vw;
 	background-color: #FFFFFF;
 	box-shadow: .3vw .3vw .4vw rgba(0,0,0,.2);
 	transition: 250ms;
@@ -539,8 +512,8 @@ body{
 	text-align: left;
 }
 
-/* ROADMAP */
-#roadmap>.title{
+/* TIMELINE */
+#timeline>.title{
 	font-size: 4em;
 	width:100%;
 	padding-top: 10vw;
@@ -548,64 +521,69 @@ body{
 	font-weight: 900;
 }
 
-#timeline{
+#timeline>.canvas{
 	width: 100%;
 	position: relative;
 }
 
-#timeline>*{
+#timeline>.canvas>*{
 	position: absolute;
 }
 
-#timeline>.vline{
+#timeline>.canvas>.vline{
 	background-color: #000000;
-	width: .3vw; /* Sync with roadmap.js!! */
+	width: .3vw; /* Sync with timeline.js!! */
 }
 
-#timeline>.event{
-	width: 1.61658vw; /* Sync with roadmap.js!! */
-	height: 1.4vw; /* Sync with roadmap.js!! */
-	margin: .3vw; /* Sync with roadmap.js!! */
+#timeline>.canvas>.event{
+	width: 1.61658vw; /* Sync with timeline.js!! */
+	height: 1.4vw; /* Sync with timeline.js!! */
+	margin: .3vw; /* Sync with timeline.js!! */
 }
 
-#timeline .eventBox{
+#timeline>.canvas .eventBox{
 	position: absolute;
-	top: -.8vw;
+	top: -.6vw;
 	width: 30vw;
 }
 
-#timeline>.event:nth-child(4n)>.eventBox{
+#timeline>.canvas .eventBox.emph{
+	color: #000000;
+	font-weight: bold;
+}
+
+#timeline>.canvas>.event:nth-child(4n)>.eventBox{
 	left: 2.5vw;
 	text-align: left;
 }
 
-#timeline>.event:nth-child(4n+2)>.eventBox{
+#timeline>.canvas>.event:nth-child(4n+2)>.eventBox{
 	right: 2.5vw;
 	text-align: right;
 }
 
-#timeline .eventBox .year{
+#timeline>.canvas .eventBox .year{
 	font-size: 2em;
 	padding: 0 .5em;
 }
 
-#timeline .eventBox .month{
+#timeline>.canvas .eventBox .month{
 	font-size: 2.5em;
 }
 
-#timeline .eventBox .content{
+#timeline>.canvas .eventBox .content{
 	font-size: 1.5em;
 }
 
-#timeline .hex>.left{
+#timeline>.canvas .hex>.left{
     border-right: solid #000000;
 }
 
-#timeline .hex>.mid{
+#timeline>.canvas .hex>.mid{
     background-color: #000000;
 }
 
-#timeline .hex>.right{
+#timeline>.canvas .hex>.right{
     border-left: solid #000000;
 }
 
@@ -631,46 +609,48 @@ body{
 	cursor: pointer;
 }
 #faq>.question:hover{
-	/*box-shadow: 3px 3px 16px 2px rgba(255,255,255,1.0);*/
+/*	box-shadow: 3px 3px 16px 2px rgba(255,255,255,1.0);*/
 	text-decoration: underline;
 }
-#faq>.question.qa_show:hover{
-	/*box-shadow: 3px 3px 16px 2px rgba(255,177,96,1.0);*/
+#faq>.question.show:hover{
+/*	box-shadow: 3px 3px 16px 2px rgba(255,177,96,1.0);*/
 	text-decoration: underline;
 }
 
-#faq>.question.qa_show{
-	/*background-image: url(img/logo.svg);
+#faq>.question.show{
+/*	background-image: url(img/logo.svg);
 	background-repeat: no-repeat;
 	background-position: right 2% top 0;*/
-	background-color: rgb(255,177,96);
+	background-color: #FFB160;
 }
 
 #faq>.question{
-	/*background-image: url(img/logo.svg);
+/*	background-image: url(img/logo.svg);
 	background-repeat: no-repeat;
 	background-position: right 2% top 0;*/
-	background-color: rgba(255,255,255,0.4);
-	padding-left: 2%;
+	background-color: #FFFFFF66;
+	padding-left: 1vw;
 }
 
 #faq>.answer{
-	margin-left: 2.5%;
-	padding-left: 2.5%;
-	margin-right: 5%;
-	margin-top: .5em;
+	padding-left: 1.5vw;
+	margin: .5em 1.5vw 0 1.5vw;
 	line-height: 1.5em;
 	display: none;
 }
 
-#faq>.answer.qa_show{
+#faq>.question.show+.answer{
 	display: block;
-	border-left: darkorange solid 3px;
+	border-left: #FF8C00 solid 3px;
 }
 
-/* Teams */
-#teamsX .member{
+#faq video{
+	width: 80%;
+	margin: 0 10%;
+}
 
+/* TEAM */
+#teamX .member{
 	display: inline-block;
 	/*flex: 44% 0 0;*/
 	width: 100%;
@@ -678,33 +658,36 @@ body{
 	margin: 3%;
 	padding: 5%;
 	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-out;
+	     -o-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
 }
-#teams .member{
+
+#team .member{
 	display: inline-block;
-    /* flex: 44% 0 0; */
-    width: 48%;
-    /* height: 40vw; */
-    position: relative;
-    margin: 0.9%;
-    padding: 3%;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-in-out;
-    /* left: -20%; */
-    /* right: -20%; */
+	/* flex: 44% 0 0; */
+	width: 48%;
+	/* height: 40vw; */
+	position: relative;
+	margin: 0.9%;
+	padding: 3%;
+ 	-webkit-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-out;
+	     -o-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
+	/* left: -20%; */
+	/* right: -20%; */
 }
+
 #teams .member:hover {
 	box-shadow: 0px 30px 80px 0 rgba(20,52,92,0.2);
 	border-radius:5px;
 	border-color:#fff !important;
 	background-color:#fff !important;
 }
+
 #teams .member-icon{
 	width: 30%;
 	display: block;
@@ -712,6 +695,7 @@ body{
 	text-align: center;
 	filter: drop-shadow(1px 1px 1px #bbb);
 }
+
 #teams .member-name{
 	display: block;
 	margin: 0 auto;
@@ -719,108 +703,121 @@ body{
 	font-size: 3vw;
 	font-weight: bold;
 	letter-spacing: 0.04em;
-    text-align: center;
+	text-align: center;
 }
+
 #teams .member-intro{
 	font-family: 'Yrsa', Times New Roman, serif;
-	/*display: grid;
+/*	display: grid;
 	grid-template: 1fr 1fr / 1fr 1fr;
 	grid-gap: 10px;*/
-	/*background: #ddd;*/
+/*	background: #ddd;*/
 }
+
 #teams .effect {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  /*padding: 1em;*/
-  cursor: pointer;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	   -ms-flex-direction: column;
+	       flex-direction: column;
+	-webkit-box-pack: center;
+	   -ms-flex-pack: center;
+	 justify-content: center;
+	-webkit-box-align: center;
+	   -ms-flex-align: center;
+	      align-items: center;
+/*	padding: 1em;*/
+	cursor: pointer;
 }
-#teams .effect__heading {
-  font-size: 1.5em;
-  line-height: 1.2;
-  position: relative;
-  z-index: 2;
+
+#teams .effect_heading {
+	font-size: 1.5em;
+	line-height: 1.2;
+	position: relative;
+	z-index: 2;
 }
-#teams .effect__heading:after {
-  content: '';
-  position: absolute;
+
+#teams .effect_heading:after {
+	content: '';
+	position: absolute;
 }
-#teams .effect__subheading {
-  font-family: 'Hindi', Avenir, sans-serif;
-  font-size: 1.2em;
-  line-height: 2;
-  letter-spacing: 0.04em;
+
+#teams .effect_subheading {
+	font-family: 'Hindi', Avenir, sans-serif;
+	font-size: 1.2em;
+	line-height: 2;
+	letter-spacing: 0.04em;
 }
 
 #teams .effect-a {
-  opacity: 0.5;
-  -webkit-transition: opacity 0.3s cubic-bezier(0.5, 0, 0.5, 1);
-  transition: opacity 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+	opacity: 0.5;
+	-webkit-transition: opacity 0.3s cubic-bezier(0.5, 0, 0.5, 1);
+	        transition: opacity 0.3s cubic-bezier(0.5, 0, 0.5, 1);
 }
+
 #teams .effect-a .effect__heading:after {
-  opacity: 0;
-  bottom: 2px;
-  left: 0;
-  height: 10px;
-  width: 100%;
-  background: #000;
-  z-index: -1;
-  -webkit-transform-origin: 0% 50%;
-          transform-origin: 0% 50%;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
-  transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
-  transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
-  transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+	opacity: 0;
+	bottom: 2px;
+	left: 0;
+	height: 10px;
+	width: 100%;
+	background: #000;
+	z-index: -1;
+	-webkit-transform-origin: 0% 50%;
+	        transform-origin: 0% 50%;
+	-webkit-transform: scaleX(0);
+	        transform: scaleX(0);
+	-webkit-transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1),
+	                            transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+	        transition: -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1),
+	                            transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
 }
-#teams .effect-a .effect__subheading {
-  opacity: 0;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
-  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
-  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
-  transition: opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1), transform 0.5s cubic-bezier(0.5, 0, 0.5, 1), -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+
+#teams .effect-a .effect_subheading {
+	opacity: 0;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	-webkit-transition:           opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1),
+	                    -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1),
+	                            transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+	        transition:           opacity 0.5s cubic-bezier(0.5, 0, 0.5, 1),
+	                    -webkit-transform 0.5s cubic-bezier(0.5, 0, 0.5, 1),
+	                            transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
 }
+
 #teams .effect-a:hover {
-  opacity: 1;
+	opacity: 1;
 }
-#teams .effect-a:hover .effect__heading:after {
-  opacity: 0.1;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+
+#teams .effect-a:hover .effect_heading:after {
+	opacity: 0.1;
+	-webkit-transform: scaleX(1);
+	        transform: scaleX(1);
 }
-#teams .effect-a:hover .effect__subheading {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
-  opacity: 1;
+
+#teams .effect-a:hover .effect_subheading {
+	opacity: 1;
+	-webkit-transform: translateX(0%);
+	        transform: translateX(0%);
 }
+
 #teams>.title{
 	font-size: 4em;
 	width:100%;
 	text-align: center;
 	font-weight: 900;
 }
-/*#teams img {
+
+#teams img {
 	margin-left:10%;
 	margin-right:10%;
 	width: 80%;
 }
+
 #teams .img_intro {
 	margin-left:10%;
 	margin-right:10%;
 	width: 80%;
-}*/
-
-
+}
