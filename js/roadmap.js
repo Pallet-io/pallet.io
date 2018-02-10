@@ -6,7 +6,7 @@ var events = [
 		"month":"May",
 		"content": {
 			"en":"Gcoin start",
-			"zh-tw":""
+			"zh-tw":"",
 			"zh-cn":" Gcoin 项目开始"
 		}
 	},{
@@ -14,7 +14,7 @@ var events = [
 		"month":"Oct",
 		"content": {
 			"en":"Gcoin API start",
-			"zh-tw":""
+			"zh-tw":"",
 			"zh-cn":" Gcoin API 开始制作"
 		}
 	},{
@@ -22,7 +22,7 @@ var events = [
 		"month":"Dec",
 		"content": {
 			"en":"Gcoin opensource",
-			"zh-tw":""
+			"zh-tw":"",
 			"zh-cn":" Gcoin 开源"
 		}
 	},{
@@ -30,7 +30,7 @@ var events = [
 		"month":"Apr",
 		"content": {
 			"en":"Release Gcoin whitepaper 1.0",
-			"zh-tw":""
+			"zh-tw":"",
 			"zh-cn":"释出 Gcoin 白皮书1.0"
 		}
 	},{
@@ -38,7 +38,7 @@ var events = [
 		"month":"Oct",
 		"content": {
 			"en":"Gcoin wallet apps available",
-			"zh-tw":""
+			"zh-tw":"",
 			"zh-cn":" Gcoin 钱包上线"
 		}
 	},{
@@ -46,7 +46,7 @@ var events = [
 		"month":"May",
 		"content": {
 			"en":"Gcoin API v2",
-			"zh-tw":""
+			"zh-tw":"",
 			"zh-cn":"释出 Gcoin API 第二版"
 		}
 	},{
@@ -54,7 +54,7 @@ var events = [
 		"month":"Aug",
 		"content": {
 			"en":"Decoupling of EVM on Gcoin",
-			"zh-tw":""
+			"zh-tw":"",
 			"zh-cn":"在 Gcoin 上成功架设虚拟机"
 		}
 	},{
