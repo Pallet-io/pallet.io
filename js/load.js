@@ -18,15 +18,15 @@ var isIE = !(navigator.userAgent.includes("Chrome")||
 			navigator.userAgent.includes("Firefox")||
 			navigator.userAgent.includes("AppleWebKit"))||
 			navigator.userAgent.includes("Edge")
-if(isIE) {
+if(isIE && 0) {
 	$("#ie").style.display = "block"
 	$("#ie").style.opacity = "1"
 }
-$("#ie").addEventListener("click",()=>{ // I don't know why I cannot use my own function.
+/*$("#ie").addEventListener("click",()=>{ // I don't know why I cannot use my own function.
 	$("#ie").style.transition = loadTrans + "ms"
 	$("#ie").style.opacity = "0"
 	setTimeout(()=>{$("#ie").style.display = "none"},loadTrans)
-})
+})*/
 
 let hexElement = $("#load .ani")
 let innerElement
@@ -75,17 +75,17 @@ hexElement2.style.top = margin*0.866 + "vw"
 
 $("#load").style.transition = loadTrans + "ms"
 $("#load>.text").style.transition = loadTrans + "ms"
-setTimeout(()=>{
+setTimeout(function(){
 	hexScale.style.transform = "scale(1)"
 	$("#load>.text").style.opacity = "1"
 	function rotate(){
 		if (document.readyState == "complete"){
-			setTimeout(()=>{
+			setTimeout(function(){
 				hexScale.style.transform = "scale(0)"
 				$("#load>.text").style.opacity = "0"
-				setTimeout(()=>{
+				setTimeout(function(){
 					$("#load").style.opacity = "0"
-					setTimeout(()=>{$("#load").style.display = "none"},loadTrans)
+					setTimeout(function(){$("#load").style.display = "none"},loadTrans)
 				},rotateTrans/2)
 			},rotateTrans)
 		}

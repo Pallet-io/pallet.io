@@ -9,23 +9,26 @@ function toBeAnnounced(a){
 	if(a == "zh-cn") alert("即将发布！")
 }
 
-$("#title>#lang>select").addEventListener("change", (event)=>{
+$("#title>#lang>select").addEventListener("change", function(event){
 	var lang = event.target.value
 	if(lang == "en") window.location = "index.html"
 	else window.location = "index_" + lang + ".html"
 });
 
-$a("#faq>.question").forEach(function(ele) {
-	ele.addEventListener("click", (event)=>{
+var qas = $a("#faq>.question");
+for (let i = 0, len = qas.length; i < len; i++) {
+/*.forEach*/(function(ele) {
+	ele.addEventListener("click", function(event){
 		var curr = event.target;
 		var next = curr.nextElementSibling;
 		curr.classList.toggle('qa_show');
 		next.classList.toggle('qa_show');
 	});
-});
+})(qas[i]);
+}
 
-window.addEventListener("load",()=>{
-	document.addEventListener("scroll", ()=>{
+window.addEventListener("load",function(){
+	document.addEventListener("scroll", function(){
 		if (($("body").scrollTop || $("html").scrollTop) < 400)
 			$("#navbar").style.opacity = ""
 		else $("#navbar").style.opacity = 1

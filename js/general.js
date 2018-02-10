@@ -9,9 +9,10 @@ Element.prototype.click = function(f){this.addEventListener("click",f)}
 
 function $n(a,id,cls){
 	var e = document.createElement(a)
-	if(id) e.id = id
-	for(cl of Array.prototype.slice.call(arguments,2))
-		e.classList.add(cl)
+	if(id) e.id = id;
+	var cls = Array.prototype.slice.call(arguments,2);
+	for(var cli = 0; cli < cls.length; cli++)
+		e.classList.add(cls[cli])
 	return e
 }
 
@@ -29,7 +30,8 @@ Element.prototype.apnd = function(e){
 };
 
 (function (arr) {
-  arr.forEach(function (item) {
+  for (var i = 0, len = arr.length; i < len; i++) {
+  /*arr.forEach(*/(function (item) {
     if (item.hasOwnProperty('nextElementSibling')) {
       return;
     }
@@ -47,5 +49,7 @@ Element.prototype.apnd = function(e){
       },
       set: undefined
     });
-  });
+  /*);*/
+  })(arr[i]);
+  }
 })([Element.prototype, CharacterData.prototype]);
