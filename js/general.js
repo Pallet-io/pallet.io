@@ -3,16 +3,17 @@ function $a(a){return document.querySelectorAll(a)}
 
 function $(a){return document.querySelector(a)}
 
-Element.prototype.load = function(f){this.addEventListener("load",f)}
+Element.prototype.load  = function(f){this.addEventListener('load', f)}
 
-Element.prototype.click = function(f){this.addEventListener("click",f)}
+Element.prototype.click = function(f){this.addEventListener('click',f)}
 
-function $n(a,id,cls){
+function $n(a,id,cl){
 	var e = document.createElement(a)
-	if(id) e.id = id;
-	var cls = Array.prototype.slice.call(arguments,2);
-	for(var cli = 0; cli < cls.length; cli++)
-		e.classList.add(cls[cli])
+	if(id) e.id = id
+	var cls = Array.prototype.slice.call(arguments,2)
+	cls.forEach(function(clss,i,a){
+		e.classList.add(clss)
+	})
 	return e
 }
 
@@ -23,33 +24,15 @@ Element.prototype.attr = function(n,v){
 
 Element.prototype.apnd = function(e){
 	if(!Element.prototype.append)
-		if(typeof(e) === "object") this.insertAdjacentElement("beforeend", e)
-		else this.insertAdjacentHTML("beforeend", e);
+		if(typeof(e) === 'object') this.insertAdjacentElement('beforeend', e)
+		else this.insertAdjacentHTML('beforeend', e)
 	else this.append(e)
 	return this
-};
+}
 
-(function (arr) {
-  for (var i = 0, len = arr.length; i < len; i++) {
-  /*arr.forEach(*/(function (item) {
-    if (item.hasOwnProperty('nextElementSibling')) {
-      return;
-    }
-    Object.defineProperty(item, 'nextElementSibling', {
-      configurable: true,
-      enumerable: true,
-      get: function () {
-        var el = this;
-        while (el = el.nextSibling) {
-          if (el.nodeType === 1) {
-              return el;
-          }
-        }
-        return null;
-      },
-      set: undefined
-    });
-  /*);*/
-  })(arr[i]);
-  }
-})([Element.prototype, CharacterData.prototype]);
+//if(!Array.prototype.forEach){
+	Array.prototype.forEach = function (f){
+		for(let i=0;i<this.length;i++)
+			f(this[i],i,this)
+	}
+//}

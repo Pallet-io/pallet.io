@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cn">
 <head>
 	<meta charset="UTF-8">
 	<title>PALLET - 高阶分布式共享账本共治协议</title>
@@ -8,7 +8,6 @@
 	<!--link href="mobile.css" rel="stylesheet"-->
 	<!--link href="debug.css" rel="stylesheet"-->
 	<link href="index_zh-cn.css" rel="stylesheet">
-	<link href="//fonts.googleapis.com/earlyaccess/notosanssc.css" rel="stylesheet">
 	<script src="js/general.js" type="text/javascript"></script>
 	<meta property="og:image" content="">
 	<meta property="og:type" content="">
@@ -41,8 +40,8 @@
 		<a href="#nav-intro" class="flex center button"><span>愿景</span></a>
 		<a href="#nav-how" class="flex center button"><span>情境</span></a>
 		<a href="#nav-feature" class="flex center button"><span>特性</span></a>
-		<a href="#nav-roadmap" class="flex center button"><span>蓝图</span></a>
-		<a href="#nav-teams" class="flex center button"><span>团队</span></a>
+		<a href="#nav-timeline" class="flex center button"><span>蓝图</span></a>
+		<!--a href="#nav-teams" class="flex center button"><span>团队</span></a-->
 		<a href="#nav-faq" class="flex center button"><span>问答</span></a>
 	</div>
 
@@ -208,10 +207,10 @@
 		</div>
 	</div>
 
-	<div id="roadmap" class="page">
-		<div id="nav-roadmap" class="nav"></div>
+	<div id="timeline" class="page">
+		<div id="nav-timeline" class="nav"></div>
 		<div class="title"><span>PALLET 发展蓝图</span></div>
-		<div id="timeline"></div>
+		<div class="canvas"></div>
 	</div>
 
 	<div id="faq">
@@ -221,21 +220,21 @@
 		<p class="answer">大多数常见的跨链方案建立在对应于每条链的连接器上，一个连接器可能是一条针对相同共识机制跨链连接的公有链。与之对应的是Pallet 的跨链方式，Pallet 通过一个轻量型，与区块链分离的高阶合约执行层连接不同的区块链。 而共识则是由被选出执行合约的陪审团成员达成。负责执行合约的陪审团保有合约的状态。</p>
 		<p class="question">Pallet 支持哪些区块链？</p>
 		<p class="answer">很多的区块链项目都是从比特币和以太坊分叉出来的。因此，我们将会优先支持比特币和以太坊，之后会很快的支持其他区块链。我们也同样欢迎社区的开发者加入我们，共同开发和连接不同的区块链。</p>
-		<p class="question">在Pallet 中如何防止共谋？</p>
+		<p class="question">在 Pallet 中如何防止共谋？</p>
 		<p class="answer">我们优先保护合约的参与者，防止作恶的陪审团成员损害他们的利益。最初，每个陪审团成员都会向仲裁合约上传押金。如果参与者质疑合约执行的结果，他们可以呼叫仲裁合约来判定结果，仲裁合约将由大陪审团执行。如果判定结果无效，执行该合约陪审团成员的押金将会被没收作为合约参与者的补偿。</p>
 		<p class="question">什么是合约的分离？</p>
 		<p class="answer">合约分离意味着合约的执行会从下方的区块链分离开而由Pallet 执行。合约经过执行验证后，合约的信息将会存储到陪审团成员内部和/或合约涉及的区块链中。</p>
 		<p class="question">是否有展示Pallet 操作的影片？</p>
 		<p class="answer">
 			可以观看下方非正式版的解释影片<br> <br>
-			<video style="width: 80%; margin-left: 10%; margin-right: 10%;" controls>
-				<source src="doc/pallet_demonstration_eng.mp4" type="video/mp4">
-				Your browser does not support the video tag. Please refer <a href="doc/pallet_demonstration_eng.mp4">here</a>.
+			<video controls>
+				<source src="doc/demo_en.mp4" type="video/mp4">
+				您的浏览器不支援内嵌式影片。请参考<a href="doc/demo_en.mp4">这里</a>。
 			</video>
 		</p>
 	</div>
 	<script src="js/hexagon.js" type="text/javascript"></script>
-	<script src="js/roadmap.js" type="text/javascript"></script>
+	<script src="js/timeline.js" type="text/javascript"></script>
 	<script src="index.js" type="text/javascript"></script>
 </body>
 </html>

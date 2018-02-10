@@ -1,36 +1,32 @@
+var lang = document.documentElement.lang
+
+function toBeAnnounced(){
+	if(lang == 'en') alert('To be announced!')
+	if(lang == 'zh-tw') alert('即將發佈！')
+	if(lang == 'zh-cn') alert('即将发布！')
+}
+
+$('#title>#lang>select').addEventListener('change', function(e){
+	var newLang = e.target.value
+	if(newLang == 'en') window.location = 'index.html'
+	else window.location = 'index_' + newLang + '.html'
+})
+
 generateHexBlocks(introBlocks)
 generateHexBlocks(howBlocks)
 
-generateRoadmap()
+generateTimeline()
 
-function toBeAnnounced(a){
-	if(a == "en") alert("To be announced!")
-	if(a == "zh-tw") alert("即將發佈！")
-	if(a == "zh-cn") alert("即将发布！")
-}
+$a('#faq>.question').forEach(function(e){
+	e.addEventListener('click', function(){
+		e.classList.toggle('show')
+	})
+})
 
-$("#title>#lang>select").addEventListener("change", function(event){
-	var lang = event.target.value
-	if(lang == "en") window.location = "index.html"
-	else window.location = "index_" + lang + ".html"
-});
-
-var qas = $a("#faq>.question");
-for (let i = 0, len = qas.length; i < len; i++) {
-/*.forEach*/(function(ele) {
-	ele.addEventListener("click", function(event){
-		var curr = event.target;
-		var next = curr.nextElementSibling;
-		curr.classList.toggle('qa_show');
-		next.classList.toggle('qa_show');
-	});
-})(qas[i]);
-}
-
-window.addEventListener("load",function(){
-	document.addEventListener("scroll", function(){
-		if (($("body").scrollTop || $("html").scrollTop) < 400)
-			$("#navbar").style.opacity = ""
-		else $("#navbar").style.opacity = 1
+window.addEventListener('load',function(){
+	document.addEventListener('scroll', function(){
+		if (($('body').scrollTop || $('html').scrollTop) < 400)
+			$('#navbar').style.opacity = ''
+		else $('#navbar').style.opacity = 1
 	})
 })
