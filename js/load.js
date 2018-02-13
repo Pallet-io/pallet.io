@@ -2,7 +2,7 @@ var loadHexRotate = 0
 var loadHexWidth = 15
 var loadHexMargin = 2
 var loadTrans = 200
-var loadHexRotateTrans = 1000
+var loadHexRotateTrans = 600
 
 if(!String.prototype.includes) {
 	String.prototype.includes = function() {
@@ -73,7 +73,7 @@ innerElement.style.borderLeftWidth   = loadHexWidth*0.250 + 'vw'
 hexElement2.apnd(innerElement)
 
 hexElement2.style.width  = loadHexWidth        + 'vw'
-hexElement2.style.height = loadHexWidth*0.866  + 'vw'
+hexElement2.style.height = loadHexWidth *0.866 + 'vw'
 hexElement2.style.left   = loadHexMargin       + 'vw'
 hexElement2.style.top    = loadHexMargin*0.866 + 'vw'
 
@@ -82,19 +82,16 @@ $('#load>.text').style.transition = loadTrans + 'ms'
 setTimeout(function(){
 	hexScale.style.transform = 'scale(1)'
 	$('#load>.text').style.opacity = '1'
+	function show(){
+		hexScale.style.transform = 'scale(0)'
+		$('#load>.text').style.opacity = '0'
+		$('#load').style.opacity = '0'
+		setTimeout(function(){
+			$('#load').style.display = 'none'
+		},loadTrans)
+	}
 	function rotate(){
-		if (document.readyState == 'complete'){
-			setTimeout(function(){
-				hexScale.style.transform = 'scale(0)'
-				$('#load>.text').style.opacity = '0'
-				setTimeout(function(){
-					$('#load').style.opacity = '0'
-					setTimeout(function(){
-						$('#load').style.display = 'none'
-					},loadTrans)
-				},loadHexRotateTrans/2)
-			},loadHexRotateTrans)
-		}
+		if (document.readyState == 'complete') show()
 		else setTimeout(rotate,loadHexRotateTrans)
 		loadHexRotate += 60
 		hexElement.style.transform = 'rotate(' + loadHexRotate + 'deg)'	

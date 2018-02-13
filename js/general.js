@@ -30,9 +30,13 @@ Element.prototype.apnd = function(e){
 	return this
 }
 
-//if(!Array.prototype.forEach){
+if(!Array.prototype.forEach){
 	Array.prototype.forEach = function (f){
 		for(let i=0;i<this.length;i++)
 			f(this[i],i,this)
 	}
-//}
+}
+
+if(!NodeList.prototype.forEach){
+	NodeList.prototype.forEach = Array.prototype.forEach
+}

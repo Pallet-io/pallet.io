@@ -63,13 +63,3 @@ input, textarea, select, button{
     border-top: solid transparent;
     border-bottom: solid transparent;
 }
-/*
-*::-webkit-scrollbar {
-	width:8px;
-}
-
-*::-webkit-scrollbar-thumb {
-	background-color: rgba(255,255,255,0.2);
-	border-radius: 100px;
-}
-*/
