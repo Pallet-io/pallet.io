@@ -1,12 +1,12 @@
-body{
-	font-family: "Myriad Pro", "Noto Sans SC", "Microsoft JhengHei", sans-serif;
+body {
+	font-family: 'Myriad Pro', 'Noto Sans SC', 'Microsoft JhengHei', sans-serif;
 }
 
-#title{
+#title {
 	height: 65vw;
 }
 
-#white{
+#white {
 	width: 90%;
 }
 
@@ -16,16 +16,16 @@ body{
 }
 
 #intro .hex.big>.text>p,
-#how   .hex.big>.text>p{
+#how   .hex.big>.text>p {
 	line-height: 1.5em;
 }
 
 #intro .hex.medium>.text>p,
-#how   .hex.medium>.text>p{
+#how   .hex.medium>.text>p {
 	line-height: 1.5em;
 }
 
 #intro .hex.small>.text>p,
-#how   .hex.small>.text>p{
+#how   .hex.small>.text>p {
 	line-height: 1.5em;
 }
