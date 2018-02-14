@@ -764,6 +764,8 @@ body {
 #team>#member>.person>.headpic>img {
 	height: 10vw;
 	width: 10vw;
+	max-width: 256px;
+	max-height: 256px;
 }
 
 #team>#member>.person>.name {
@@ -797,6 +799,8 @@ body {
 #team>#other>.person>.headpic>img {
 	height: 10vw;
 	width: 10vw;
+	max-width: 256px;
+	max-height: 256px;
 }
 
 #team>#other>.person>.name {
