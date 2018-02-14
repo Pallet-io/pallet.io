@@ -1,7 +1,7 @@
 var loadHexRotate = 0
 var loadHexWidth = 15
 var loadHexMargin = 2
-var loadTrans = 200
+var loadTrans = 50
 var loadHexRotateTrans = 600
 
 if(!String.prototype.includes) {
@@ -79,6 +79,22 @@ hexElement2.style.top    = loadHexMargin*0.866 + 'vw'
 
 $('#load').style.transition = loadTrans + 'ms'
 $('#load>.text').style.transition = loadTrans + 'ms'
+
+var perloadImage = function(imgPath, imgId, callback){
+	var img = document.createElement("img")
+	img.setAttribute("id", imgId)
+	img.setAttribute("src", imgPath)
+	img.style.display = "none"
+	img.onload = function(){
+		if (!img.complete || typeof img.naturalWidth != "undefined" && img.naturalWidth == 0){
+			return
+		}
+		callback()
+		this.parentNode.removeChild(this);
+	}
+	document.body.appendChild(img)
+}
+
 setTimeout(function(){
 	hexScale.style.transform = 'scale(1)'
 	$('#load>.text').style.opacity = '1'
@@ -88,13 +104,16 @@ setTimeout(function(){
 		$('#load').style.opacity = '0'
 		setTimeout(function(){
 			$('#load').style.display = 'none'
+			perloadImage('img/titlebg.png', 'titlebg-preload', function(){
+				$('#title').style.backgroundImage = "url('img/titlebg.png')"
+			})
 		},loadTrans)
 	}
 	function rotate(){
 		if (document.readyState == 'complete') show()
 		else setTimeout(rotate,loadHexRotateTrans)
 		loadHexRotate += 60
-		hexElement.style.transform = 'rotate(' + loadHexRotate + 'deg)'	
+		hexElement.style.transform = 'rotate(' + loadHexRotate + 'deg)'
 	}
 	setTimeout(rotate,loadHexRotateTrans)
-},100)
+},50)
