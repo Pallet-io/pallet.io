@@ -1,7 +1,7 @@
 # Pallet.io
 This is the introducing webpage of pallet.io.
 
-This `README.md` is authored by DeemoHarlos
+Copyright (c) 2018 ABCD Foundation, All Rights Reserved
 
 ## Coding Style
 ### All
