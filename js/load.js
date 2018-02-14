@@ -90,7 +90,7 @@ var perloadImage = function(imgPath, imgId, callback){
 			return
 		}
 		callback()
-		this.parentNode.removeChild(this);
+		this.parentNode.removeChild(this)
 	}
 	document.body.appendChild(img)
 }
