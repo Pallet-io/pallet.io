@@ -1,8 +1,3 @@
-# Pallet.io
-This is the introducing webpage of pallet.io.
-
-Copyright (c) 2018 ABCD Foundation, All Rights Reserved
-
 ## Coding Style
 ### All
 * Put ONLY a blank line at the end of every file.
@@ -24,13 +19,13 @@ Copyright (c) 2018 ABCD Foundation, All Rights Reserved
 * Selectors are grouped. A commented string indicating the group name is added before the first selector of that group.
 * The notation of commented styles comes before the TAB character and after the semicolon.
 * There must be a space between the commented strings and the star signs, except for commented styles.
-* Long selectors can have line breaks after comma,and if they are similar in some part, use spaces to align if posiible.
+* Long selectors can have line breaks after comma, and if they are similar in some part, use spaces to align if posiible.
 
 ### JavaScript
 * **NO SEMICOLONS.**
 * Use **SINGLE QUOTATION MARKS** with strings.
 * Spaces are added around assigning operator, eg. `=`, `+=`, etc.
-* Use `function(){}` instead of `()=>{}` for there are cross-browser issue with ES6.
+* Use `function(){}` instead of `()=>{}` for the cross-browser issue with ES6.
 * Long argument lists and arrays can have line breaks after commas.
 * If multiple sequential lines are similar in some part, use spaces to align if possible.
 * There is a blank line between every sections.
