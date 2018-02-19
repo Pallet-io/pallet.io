@@ -249,14 +249,19 @@ body {
 	background-color: #D6CBF7;
 }
 
+#team {
+	background-color: #C7FFD1;
+	padding: 2vw 5vw;
+}
+
 #faq {
 	background-color: #FFCC99;
 	padding: 5vw 20vw;
 }
 
-#team {
-	background-color: #C7FFD1;
-	padding: 2vw 5vw;
+#contact {
+	background-color: #BBBBBB;
+	padding: 5vw 20vw;
 }
 
 .trans.hex {
@@ -636,7 +641,11 @@ body {
 
 #faq>.question {
 	background-color: rgba(255, 255, 255, 0.4);
-	padding-left: 1vw;
+	padding-left: 4vw;
+	background-image: url(img/question.png);
+	background-repeat: no-repeat;
+	background-size: 1em;
+	background-position: 1vw 50%;
 }
 
 #faq>.answer {
@@ -655,6 +664,47 @@ body {
 #faq video {
 	width: 80%;
 	margin: 0 10%;
+}
+
+/* Contact */
+#contact>.title {
+	font-size: 4em;
+	width: 100%;
+	text-align: center;
+	font-weight: 900;
+	margin-bottom: 0.8em;
+}
+
+#contact .contact-item {
+	margin: 1em;
+	flex-direction: row;
+	display: flex;
+	align-items: center;
+}
+
+#contact .contact-item .contact-icon {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+#contact .contact-item .contact-icon img {
+	width: 4vw;
+	max-width: 80px;
+}
+
+#contact .contact-item .contact-account {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 2vw;
+	height: 1.4em;
+}
+
+#contact .contact-item .contact-account img.emailat {
+	width: 0.8em;
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+	margin-bottom: -0.15em;
+	filter: contrast(0.4);
 }
 
 /* TEAM */
