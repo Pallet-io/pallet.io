@@ -37,6 +37,10 @@ body {
 	overflow-x: hidden;
 }
 
+.nowrap {
+	white-space: nowrap;
+}
+
 /* IE */
 #ie {
 	background-color: #FFFFFF;
