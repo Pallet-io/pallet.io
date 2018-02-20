@@ -260,8 +260,13 @@ body {
 }
 
 #contact {
-	background-color: #BBBBBB;
+	background-color: #CCCCCC;
 	padding: 5vw 20vw;
+}
+
+#notice {
+	background-color: #AAAAAA;
+	padding: 1vw 1vw;
 }
 
 .trans.hex {
@@ -688,14 +693,14 @@ body {
 }
 
 #contact .contact-item .contact-icon img {
-	width: 4vw;
+	width: 3vw;
 	max-width: 80px;
 }
 
 #contact .contact-item .contact-account {
 	display: inline-block;
 	vertical-align: middle;
-	font-size: 2vw;
+	font-size: 1.5vw;
 	height: 1.4em;
 }
 
@@ -705,6 +710,12 @@ body {
 	margin-right: 0.3em;
 	margin-bottom: -0.15em;
 	filter: contrast(0.4);
+}
+
+#notice .attention {
+	font-size: 1.2vw;
+	margin: 0 auto;
+	text-align: center;
 }
 
 /* TEAM */
