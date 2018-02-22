@@ -1,11 +1,17 @@
-/*General Function Declaration*/
+/* General Function Declaration */
 function $a(a){return document.querySelectorAll(a)}
 
 function $(a){return document.querySelector(a)}
 
-Element.prototype.load  = function(f){this.addEventListener('load', f)}
+Element.prototype.$e = function(e,f){
+	this.addEventListener(e,f)
+	return this
+}
 
-Element.prototype.click = function(f){this.addEventListener('click',f)}
+Element.prototype.$tc = function(c,f){
+	this.classList.toggle(c,f)
+	return this
+}
 
 function $n(a,id,cl){
 	var e = document.createElement(a)

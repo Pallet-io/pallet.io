@@ -1,7 +1,109 @@
-@media (max-width: 640px), (orientation: portrait) {
+@media (max-width: 850px) and (orientation: portrait) {
+	body {
+		font-size: 2.5vw;
+		}
 
-body{
-	font-size: 2vw;
-}
+	.m-flex {
+		display: flex;
+	}
 
+	.m-column {
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+	.m-row {
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+	}
+
+	/* NAVBAR */
+	#navbar {
+		pointer-events: none;
+	}
+
+	#navbar:hover {
+		opacity: 0;
+	}
+
+	/* PAGES */
+	#title {
+		height: 118vh;
+	}
+
+	#intro {
+		height: 150vw;
+	}
+
+	#how {
+		height: 150vw;
+	}
+
+	#feature {
+		margin-bottom: -5vw;
+	}
+
+	#team {
+		padding: 2vw 5vw;
+	}
+
+	#faq {
+		padding: 5vw 20vw;
+	}
+
+	#contact {
+		padding: 5vw 20vw;
+	}
+
+	#notice {
+		padding: 1vw 1vw;
+	}
+
+	/* TITLE */
+	#title>#lang {
+		top: 88vh;
+		right: 5vw;
+	}
+
+	#title .area {
+		width: 100%;
+	}
+
+	#white {
+		width: 150%;
+		height: 100%;
+		transform:
+			translate(-25%, -9%)
+			rotate(-11deg);
+	}
+
+	#title .content {
+		width: auto;
+		padding: 10% 5% 25% 5%;
+		z-index: 101;
+		text-align: center;
+		-webkit-align-items: center;
+		    -ms-align-items: center;
+		        align-items: center;
+		-webkit-justify-content: center;
+		    -ms-justify-content: center;
+		        justify-content: center;
+	}
+
+	#logo {
+		height: 20vw;
+		width: 20vw; /* for IE */
+		margin-right: 2%;
+	}
+
+	#title .text-b {
+		margin-bottom: 1em;
+	}
+
+	#title .button:hover {
+		background-color: rgba(0, 0, 0, 0.1);
+		border: solid #555555 3px;
+	}
 }

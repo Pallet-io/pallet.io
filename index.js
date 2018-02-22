@@ -26,7 +26,7 @@ $a('#faq>.question').forEach(function(e){
 window.addEventListener('load',function(){
 	document.addEventListener('scroll', function(){
 		if (($('body').scrollTop || $('html').scrollTop) < 400)
-			$('#navbar').style.opacity = ''
-		else $('#navbar').style.opacity = 1
+			$('#navbar').$tc('show',false)
+		else $('#navbar').$tc('show',true)
 	})
 })
