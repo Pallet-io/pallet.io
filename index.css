@@ -770,31 +770,31 @@ body {
 	margin-bottom: 0.8em;
 }
 
-#contact .contact-item {
+#contact .item {
 	margin: 1em;
 	flex-direction: row;
 	display: flex;
 	align-items: center;
 }
 
-#contact .contact-item .contact-icon {
+#contact .item .icon {
 	display: inline-block;
 	margin-right: 1em;
 }
 
-#contact .contact-item .contact-icon img {
+#contact .item .icon img {
 	width: 3vw;
 	max-width: 80px;
 }
 
-#contact .contact-item .contact-account {
+#contact .item .account {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 1.5vw;
 	height: 1.4em;
 }
 
-#contact .contact-item .contact-account img.emailat {
+#contact .item .account img.emailat {
 	width: 0.8em;
 	margin-left: 0.3em;
 	margin-right: 0.3em;
