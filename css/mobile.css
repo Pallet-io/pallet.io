@@ -19,6 +19,10 @@
 		        flex-direction: row;
 	}
 
+	.m-hide{
+		display: none;
+	}
+
 	/* NAVBAR */
 	#navbar {
 		pointer-events: none;
