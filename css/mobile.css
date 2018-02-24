@@ -19,6 +19,15 @@
 		        flex-direction: row;
 	}
 
+	.m-center {
+		-webkit-align-items: center;
+		    -ms-align-items: center;
+		        align-items: center;
+		-webkit-justify-content: center;
+		    -ms-justify-content: center;
+		        justify-content: center;
+	}
+
 	.m-hide{
 		display: none;
 	}
@@ -34,11 +43,11 @@
 
 	/* PAGES */
 	#title {
-		height: 118vh;
+		height: 112vh;
 	}
 
 	#intro {
-		height: 150vw;
+		height: 115vw;
 	}
 
 	#how {
@@ -67,8 +76,8 @@
 
 	/* TITLE */
 	#title>#lang {
-		top: 88vh;
-		right: 5vw;
+		top: 5vw;
+		left: 5vw;
 	}
 
 	#title .area {
@@ -76,21 +85,18 @@
 	}
 
 	#white {
-		width: 150%;
-		height: 100%;
+		width: 160%;
+		height: 73%;
 		transform:
-			translate(-25%, -9%)
+			translate(-20%, 28%)
 			rotate(-11deg);
 	}
 
 	#title .content {
 		width: auto;
-		padding: 10% 5% 25% 5%;
+		padding: 45% 5% 25% 5%;
 		z-index: 101;
 		text-align: center;
-		-webkit-align-items: center;
-		    -ms-align-items: center;
-		        align-items: center;
 		-webkit-justify-content: center;
 		    -ms-justify-content: center;
 		        justify-content: center;

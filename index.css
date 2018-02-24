@@ -232,7 +232,7 @@ body {
 
 #white {
 	width: 95%;
-	height: 118%;
+	height: 112%;
 	position: absolute;
 	background-color: #FFFFFF;
 	transform:
@@ -276,7 +276,7 @@ body {
 #title .text-b {
 	font-size: 1.5em;
 	font-weight: 200;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 
 #title .button {
