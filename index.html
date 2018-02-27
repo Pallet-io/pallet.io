@@ -21,15 +21,18 @@
 <body>
 
 	<div id="navbar" class="flex row">
-		<a href="#nav-title" class="flex row center button">
-			<img class="logo" src="img/logo.svg" alt="Pallet logo"><span class="title">PALLET</span>
+		<a href="#nav-title" id="titlebutton" class="flex center button">
+			<img class="logo" src="img/logo.svg" alt="Pallet logo"><span class="title m-hide">PALLET</span>
 		</a>
-		<a href="#nav-intro" class="flex center button"><span>Vision</span></a>
-		<a href="#nav-how" class="flex center button"><span>Usage</span></a>
-		<a href="#nav-feature" class="flex center button"><span>Features</span></a>
-		<a href="#nav-timeline" class="flex center button"><span>Timeline</span></a>
-		<a href="#nav-team" class="flex center button"><span>Team</span></a>
-		<a href="#nav-faq" class="flex center button"><span>Q&amp;A</span></a>
+		<div class="buttons flex row">
+			<a href="#nav-intro" class="flex center button a"><span>Vision</span></a>
+			<a href="#nav-how" class="flex center button a"><span>Usage</span></a>
+			<a href="#nav-feature" class="flex center button a"><span>Features</span></a>
+			<a href="#nav-timeline" class="flex center button b"><span>Timeline</span></a>
+			<a href="#nav-team" class="flex center button b"><span>Team</span></a>
+			<a href="#nav-faq" class="flex center button b"><span>Q&amp;A</span></a>
+			<a href="#nav-contact" class="flex center button b"><span>Contact</span></a>
+		</div>
 	</div>
 
 	<div id="title" class="page">
@@ -349,18 +352,18 @@
 	<div id="faq" class="page">
 		<div id="nav-faq" class="nav"></div>
 		<div class="title"><span>Q&amp;A</span></div>
-		<p class="question">Differences with other inter-chain solution?</p>
+		<p class="question flex row"><img src="img/question.png" alt="(Q)"><span>Differences with other inter-chain solution?</span></p>
 		<p class="answer">Most recent solutions deal with blockchain interoperability by building one trustable adapter for each pair of chains. One popular adapter can be the inter-chain that consists of fully replicated nodes running the same consensus protocol. In comparison, Pallet bridges one chain with others through a decoupled, lightweight, and meta-level smart contract layer. The consensus is reached among the Jurors selected before the contract execution. Jurors responsible for execution have the contract states.</p>
-		<p class="question">Which blockchain does pallet support?</p>
+		<p class="question flex row"><img src="img/question.png" alt="(Q)"><span>Which blockchain does pallet support?</span></p>
 		<p class="answer">Many new blockchains are forked from Bitcoin and Ethereum. We are starting with Bitcoin and Ethereum, and then move to other popular blockchains as soon as possible. We encourage community developers to contribute to the bridge with other chains.</p>
 		<!--p class="question">How do you prevent collusion in Pallet?</p>
 		<p class="answer">We focus on protecting each participant from being harmed by malicious Jurors. In the beginning, each Juror deposits a stake into the arbiter contract. If participants doubt the result from contract execution, participants can invoke an arbiter contract to verify the result. The arbiter contract can request Jury 0 to verify the contract. If the result is invalid, the stake of the Juror will be confiscated and given to the contract participants as compensation.</p-->
-		<p class="question">What do you mean by decoupling contract?</p>
+		<p class="question flex row"><img src="img/question.png" alt="(Q)"><span>What do you mean by decoupling contract?</span></p>
 		<p class="answer">Decoupling Contract means that the contract execution is decoupled from the blockchain beneath and is done at Pallet level. After execution, contract states are stored in the Jury and/or the blockchain beneath.</p>
-		<p class="question">Is there any video to show how Pallet protocol works?</p>
+		<p class="question flex row"><img src="img/question.png" alt="(Q)"><span>Is there any video to show how Pallet protocol works?</span></p>
 		<p class="answer">
-			A preliminary video is here.<br> <br>
-			<video controls muted="muted" preload="none">
+			A preliminary video is here.<br>
+			<video controls preload="none">
 				<source src="doc/demo_en.mp4" type="video/mp4">
 				Your browser does not support the video tag. Please refer <a href="doc/demo_en.mp4">here</a>.
 			</video>
@@ -371,24 +374,19 @@
 		<div id="nav-contact" class="nav"></div>
 		<div class="title"><span>Contact us</span></div>
 		<div class="item">
-			<div class="icon"><a href="https://forum.pallet.io" target="_blank"><img src="img/contact/forum.png" alt="pallet forum"></a></div>
-			<div class="account"><a href="https://forum.pallet.io" target="_blank">forum.pallet.io</a></div>
+			<a href="https://forum.pallet.io" target="_blank"><img src="img/contact/forum.png" alt="pallet forum">forum.pallet.io</a>
 		</div>
 		<div class="item">
-			<div class="icon"><img src="img/contact/email.png" alt="E-Mail"></div>
-			<div class="account">contact<img src="img/contact/emailat.png" alt="symbol(At)" class="emailat">pallet.io</div>
+			<a href="mailto:contact@pallet.io"><img src="img/contact/email.png" alt="E-Mail">contact@pallet.io</a>
 		</div>
 		<div class="item">
-			<div class="icon"><a href="https://twitter.com/pallet_io" target="_blank"><img src="img/contact/twitter.png" alt="Twitter"></a></div>
-			<div class="account"><a href="https://twitter.com/pallet_io" target="_blank">twitter.com/pallet_io</a></div>
+			<a href="https://twitter.com/pallet_io" target="_blank"><img src="img/contact/twitter.png" alt="Twitter">twitter.com/pallet_io</a>
 		</div>
 		<div class="item">
-			<div class="icon"><a href="https://www.facebook.com/PalletProtocol/" target="_blank"><img src="img/contact/facebook.png" alt="Facebook"></a></div>
-			<div class="account"><a href="https://www.facebook.com/PalletProtocol/" target="_blank">facebook.com/PalletProtocol</a></div>
+			<a href="https://www.facebook.com/PalletProtocol/" target="_blank"><img src="img/contact/facebook.png" alt="Facebook">facebook.com/PalletProtocol</a>
 		</div>
 		<div class="item">
-			<div class="icon"><a href="https://www.medium.com/@pallets.io" target="_blank"><img src="img/contact/medium.png" alt="medium"></a></div>
-			<div class="account"><a href="https://www.medium.com/@pallets.io" target="_blank">medium.com/@pallets.io</a></div>
+			<a href="https://www.medium.com/@pallets.io" target="_blank"><img src="img/contact/medium.png" alt="medium">medium.com/@pallets.io</a>
 		</div>
 	</div>
 

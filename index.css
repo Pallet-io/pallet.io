@@ -74,15 +74,24 @@ body {
 	margin-right: 3vw;
 }
 
-#navbar>.button {
+#navbar>.buttons {
 	flex: 1 0 0;
-	padding: 0 2%;
+}
+
+#navbar>#titlebutton {
+	flex: 0 0 auto;
+	padding: 0 1vw;
+}
+
+#navbar .button {
+	flex: 1 0 0;
+	padding: 0;
 	font-size: 2em;
 	text-align: center;
 	transition: 200ms;
 }
 
-#navbar>.button:hover {
+#navbar .button:hover {
 	background-color: rgba(0, 0, 0, .2);
 }
 
@@ -103,6 +112,10 @@ body {
 }
 
 #nav-faq {
+	top: -5vw;
+}
+
+#nav-contact {
 	top: -5vw;
 }
 
@@ -191,7 +204,7 @@ body {
 
 #notice {
 	background-color: #AAAAAA;
-	padding: 1vw 1vw;
+	padding: 1vw 5vw;
 }
 
 .trans.hex {
@@ -722,13 +735,6 @@ body {
 
 #faq>.question:hover {
 	cursor: pointer;
-}
-
-#faq>.question:hover {
-	text-decoration: underline;
-}
-
-#faq>.question.show:hover {
 	text-decoration: underline;
 }
 
@@ -738,17 +744,18 @@ body {
 
 #faq>.question {
 	background-color: rgba(255, 255, 255, 0.4);
-	padding-left: 4vw;
-	background-image: url(img/question.png);
-	background-repeat: no-repeat;
-	background-size: 1em;
-	background-position: 1vw 50%;
+}
+
+#faq>.question>img {
+	margin: .2em;
+	width: 1em;
+	height: 1em;
 }
 
 #faq>.answer {
 	font-size: 1.5em;
 	padding-left: 1.5vw;
-	margin: .5em 1.5vw 0 1.5vw;
+	margin: 1vw 1.5vw 0 1.5vw;
 	line-height: 1.5em;
 	display: none;
 }
@@ -764,38 +771,34 @@ body {
 }
 
 /* Contact */
+#contact>.nav {
+	top: -5vw;
+}
+
 #contact>.title {
 	font-size: 4em;
 	width: 100%;
 	text-align: center;
 	font-weight: 900;
-	margin-bottom: 0.8em;
+	margin-bottom: 1vw;
 }
 
 #contact .item {
-	margin: 1em;
-	flex-direction: row;
-	display: flex;
-	align-items: center;
+	margin: 2vw;
+	font-size: 2em;
 }
 
-#contact .item .icon {
-	display: inline-block;
-	margin-right: 1em;
+#contact .item>a:hover {
+	text-decoration: underline;
 }
 
-#contact .item .icon img {
-	width: 3vw;
-	max-width: 80px;
-}
-
-#contact .item .account {
-	display: inline-block;
+#contact .item img {
+	width: 5vw;
+	height: 5vw;
+	margin-right: 1vw;
 	vertical-align: middle;
-	font-size: 1.5vw;
-	height: 1.4em;
 }
-
+/*
 #contact .item .account img.emailat {
 	width: 0.8em;
 	margin-left: 0.3em;
@@ -803,9 +806,9 @@ body {
 	margin-bottom: -0.15em;
 	filter: contrast(0.4);
 }
-
+*/
 #notice .attention {
-	font-size: 1vw;
+	font-size: 1.5em;
 	margin: 0 auto;
 	text-align: center;
 }

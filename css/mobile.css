@@ -35,10 +35,69 @@
 	/* NAVBAR */
 	#navbar {
 		pointer-events: none;
+		height: 20vw;
 	}
 
 	#navbar:hover {
 		opacity: 0;
+	}
+
+	#navbar.show {
+		opacity: 1;
+	}
+
+	#navbar .logo {
+		height: 16vw;
+		width: 16vw; /* for IE */
+		margin: 0 0 0 1vw;
+	}
+
+	#navbar>.buttons {
+		flex-wrap: wrap;
+	}
+
+	#navbar .button {
+		font-size: 1.7em;
+	}
+
+	#navbar .button.a {
+		flex: 0 0 33.3%;
+	}
+
+	#navbar .button.b {
+		flex: 0 0 25%;
+	}
+
+	#navbar .button:hover {
+		background-color: rgba(0, 0, 0, .2);
+	}
+
+	#nav-intro {
+		top: -40vw;
+	}
+
+	#nav-how {
+		top: -2vw;
+	}
+
+	#nav-feature {
+		top: -10vw;
+	}
+
+	#nav-timeline {
+		top: -10vw;
+	}
+
+	#nav-team {
+		top: -12vw;
+	}
+
+	#nav-faq {
+		top: -15vw;
+	}
+
+	#nav-faq {
+		top: -15vw;
 	}
 
 	/* PAGES */
@@ -64,15 +123,15 @@
 	}
 
 	#faq {
-		padding: 5vw 20vw;
+		padding: 5vw 5vw;
 	}
 
 	#contact {
-		padding: 5vw 20vw;
+		padding: 5vw 10vw;
 	}
 
 	#notice {
-		padding: 1vw 1vw;
+		padding: 1vw 5vw;
 	}
 
 	/* TITLE */
@@ -236,5 +295,18 @@
 
 	#team>#other>.person .type {
 		margin: .25em 0;
+	}
+
+	/* FAQ */
+	#faq video {
+		width: 100%;
+		margin: 0;
+	}
+
+	/* CONTACT */
+	#contact .item img {
+		width: 10vw;
+		height: 10vw;
+		margin-right: 3vw;
 	}
 }
