@@ -1,4 +1,6 @@
 /* General Function Declaration */
+var mobile = window.innerWidth < 850 && window.innerWidth <= window.innerHeight
+
 function $a(a){return document.querySelectorAll(a)}
 
 function $(a){return document.querySelector(a)}
@@ -18,7 +20,7 @@ function $n(a,id,cl){
 	if(id) e.id = id
 	var cls = Array.prototype.slice.call(arguments,2)
 	cls.forEach(function(clss,i,a){
-		e.classList.add(clss)
+		if(clss) e.classList.add(clss)
 	})
 	return e
 }

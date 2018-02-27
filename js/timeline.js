@@ -173,9 +173,10 @@ var events = [
 ]
 
 var eventNum = events.length
-var lineWidth = 0.3 // sync with index.css!!
-var eventSize = 1.4 // sync with index.css!!
-var eventMargin = 0.3 // sync with index.css!!
+var lineWidth = mobile?.5:.3 // sync with index.css!!
+var eventSize = mobile?3:1.4 // sync with index.css!!
+var eventMargin = mobile?.5:.3 // sync with index.css!!
+var eventSpace = mobile?5:2.5
 
 function generateTimeline(){
 	var timeline = $('#timeline>.canvas')
@@ -207,16 +208,16 @@ function generateTimeline(){
 		newElement.style.left = 'calc(50% - ' + (eventSize*0.57735 + eventMargin) + 'vw)'
 
 		let innerElement
-		innerElement = $n('div','','left')
+		innerElement = $n('div',null,'left')
 		innerElement.style.borderTopWidth    = eventSize*0.500 + 'vw'
 		innerElement.style.borderBottomWidth = eventSize*0.500 + 'vw'
 		innerElement.style.borderRightWidth  = eventSize*0.289 + 'vw'
 		newElement.apnd(innerElement)
 
-		innerElement = $n('div','','mid')
+		innerElement = $n('div',null,'mid')
 		newElement.apnd(innerElement)
 
-		innerElement = $n('div','','right')
+		innerElement = $n('div',null,'right')
 		innerElement.style.borderTopWidth    = eventSize*0.500 + 'vw'
 		innerElement.style.borderBottomWidth = eventSize*0.500 + 'vw'
 		innerElement.style.borderLeftWidth   = eventSize*0.289 + 'vw'
@@ -226,24 +227,22 @@ function generateTimeline(){
 		yCursor += eventSize + 2*eventMargin
 
 		newElement = $n('div',null,'vline')
-		newElement.style.width = lineWidth+'vw'
-		newElement.style.height = '2.5vw'
+		newElement.style.height = eventSpace + 'vw'
 		newElement.style.left = 'calc(50% - ' + (lineWidth/2) + 'vw)'
 		newElement.style.top = yCursor + 'vw'
 		timeline.apnd(newElement)
-		yCursor += 2.5
+		yCursor += eventSpace
 	})
 
 	for(let i=0;i<3;i++){
-		yCursor += .5
+		yCursor += eventSpace/4
 		newElement = $n('div',null,'vline')
-		newElement.style.width = lineWidth+'vw'
-		newElement.style.height = '.5vw'
+		newElement.style.height = eventSpace/4 + 'vw'
 		newElement.style.left = 'calc(50% - ' + (lineWidth/2) + 'vw)'
 		newElement.style.top = yCursor + 'vw'
 		timeline.apnd(newElement)
-		yCursor += .5
+		yCursor += eventSpace/4
 	}
 
-	$('#timeline').style.height = (yCursor+20) + 'vw'
+	$('#timeline').style.height = (yCursor+30) + 'vw'
 }

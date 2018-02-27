@@ -115,57 +115,57 @@ var howBlocks = [
 		'left':73,
 		'top':56,
 		'width':28,
-		'm_left':73,
-		'm_top':56,
-		'm_width':28,
+		'm_left':50,
+		'm_top':31,
+		'm_width':62,
 	},{
 		'id':'exchange',
 		'left':24,
 		'top':69,
 		'width':28,
-		'm_left':24,
-		'm_top':69,
-		'm_width':28,
+		'm_left':50,
+		'm_top':58.5,
+		'm_width':65,
 	},{
 		'id':'decentralize',
 		'left':51,
 		'top':77,
 		'width':28,
-		'm_left':51,
-		'm_top':77,
-		'm_width':28,
+		'm_left':50,
+		'm_top':88,
+		'm_width':72,
 	},{
 		'id':'howzcash',
 		'left':39,
 		'top':53,
 		'width':10,
-		'm_left':39,
-		'm_top':53,
-		'm_width':10,
+		'm_left':15,
+		'm_top':44,
+		'm_width':22,
 	},{
 		'id':'howlitecoin',
 		'left':80,
 		'top':85,
 		'width':10,
-		'm_left':80,
-		'm_top':85,
-		'm_width':10,
+		'm_left':85,
+		'm_top':44,
+		'm_width':22,
 	},{
 		'id':'howethereum',
 		'left':68,
 		'top':95,
 		'width':10,
-		'm_left':68,
-		'm_top':95,
-		'm_width':10,
+		'm_left':15,
+		'm_top':72,
+		'm_width':22,
 	},{
 		'id':'howbitcoin',
 		'left':29,
 		'top':99,
 		'width':10,
-		'm_left':29,
-		'm_top':99,
-		'm_width':10,
+		'm_left':85,
+		'm_top':72,
+		'm_width':22,
 	},{
 		'id':'trans5',
 		'left':7,
@@ -217,8 +217,8 @@ var howBlocks = [
 	}
 ]
 
-function generateHexBlocks(src,mobile){
-	if (window.innerWidth < 850 && window.innerWidth <= window.innerHeight){
+function generateHexBlocks(src){
+	if (mobile){
 		src.forEach(function(e,i,a){
 			let hexElement = $('#' + e.id + '-block')
 			let innerElement

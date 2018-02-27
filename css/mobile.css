@@ -51,11 +51,12 @@
 	}
 
 	#how {
-		height: 150vw;
+		height: 230vw;
 	}
 
 	#feature {
 		margin-bottom: -5vw;
+		padding: 5vw;
 	}
 
 	#team {
@@ -115,5 +116,125 @@
 	#title .button:hover {
 		background-color: rgba(0, 0, 0, 0.1);
 		border: solid #555555 3px;
+	}
+
+	/* FEATURE */
+	#feature>.content {
+		flex-wrap: nowrap;
+		padding: 0;
+	}
+
+	#feature>.content>.item {
+		flex: 0 0 auto;
+		margin: 4vw;
+		padding: 6vw;
+	}
+
+	#feature .icon {
+		height: 15vw;
+	}
+
+	#feature .item>.title {
+		margin: .5em 0;
+	}
+
+	/* TIMELINE */
+	#timeline>.canvas>.vline {
+		background-color: #000000;
+		width: .5vw; /* Sync with timeline.js!! */
+	}
+
+	#timeline>.canvas>.event {
+		width: 3.47vw; /* Sync with timeline.js!! */
+		height: 3vw; /* Sync with timeline.js!! */
+		margin: .5vw; /* Sync with timeline.js!! */
+	}
+
+	#timeline>.canvas .eventBox {
+		top: -1.4vw;
+		width: 45vw;
+	}
+
+	#timeline>.canvas>.event:nth-child(4n)>.eventBox {
+		left: 5vw;
+		text-align: left;
+	}
+
+	#timeline>.canvas>.event:nth-child(4n+2)>.eventBox {
+		right: 5vw;
+		text-align: right;
+	}
+
+	/* Team */
+	#team>#advisor {
+		margin: 0 5vw;
+	}
+
+	#team>#advisor>.person {
+		flex: 0 0 auto;
+		max-width: initial;
+	}
+
+	#team>#advisor>.person .content{
+		flex: 1 0 0;
+	}
+
+	#team>#advisor>.person .headpic {
+		margin: 2vw 2vw;
+	}
+
+	#team>#advisor>.person .headpic>img {
+		height: 25vw;
+		width: 25vw;
+		max-height: 180px;
+		max-width: 180px;
+	}
+
+	#team>#member>.person .headpic {
+		margin: 1vw 0;
+	}
+
+	#team>#member>.person .headpic>img {
+		height: 15vw;
+		width: 15vw;
+	}
+
+	#team>#member>.person {
+		width: calc(25% - 2vw);
+	}
+
+	#team>#member>.person .name {
+		font-size: 2em;
+		line-height: 1em;
+		margin: .5em 0;
+		height: 2em;
+	}
+
+	#team>#member>.person .type {
+		font-size: 1.25em;
+		margin: .25em 0;
+	}
+
+	#team>#other>.person {
+		width: calc(50% - 2vw);
+	}
+
+	#team>#other>.person .headpic {
+		margin: 1vw 0;
+	}
+
+	#team>#other>.person .headpic>img {
+		height: 20vw;
+		width: 20vw;
+	}
+
+	#team>#other>.person .name {
+		line-height: 1em;
+		margin: .2em 0;
+		height: 2em;
+	}
+
+	#team>#other>.person .type {
+		margin: .25em 0;
 	}
 }

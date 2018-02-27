@@ -429,8 +429,7 @@ body {
 }
 
 #feature>.content>.item {
-	flex: 44% 0 0;
-	height: 40vw;
+	flex: 0 0 30vw;
 	margin: 2vw;
 	padding: 3vw;
 	background-color: #FFFFFF;
@@ -550,20 +549,20 @@ body {
 	border-radius: 1vw;
 }
 
-#team .person>.headpic {
+#team .person .headpic {
 	text-align: center;
 }
 
-#team .person>.headpic>img{
+#team .person .headpic>img{
 	border-radius: 50%;
 }
 
-#team .person>.name,
-#team .person>.type {
+#team .person .name,
+#team .person .type {
 	text-align: center;
 }
 
-#team .person>.description {
+#team .person .description {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -577,7 +576,7 @@ body {
 	transition: 200ms;
 }
 
-#team .person>.description:hover {
+#team .person .description:hover {
 	opacity: 1;
 }
 
@@ -597,11 +596,11 @@ body {
 	padding: 4vw 2vw;
 }
 
-#team>#advisor>.person>.headpic {
+#team>#advisor>.person .headpic {
 	margin: 2vw 0;
 }
 
-#team>#advisor>.person>.headpic>img {
+#team>#advisor>.person .headpic>img {
 	height: 15vw;
 	width: 15vw;
 /*	box-shadow: 0 0 30px 10px rgba(255,255,255,.7) inset; */
@@ -609,24 +608,24 @@ body {
 	max-width: 180px;
 }
 
-#team>#advisor>.person>.name {
+#team>#advisor>.person .name {
 	font-size: 3em;
 	text-align: center;
 	margin: .5em 0;
 }
 
-#team>#advisor>.person>.type {
+#team>#advisor>.person .type {
 	font-size: 2em;
 	text-align: center;
 	margin: .25em 0;
 }
 
-#team>#advisor>.person>.description {
+#team>#advisor>.person .description {
 	font-size: 1.4em;
 	line-height: 1.5em;
 }
 
-#team>#advisor>.person>.description>* {
+#team>#advisor>.person .description>* {
 	max-width: 100%; /* Workaround of IE */
 }
 
@@ -641,23 +640,23 @@ body {
 	width: calc(16.66% - 2vw);
 }
 
-#team>#member>.person>.headpic {
+#team>#member>.person .headpic {
 	margin: 2vw 0;
 }
 
-#team>#member>.person>.headpic>img {
+#team>#member>.person .headpic>img {
 	height: 10vw;
 	width: 10vw;
 }
 
-#team>#member>.person>.name {
+#team>#member>.person .name {
 	font-size: 2.5em;
 	text-align: center;
 	margin: .5em 0;
 	height: 2.5em;
 }
 
-#team>#member>.person>.type {
+#team>#member>.person .type {
 	font-size: 1.5em;
 	text-align: center;
 	margin: .25em 0;
@@ -674,32 +673,32 @@ body {
 	width: calc(16.6% - 2vw);
 }
 
-#team>#other>.person>.headpic {
+#team>#other>.person .headpic {
 	margin: 2vw 0;
 }
 
-#team>#other>.person>.headpic>img {
+#team>#other>.person .headpic>img {
 	height: 10vw;
 	width: 10vw;
 }
 
-#team>#other>.person>.name {
+#team>#other>.person .name {
 	font-size: 2.5em;
 	margin: .5em 0;
 	height: 2.5em;
 }
 
-#team>#other>.person>.type {
+#team>#other>.person .type {
 	font-size: 1.5em;
 	margin: .25em 0;
 }
 
-#team>#other>.person>.description {
+#team>#other>.person .description {
 	font-size: 1.3em;
 	line-height: 1.15em;
 }
 
-#team>#other>.person>.description>* {
+#team>#other>.person .description>* {
 	max-width: 100%; /* Workaround of IE */
 }
 
