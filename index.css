@@ -338,6 +338,7 @@ body {
 	font-size: 2em;
 	font-weight: bold;
 	text-decoration: underline;
+	text-decoration-skip-ink: none;
 }
 
 #intro .hex>.text>p,
