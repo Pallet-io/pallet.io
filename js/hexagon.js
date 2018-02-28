@@ -3,7 +3,7 @@ var introBlocks = [
 		'id':'pallet',
 		'left':50,
 		'top':0,
-		'width':40
+		'width':32
 	},{
 		'id':'zcash',
 		'left':18,
@@ -30,15 +30,15 @@ var introBlocks = [
 		'top':104,
 		'width':14
 	},{
-		'id':'blank1',
+		'id':'security',
 		'left':22,
-		'top':-50,
-		'width':14
+		'top':-30,
+		'width':20
 	},{
-		'id':'blank2',
+		'id':'scalability',
 		'left':82,
-		'top':3,
-		'width':14
+		'top':8,
+		'width':20
 	},{
 		'id':'blank3',
 		'left':16,
