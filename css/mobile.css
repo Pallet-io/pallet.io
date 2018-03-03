@@ -177,6 +177,17 @@
 		border: solid #555555 3px;
 	}
 
+	/* INTRO & HOW */
+	#intro .hex:not(.trans),
+	#how   .hex:not(.trans) {
+		filter: none;
+	}
+
+	#intro .hex.withtext:hover,
+	#how   .hex.withtext:hover {
+		filter: none;
+	}
+
 	/* FEATURE */
 	#feature>.content {
 		flex-wrap: nowrap;
