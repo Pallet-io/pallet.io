@@ -55,6 +55,10 @@ body {
 	        justify-content: center;
 }
 
+.nowrap {
+	white-space: nowrap;
+}
+
 .hex>.left{
     float:left;
     border-top: solid transparent;

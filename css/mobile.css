@@ -73,11 +73,11 @@
 	}
 
 	#nav-intro {
-		top: -40vw;
+		top: -45vw;
 	}
 
 	#nav-how {
-		top: -2vw;
+		top: -5vw;
 	}
 
 	#nav-feature {
@@ -85,19 +85,19 @@
 	}
 
 	#nav-timeline {
-		top: -10vw;
+		top: -15vw;
 	}
 
 	#nav-team {
-		top: -12vw;
+		top: -18vw;
 	}
 
 	#nav-faq {
-		top: -15vw;
+		top: -18vw;
 	}
 
 	#nav-faq {
-		top: -15vw;
+		top: -18vw;
 	}
 
 	/* PAGES */
@@ -150,6 +150,7 @@
 		transform:
 			translate(-20%, 28%)
 			rotate(-11deg);
+		box-shadow: 0 0 5vw rgba(0, 0, 0, .4);
 	}
 
 	#title .content {
@@ -198,6 +199,11 @@
 		flex: 0 0 auto;
 		margin: 4vw;
 		padding: 6vw;
+		box-shadow: .6vw .6vw .8vw rgba(0, 0, 0, .2);
+	}
+
+	#feature>.content>.item:hover {
+		box-shadow: .6vw .6vw .8vw rgba(0, 0, 0, .5);
 	}
 
 	#feature .icon {

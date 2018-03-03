@@ -37,10 +37,6 @@ body {
 	overflow-x: hidden;
 }
 
-.nowrap {
-	white-space: nowrap;
-}
-
 /* NAVBAR */
 #navbar {
 	position: fixed;
