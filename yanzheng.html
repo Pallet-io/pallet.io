@@ -10,10 +10,10 @@ body{ background:#f7f7f7; font-size:14px;}
 .box{ width:600px; margin:40px auto; border-radius:6px; background:#fff; box-sizing:border-box; box-shadow: 0px 0px 6px rgba(0,0,0,0.1); padding:40px 20px;}
 .box .exp{ border:1px dashed #888; padding:20px; text-align:center; color:#888; width:90%; box-sizing:border-box; margin:0 auto;}
 .box .exp .color{ color:#3da0e5; padding:0 4px;}
-.ulForm li{ border:1px solid #dbdbdb; border-radius:4px; line-height:22px; padding:8px 10px; box-sizing:border-box; width:90%; margin:10px auto; position:relative;}
+.ulForm li{ border:1px solid #dbdbdb; border-radius:4px; line-height:42px; padding:8px 10px; box-sizing:border-box; width:90%; margin:10px auto; position:relative;}
 .ulForm li input{ background:none; border:none; width:100%; font-size:13px; font-family:"Microsoft YaHei";}
-.ulForm li.button{ cursor:pointer; background:rgba(61,160,229,0.8); border:none; color:#fff; transition:0.3s all ease; margin-top:20px; padding:10px;}
-.ulForm li.button input{ color:#fff; cursor:pointer; font-size:13px; font-family:"Microsoft YaHei";}
+.ulForm li.button{ cursor:pointer; background:rgba(61,160,229,0.8); border:none; color:#fff; transition:0.3s all ease; margin-top:20px; padding:0;}
+.ulForm li.button input{ color:#fff; cursor:pointer; font-size:13px; line-height:42px; font-family:"Microsoft YaHei";}
 .ulForm li.button:hover{ background:rgba(61,160,229,1);  }
 @media (max-width:600px) {
 	body{ background:#fff; font-size:13px;}
@@ -26,7 +26,7 @@ body{ background:#f7f7f7; font-size:14px;}
 
 <body>
 <div class="box">
-	<p class="exp"><span class="color">地址验证</span>，请输入您要验证的地址,<span class="color">确保地址安全</span>。</p>
+	<p class="exp"><span class="color">(in Chinese) 地址验证</span>, 请输入您要验证的地址 , <span class="color">确保地址安全</span>。</p>
     <form action="" method="post" onsubmit="return checkUrl();">
          <ul class="ulForm">
             <li><input type="text" placeholder="请输入您要验证的地址" name="url" id="url" value="" onfocus="this.value=''"/></li>
