@@ -1,3 +1,7 @@
+if (top.location.href != self.location.href){
+	top.location.href = self.location.href
+}
+
 var lang = document.documentElement.lang
 
 function toBeAnnounced(){
