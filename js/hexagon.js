@@ -3,10 +3,10 @@ var introBlocks = [
 		'id':'pallet',
 		'left':50,
 		'top':0,
-		'width':40,
+		'width':32,
 		'm_left':50,
 		'm_top':15,
-		'm_width':95,
+		'm_width':95
 	},{
 		'id':'zcash',
 		'left':18,
@@ -48,18 +48,18 @@ var introBlocks = [
 		'm_top':68,
 		'm_width':35,
 	},{
-		'id':'blank1',
+		'id':'security',
 		'left':22,
-		'top':-50,
-		'width':14,
+		'top':-30,
+		'width':20,
 		'm_left':22,
 		'm_top':-50,
-		'm_width':14,
+		'm_width':14
 	},{
-		'id':'blank2',
+		'id':'scalability',
 		'left':82,
-		'top':3,
-		'width':14,
+		'top':8,
+		'width':20,
 		'm_left':82,
 		'm_top':3,
 		'm_width':14,
