@@ -6,14 +6,14 @@ var introBlocks = [
 		'width':32,
 		'm_left':50,
 		'm_top':15,
-		'm_width':95
+		'm_width':80
 	},{
 		'id':'zcash',
 		'left':18,
 		'top':115,
 		'width':14,
 		'm_left':30,
-		'm_top':68,
+		'm_top':77,
 		'm_width':35,
 	},{
 		'id':'litecoin',
@@ -45,24 +45,24 @@ var introBlocks = [
 		'top':104,
 		'width':14,
 		'm_left':70,
-		'm_top':68,
+		'm_top':77,
 		'm_width':35,
 	},{
 		'id':'security',
 		'left':22,
 		'top':-30,
 		'width':20,
-		'm_left':22,
-		'm_top':-50,
-		'm_width':14
+		'm_left':25,
+		'm_top':53,
+		'm_width':50
 	},{
 		'id':'scalability',
 		'left':82,
 		'top':8,
 		'width':20,
-		'm_left':82,
-		'm_top':3,
-		'm_width':14,
+		'm_left':75,
+		'm_top':50,
+		'm_width':50,
 	},{
 		'id':'blank3',
 		'left':16,

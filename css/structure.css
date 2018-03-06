@@ -11,6 +11,10 @@ a, input, textarea, select, button {
 	text-decoration: none;
 }
 
+br.hide{
+	display: none;
+}
+
 body {
 	margin: 0;
 	font-size: 1vw;

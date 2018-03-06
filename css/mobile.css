@@ -1,7 +1,11 @@
 @media (max-width: 850px) and (orientation: portrait) {
 	body {
 		font-size: 2.5vw;
-		}
+	}
+
+	br.m-show{
+		display: initial;
+	}
 
 	.m-flex {
 		display: flex;
@@ -106,7 +110,7 @@
 	}
 
 	#intro {
-		height: 115vw;
+		height: 165vw;
 	}
 
 	#how {
