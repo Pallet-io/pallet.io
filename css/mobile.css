@@ -106,7 +106,8 @@
 
 	/* PAGES */
 	#title {
-		height: 112vh;
+		height: 185vw;
+		min-height: 112vh;
 	}
 
 	#intro {
