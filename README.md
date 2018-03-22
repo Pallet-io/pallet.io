@@ -1,5 +1,5 @@
-Copyright (c) 2018 ABCD Foundation, All Rights Reserved.
-The repository is also released under the terms of the Apache License 2.0.
+Copyright (c) 2017-2018 Pallet Open Source Community.
+The repository is released under the terms of the Apache License 2.0.
 
                                  Apache License
                            Version 2.0, January 2004
